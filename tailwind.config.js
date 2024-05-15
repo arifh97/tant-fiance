@@ -21,9 +21,14 @@ export default {
             secondary: '#0152FF',
             body: '#B2B0B9',
             bg: '#060706',
+            white: '#ffffff',
+            black: '#000000'
         },
         fontFamily: {
             main: ['General Sans', 'Roboto', 'Poppins']
+        },
+        backgroundImage: {
+            'banner': "url('src/assets/img/banner-bg.png')",
         }
     },
     darkMode: "class",

@@ -3,7 +3,7 @@
 @tailwind utilities;
 // 
 body {
-    @apply bg-bg text-body font-main font-normal text-base leading-normal h-lvh;
+    @apply bg-bg text-body font-main font-normal text-base leading-normal;
 }
 
 h1,
@@ -31,17 +31,6 @@ ol {
 a {
     text-decoration: none !important;
     @include transition;
-}
-
-input,
-textarea,
-button {
-    padding: 10px 25px;
-    outline: none;
-    @include transition;
-    &:focus {
-        outline: none;
-    }
 }
 
 
@@ -98,6 +87,7 @@ input[type=number] {
     }
 }
 
+a,
 button {
     &.bg-primary {
         background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
@@ -129,4 +119,8 @@ button {
             }
         }
     }
+}
+
+#root {
+    overflow-x: hidden !important;
 }

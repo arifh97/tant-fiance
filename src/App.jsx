@@ -1,6 +1,5 @@
 import Header from './components/Header'
-import Banner from './components/Bannner'
-import Brands from './components/Brands'
+import Banner from './components/Banner'
 import About from './components/About'
 import HowToWork from './components/HowToWork'
 import RoadMap from './components/RoadMap'
@@ -15,7 +14,6 @@ export default function App() {
     <>
       <Header />
       <Banner />
-      <Brands />
       <About />
       <HowToWork />
       <RoadMap />
