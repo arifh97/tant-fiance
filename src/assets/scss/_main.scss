@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// 
+body {
+    @apply bg-bg text-body font-main font-normal text-base leading-normal h-lvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    outline: none;
+    @include transition;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.common {
+    &-padding {
+        --padding-y: 130px;
+        --padding-x: 0;
+        padding: var(--padding-y) var(--padding-x);
+        @include xl {
+            --padding-y: 100px;
+        }
+        @include lg {
+            --padding-y: 100px;
+        }
+        @include md {
+            --padding-y: 80px;
+        }
+        @include sm {
+            --padding-y: 60px;
+        }
+    }
+    &-meta {
+        font-size: 18px;
+        line-height: 125%;
+        @include textGradient;
+    }
+    &-title {
+        margin-bottom: 60px;
+        @include md {
+            margin-bottom: 40px;
+        }
+        @include sm {
+            margin-bottom: 30px;
+        }
+        & h2 {
+            @include font-68;
+        }
+        & p {
+            @include font-20;
+        }
+    }
+}
+
+button {
+    &.bg-primary {
+        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+        background-size: var(--size, 100%) auto;
+        &:hover {
+            --size: 200%;
+        }
+    }
+}
+
+// social 
+.social {
+    &-link {
+        --width: 48px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $primary;
+        color: $heading;
+        box-shadow: 2px 2px 0 $black;
+        @include font-24;
+        &:hover {
+            box-shadow: 0 0 0;
+        }
+        @include sm {
+            --width: 38px;
+            & svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
