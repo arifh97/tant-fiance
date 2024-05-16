@@ -52,7 +52,7 @@ export default function Faq() {
   ]
 
   return (
-    <div className="common-padding">
+    <div className="common-padding faq">
       <Container>
         <Col className="w-full text-center">
           <CommonTitle className="mb-7 md:mb-10" subTitle='FREQUENTLY ASKED QUESTIONS' title='Frequently asked Questions' />
@@ -97,10 +97,9 @@ export default function Faq() {
                 },
               },
             }}
-            itemClasses="faq-item"
             >
               {faqs.map((item, index) => (
-                <AccordionItem className="!bg-[#0C0C0D] faq-item" key={index} aria-label={index + 1} title={item.title} indicator={<FaAngleDown />}>
+                <AccordionItem className="!bg-[#0C0C0D] faq-item !p-6" key={index} aria-label={index + 1} title={item.title} indicator={<FaAngleDown />}>
                   {item.des}
                 </AccordionItem>
               ))}

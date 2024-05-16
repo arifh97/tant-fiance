@@ -1,11 +1,24 @@
 .faq {
+    & .common-title {
+        & h2 {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 34.91%, rgba(255, 255, 255, 0.21) 148.11%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
     &-item {
-        @apply p-6;
         & button {
             @apply p-0;
             & span:not([aria-hidden="true"]) {
                 @apply text-[#FAFAFA] text-opacity-70 text-[22px] leading-[165%];
             }
         }
+        // & section {
+        //     @apply p-6 pt-0;
+        //     &>* {
+        //         padding: 0 !important;
+        //     }
+        // }
     }
 }

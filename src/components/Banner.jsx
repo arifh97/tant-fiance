@@ -10,7 +10,7 @@ import b_img_6 from '../assets/img/brands/6.png'
 export default function Banner() {
   const brands = [b_img_1,b_img_2,b_img_3,b_img_4,b_img_5,b_img_6];
   return (
-    <div className="banner pt-[164px] pb-[140px] bg-cover bg-no-repeat bg-banner relative z-1">
+    <div className="banner pt-[164px] pb-[140px] bg-cover bg-no-repeat bg-banner relative z-1 bg-[url('../img/banner-bg.png')]">
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute banner-shape left-[var(--position)] top-[var(--position)]"></div>
       <Container rowClass="items-center">
         <Col className="w-full lg:w-6/12">
