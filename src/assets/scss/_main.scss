@@ -47,6 +47,12 @@ input[type=number] {
 }
 
 .common {
+    &-row {
+        margin-bottom: -30px;
+        &>div {
+            margin-bottom: 30px;
+        }
+    }
     &-padding {
         --padding-y: 130px;
         --padding-x: 0;

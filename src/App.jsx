@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Banner from './components/Banner'
 import About from './components/About'
+import Features from './components/Features'
 import HowToWork from './components/HowToWork'
 import RoadMap from './components/RoadMap'
 import Specification from './components/Specification'
@@ -15,6 +16,7 @@ export default function App() {
       <Header />
       <Banner />
       {/* <About /> */}
+      <Features />
       {/* <HowToWork /> */}
       <RoadMap />
       {/* <WhyUs /> */}
