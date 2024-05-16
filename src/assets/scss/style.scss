@@ -3,48 +3,4 @@
 @import '../scss/media_quers';
 @import '../scss/main';
 @import '../scss/header';
-// banner
-.banner {
-    &-content {
-        & h1 {
-            span {
-                background: var(--GRADIENT, linear-gradient(291deg, #0FF 7.92%, #0152FF 85.67%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-    }
-    &-shape {
-        --width: 432px;
-        --position: -100px;
-        opacity: 0.4;
-        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
-        filter: blur(300px);
-    }
-    &-inner {
-        box-shadow: 0px 0px 12px 0px #1B1B1E inset;
-        & .progress {
-            &>.flex {
-                &>.flex {
-                    position: absolute;
-                    top: 50%;
-                    left: var(--position);
-                    transform: translateY(-50%);
-                    color: $white;
-                    z-index: 2;
-                    margin-left: -35px;
-                }
-            }
-            &-bar {
-                background: linear-gradient(90deg, #01BEFF 0%, #017299 100%);
-            }
-        }
-        & .rate {
-            background: linear-gradient(298deg, #0FF 1.19%, #0152FF 120.86%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-}
+@import '../scss/banner';

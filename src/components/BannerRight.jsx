@@ -1,6 +1,22 @@
 import { FaArrowUp } from "react-icons/fa6"
 import { useState, useEffect } from 'react'
 import { Progress } from "@nextui-org/react"
+import { Select, SelectItem } from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
+import { CButton } from './CAllComponent'
+import BannerInput from "./BannerInput";
+
+import icon_1 from '../assets/img/coins/1.png'
+import icon_2 from '../assets/img/coins/2.png'
+import icon_3 from '../assets/img/coins/3.png'
+import icon_4 from '../assets/img/coins/4.png'
+import icon_5 from '../assets/img/coins/5.png'
+import icon_6 from '../assets/img/coins/6.png'
+import icon_7 from '../assets/img/coins/7.png'
+import icon_8 from '../assets/img/coins/8.png'
+import icon_9 from '../assets/img/coins/9.png'
+import amount_1 from '../assets/img/coins/3.png'
+import amount_2 from '../assets/img/coins/tant.svg'
 
 export default function BannerRight() {
   const endDate = "2024-06-18";
@@ -25,8 +41,25 @@ export default function BannerRight() {
     }, 1000);
     return () => clearTimeout(timer);
   });
+
+  // accent methods
+  const methods = [
+    {
+      value: 0,
+      label: 'Crypto'
+    },
+    {
+      value: 1,
+      label: 'BitCoin'
+    },
+    {
+      value: 2,
+      label: 'Crypto'
+    }
+  ]
+  const acceptMethods = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, icon_7, icon_8, icon_9]
   return (
-    <div className='pl-0 md:pl-6 lg:pl-8 xl:pl-14'>
+    <div className='pl-0 md:pl-4 lg:pl-6 xl:pl-8'>
       <div className='banner-inner bg-[#101012] rounded-3xl p-6 md:p-8'>
         <h4 className='text-xl lg:text-2xl leading-tight mb-4 lg:mb-6'>Buy TANT Token Now</h4>
         <div className="flex items-center -mx-3 mb-4">
@@ -69,6 +102,7 @@ export default function BannerRight() {
               }}
               value={53}
               showValueLabel={true}
+              aria-labelledby="progress-label"
             />
           </div>
           <p className="flex items-center fs-sm leading-relaxed justify-between mt-2">
@@ -79,7 +113,7 @@ export default function BannerRight() {
         <div className="mb-6">
           <p className="text-center mb-4">Until Price Increase</p>
           <div className="grid grid-cols-4 gap-4">
-            {Object.entries(timeLeft).map(([unit,value], index) => (
+            {Object.entries(timeLeft).map(([unit, value], index) => (
               <div className="text-center p-4 rounded-[20px] bg-[#18181A]" key={index}>
                 <strong className="font-medium mb-2 block text-white text-[18px] md:text-xl lg:text-[28px]">{value}</strong>
                 <p className="text-xs text-[#8D8C94]">{unit}</p>
@@ -87,8 +121,39 @@ export default function BannerRight() {
             ))}
           </div>
         </div>
-        <div className="mb-6">
+        <div className="mb-7">
           <p className="text-center rate">$1000 Now = $12,000 at Listing</p>
+        </div>
+        <div className="mb-5">
+          <h6 className="mb-3 md:mb-4 text-center uppercase font-medium">Connect Wallet</h6>
+          <Select variant={'flat'} label="Choose Crypto" className="max-w-full custom-select mb-4" radius="md" size="md" key="" color="">
+            {methods.map((methods) => (
+              <SelectItem key={methods.value} value={methods.value}>
+                {methods.label}
+              </SelectItem>
+            ))}
+          </Select>
+          <div className="mb-4">
+            <div className="flex flex-wrap -mx-3 mb-4 md:mb-6">
+              <div className="px-3 w-full sm:w-1/2">
+                <BannerInput placeholder="Enter amount" icon={amount_1} />
+              </div>
+              <div className="px-3 w-full sm:w-1/2">
+                <BannerInput placeholder="TANT Amount" icon={amount_2} readonly />
+              </div>
+            </div>
+            <CButton isLink={false} className="w-full text-center">Connect Wallet</CButton>
+          </div>
+          <div className="flex items-center flex-wrap gap-3 justify-between">
+            <div>
+              <h6 className="mb-0 text-base font-medium leading-tight">Supported Coins</h6>
+            </div>
+            <div className="flex gap-[10px]">
+              {acceptMethods.map((item, index) => (
+                <Avatar key={index} src={item} className="w-8 h-8" />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,8 @@ export default {
             body: '#B2B0B9',
             bg: '#060706',
             white: '#ffffff',
-            black: '#000000'
+            black: '#000000',
+            transparent: 'transparent'
         },
         fontFamily: {
             main: ['General Sans', 'Roboto', 'Poppins']
