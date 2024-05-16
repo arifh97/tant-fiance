@@ -28,9 +28,9 @@ export default {
         fontFamily: {
             main: ['General Sans', 'Roboto', 'Poppins']
         },
-        backgroundImage: {
-            'banner': "url('src/assets/img/banner-bg.png')",
-        }
+        // backgroundImage: {
+        //     'banner': "url('src/assets/img/banner-bg.png')",
+        // }
     },
     darkMode: "class",
     plugins: [nextui()],

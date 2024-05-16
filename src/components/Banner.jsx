@@ -1,7 +1,14 @@
 import { Container, Col, CButton } from './CAllComponent'
 import BannerRight from './BannerRight'
+import b_img_1 from '../assets/img/brands/1.png'
+import b_img_2 from '../assets/img/brands/2.png'
+import b_img_3 from '../assets/img/brands/3.png'
+import b_img_4 from '../assets/img/brands/4.png'
+import b_img_5 from '../assets/img/brands/5.png'
+import b_img_6 from '../assets/img/brands/6.png'
 
 export default function Banner() {
+  const brands = [b_img_1,b_img_2,b_img_3,b_img_4,b_img_5,b_img_6];
   return (
     <div className="banner pt-[164px] pb-[140px] bg-cover bg-no-repeat bg-banner relative z-1">
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute banner-shape left-[var(--position)] top-[var(--position)]"></div>
@@ -19,6 +26,16 @@ export default function Banner() {
         </Col>
         <Col className="w-full lg:w-6/12">
           <BannerRight />
+        </Col>
+        <Col className="w-full mt-8 md:mt-10">
+          <span className='block text-xl mb-5 md:mb-7 uppercase text-white'>AS SEEN IN</span>
+          <div className="overflow-auto">
+            <div className="flex items-center gap-6 justify-between">
+                {brands.map((item,index) => (
+                  <div className='w-full' key={index}><img src={item} alt="" /></div>
+                ))}
+            </div>
+          </div>
         </Col>
       </Container>
     </div>
