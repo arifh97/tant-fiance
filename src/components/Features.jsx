@@ -134,7 +134,7 @@ export default function Features() {
                   <div className='flex items-center justify-center bg-[#0D0D0D] w-full h-full rounded-full' dangerouslySetInnerHTML={{__html:item.icon}}></div>
                 </div>
                 <h4 className='font-semibold text-white leading-[145%] mb-2 text-xl lg:text-2xl'>{item.title}</h4>
-                <p className='text-base'>{item.des}</p>
+                <p className='text-base pGradient'>{item.des}</p>
               </div>
             </div>
           </Col>

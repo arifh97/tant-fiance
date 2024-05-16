@@ -48,10 +48,16 @@ input[type=number] {
 
 .common {
     &-row {
-        margin-bottom: -30px;
+        --tw-mb: 30px;
+        margin-bottom: calc(var(--tw-mb) * -1);
         &>div {
-            margin-bottom: 30px;
+            margin-bottom: var(--tw-mb);
         }
+    }
+    &-shape {
+        opacity: 0.4;
+        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+        filter: blur(300px);
     }
     &-padding {
         --padding-y: 130px;
@@ -125,4 +131,11 @@ button {
 
 #root {
     overflow-x: hidden !important;
+}
+
+.pGradient {
+    background: linear-gradient(180deg, rgba(212, 214, 219, 0.80) 0%, rgba(113, 115, 130, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
