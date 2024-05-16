@@ -121,7 +121,7 @@ export default function Features() {
     },
   ]
   return (
-    <div className="feature py-10 md:py-16 lg:py-20 xl:py-28">
+    <div className="feature pt-10 md:pt-16 lg:pt-20 xl:pt-28">
       <Container rowClass='common-row'>
         <Col className="w-full text-center">
           <CommonTitle title="What is TANT Finance" subTitle="Features" des="Whether you're a small business or an individual, Instant Settlements" />

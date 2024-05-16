@@ -19,8 +19,8 @@ export default function App() {
       <Features />
       {/* <HowToWork /> */}
       <RoadMap />
+      <Specification />
       {/* <WhyUs /> */}
-      {/* <Specification /> */}
       <Faq />
       {/* <Cta /> */}
       {/* <Footer /> */}
