@@ -47,15 +47,15 @@ export default function Header() {
 
   return (
     <>
-      <header className={`heading ${scrolled ? 'position-fixed' : ''}`}>
+      <header className={`heading top-0 left-0 z-10 w-full ${scrolled ? 'fixed' : 'absolute'}`}>
         <Container>
           <Col className="w-full flex items-center justify-between">
-            <Link className="logo cursor-pointer" to="banner">
+            <Link className="logo cursor-pointer" to="banner" spy={true} smooth={true} duration={700} offset={0}>
               <img src={logo} alt='logo' />
             </Link>
             <nav className={`heading-menu ${isMenu ?'show-menu':''}`}>
               <div className="title flex items-center justify-between lg:hidden">
-                <Link className="logo cursor-pointer" to="banner">
+                <Link className="logo cursor-pointer" to="banner" spy={true} smooth={true} duration={700} offset={0}>
                   <img src={logo} alt='logo' />
                 </Link>
                 <button className="heading-toggler" onClick={() => setIsMenu(!isMenu)}>
@@ -68,7 +68,7 @@ export default function Header() {
               <ul className="lg:flex items-center">
                 {navLinks.map((link, index) => (
                   <li key={index} className='block'>
-                    <Link className="heading-link cursor-pointer " to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                    <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={0} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
                   </li>
                 ))}
               </ul>

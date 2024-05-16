@@ -8,11 +8,6 @@
 }
 
 .heading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
     padding: var(--bs-navbar-padding-y) 0;
     --bs-navbar-padding-y: 30px;
     @include md {
@@ -26,7 +21,7 @@
             width: 140px;
         }
     }
-    &.position-fixed {
+    &.fixed {
         animation: headerAnimation .5s linear;
         background-color: rgba($color: $bg, $alpha: .6);
         backdrop-filter: blur(3px);
