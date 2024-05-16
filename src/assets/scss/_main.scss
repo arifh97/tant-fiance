@@ -14,7 +14,6 @@ h5,
 h6 {
     color: $heading;
     font-weight: 500;
-    margin: 0 0 10px;
 }
 
 p {
@@ -68,7 +67,10 @@ input[type=number] {
     &-meta {
         font-size: 18px;
         line-height: 125%;
-        @include textGradient;
+        background: linear-gradient(260deg, #0FF 12.71%, #0152FF 132.82%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     &-title {
         margin-bottom: 60px;
@@ -77,12 +79,6 @@ input[type=number] {
         }
         @include sm {
             margin-bottom: 30px;
-        }
-        & h2 {
-            @include font-68;
-        }
-        & p {
-            @include font-20;
         }
     }
 }
