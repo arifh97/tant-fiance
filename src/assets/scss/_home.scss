@@ -238,3 +238,10 @@
         }
     }
 }
+
+// footer
+.footer {
+    & .common-shape {
+        --width: 254px;
+    }
+}

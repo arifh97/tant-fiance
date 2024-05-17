@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../assets/img/logo.svg'
 import Container from './Container';
 import Col from './Col';
 import CButton from './CButton';
+import Logo from './Logo'
 
 export default function Header() {
   const navLinks = [
@@ -29,10 +29,10 @@ export default function Header() {
     },
   ];
   const [isMenu, setIsMenu] = useState(false);
-  const handleTouchStart  = () => {
+  const handleTouchStart = () => {
     setIsMenu(!isMenu);
   };
-  
+
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -50,14 +50,10 @@ export default function Header() {
       <header className={`heading top-0 left-0 z-10 w-full ${scrolled ? 'fixed' : 'absolute'}`}>
         <Container>
           <Col className="w-full flex items-center justify-between">
-            <Link className="logo cursor-pointer" to="banner" spy={true} smooth={true} duration={700} offset={0}>
-              <img src={logo} alt='logo' />
-            </Link>
-            <nav className={`heading-menu ${isMenu ?'show-menu':''}`}>
+            <Logo />
+            <nav className={`heading-menu ${isMenu ? 'show-menu' : ''}`}>
               <div className="title flex items-center justify-between lg:hidden">
-                <Link className="logo cursor-pointer" to="banner" spy={true} smooth={true} duration={700} offset={0}>
-                  <img src={logo} alt='logo' />
-                </Link>
+                <Logo />
                 <button className="heading-toggler" onClick={() => setIsMenu(!isMenu)}>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.3849 9.32205C16.481 9.23249 16.5585 9.12488 16.6129 9.00538C16.6674 8.88587 16.6978 8.75681 16.7024 8.62555C16.707 8.4943 16.6857 8.36342 16.6397 8.2404C16.5938 8.11737 16.524 8.00461 16.4344 7.90855C16.3449 7.81249 16.2373 7.73501 16.1178 7.68053C15.9982 7.62605 15.8692 7.59565 15.7379 7.59105C15.6067 7.58646 15.4758 7.60776 15.3528 7.65374C15.2297 7.69972 15.117 7.76949 15.0209 7.85905L12.0949 10.587L9.36692 7.66005C9.18439 7.47309 8.93593 7.36501 8.67472 7.35891C8.4135 7.35282 8.16028 7.44921 7.96923 7.62745C7.77818 7.8057 7.66448 8.05164 7.65246 8.31265C7.64044 8.57366 7.73106 8.829 7.90492 9.02405L10.6329 11.95L7.70592 14.6781C7.60647 14.7667 7.52573 14.8743 7.46846 14.9946C7.41118 15.1149 7.37852 15.2454 7.37239 15.3785C7.36626 15.5116 7.38679 15.6446 7.43277 15.7696C7.47875 15.8947 7.54925 16.0093 7.64014 16.1067C7.73103 16.2041 7.84047 16.2824 7.96203 16.3369C8.08359 16.3915 8.21482 16.4212 8.34802 16.4243C8.48121 16.4274 8.61369 16.4038 8.73766 16.355C8.86163 16.3062 8.97459 16.2331 9.06992 16.14L11.9959 13.413L14.7239 16.3391C14.812 16.4403 14.9196 16.5229 15.0402 16.5817C15.1609 16.6405 15.2922 16.6745 15.4262 16.6815C15.5603 16.6885 15.6943 16.6685 15.8205 16.6226C15.9466 16.5767 16.0622 16.5058 16.1604 16.4143C16.2586 16.3228 16.3374 16.2124 16.392 16.0898C16.4466 15.9672 16.476 15.8348 16.4784 15.7006C16.4807 15.5664 16.4561 15.4331 16.4058 15.3086C16.3556 15.1841 16.2808 15.071 16.1859 14.976L13.4589 12.05L16.3849 9.32205Z" fill="currentColor" />

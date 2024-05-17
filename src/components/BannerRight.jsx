@@ -15,6 +15,7 @@ import icon_6 from '../assets/img/coins/6.png'
 import icon_7 from '../assets/img/coins/7.png'
 import icon_8 from '../assets/img/coins/8.png'
 import icon_9 from '../assets/img/coins/9.png'
+
 import amount_1 from '../assets/img/coins/3.png'
 import amount_2 from '../assets/img/coins/tant.svg'
 
