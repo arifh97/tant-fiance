@@ -20,7 +20,7 @@ export default function App() {
       {/* <HowToWork /> */}
       <RoadMap />
       <Specification />
-      {/* <WhyUs /> */}
+      <WhyUs />
       <Faq />
       {/* <Cta /> */}
       {/* <Footer /> */}

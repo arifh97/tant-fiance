@@ -46,6 +46,24 @@ input[type=number] {
     appearance: textfield;
 }
 
+#root {
+    overflow-x: hidden !important;
+    --padding-y: 130px;
+    --padding-x: 0;
+    @include xl {
+        --padding-y: 100px;
+    }
+    @include lg {
+        --padding-y: 100px;
+    }
+    @include md {
+        --padding-y: 80px;
+    }
+    @include sm {
+        --padding-y: 60px;
+    }
+}
+
 .common {
     &-row {
         --tw-mb: 30px;
@@ -60,20 +78,9 @@ input[type=number] {
         filter: blur(300px);
     }
     &-padding {
-        --padding-y: 130px;
-        --padding-x: 0;
         padding: var(--padding-y) var(--padding-x);
-        @include xl {
-            --padding-y: 100px;
-        }
-        @include lg {
-            --padding-y: 100px;
-        }
-        @include md {
-            --padding-y: 80px;
-        }
-        @include sm {
-            --padding-y: 60px;
+        &-top {
+            padding-top: var(--padding-y);
         }
     }
     &-meta {
@@ -127,10 +134,6 @@ button {
             }
         }
     }
-}
-
-#root {
-    overflow-x: hidden !important;
 }
 
 .pGradient {
