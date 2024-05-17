@@ -69,6 +69,22 @@
             --position: -100px;
         }
     }
+    &-wrap {
+        --tw-radius: 64px;
+        border-radius: var(--tw-radius);
+        &::before {
+            content: "";
+            background: linear-gradient(178deg, #060706 27.27%, #0152FF 167.15%);
+            z-index: -1;
+            height: var(--height, 880px);
+            transform: scaleY(-1);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: var(--tw-radius);
+        }
+    }
 }
 
 // features

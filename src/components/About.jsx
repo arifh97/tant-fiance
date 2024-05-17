@@ -1,5 +1,6 @@
-import { Container, Col } from './CAllComponent';
+import { Container, Col } from './CAllComponent'
 import a_img from '../assets/img/about-img.png'
+import about_img from '../assets/img/about-card.svg'
 
 export default function About() {
   const about_card = [
@@ -50,16 +51,44 @@ export default function About() {
       des: `At TANT Finance, we are driven by integrity, transparency, and a commitment to empowering our community. We believe in fostering collaboration, embracing diversity, and continuously striving for excellence in everything we do. Join us on our journey to redefine the future of finance and unlock new possibilities for prosperity.`,
     },
   ]
+  const cardDes = [
+    {
+      title: 'Virtual Card',
+      des: `Instant Use Online`
+    },
+    {
+      title: 'Physical Card',
+      des: `Spend Crypto Everywhere you go`
+    },
+    {
+      title: 'No KYC Card',
+      des: `The Ultimate Privacy Option`
+    },
+  ]
   return (
     <div className='about !pb-4 md:!pb-5 lg:!pb-7 common-padding relative z-[1]'>
+      <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape one left-[var(--position)] top-0"></div>
+      <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape two sm right-[var(--position)] top-[10%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape four sm right-[var(--position)] bottom-[10%]"></div>
       <Container>
         <Col className="w-full text-center">
-          about-top
+          <div className="about-wrap !pt-0 p-8 md:p-12 lg:p-[60px] flex flex-wrap items-center gap-6 relative z-[1]">
+            <div className="about-img relative -top-12">
+              <img src={about_img} alt="" />
+            </div>
+            <div className="about-des ps-1">
+              {cardDes.map((item,index) => (
+                <div className={`text-left mt-[34px] ${index == cardDes.length -1 ? "" : 'mb-6 md:mb-10 lg:mb-14'}`} key={index}>
+                  <h4 className="font-medium text-xl lg:text-2xl text-white mb-2">{item.title}</h4>
+                  <p className='font-regular text-lg md:text-xl text-white text-opacity-70'>{item.des}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </Col>
       </Container>
-      <Container rowClass='items-center'>
+      <Container className='relative z-[2]' rowClass='items-center'>
         <Col className="w-full md:w-6/12">
           <div className="about-content lg:pr-[8%]">
             <span className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</span>
