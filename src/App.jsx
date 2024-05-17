@@ -22,8 +22,8 @@ export default function App() {
       <Specification />
       <WhyUs />
       <Faq />
-      {/* <Cta /> */}
-      {/* <Footer /> */}
+      <Cta />
+      <Footer />
     </>
   )
 }

@@ -52,7 +52,7 @@ export default function Faq() {
   ]
 
   return (
-    <div className="common-padding faq">
+    <div className="common-padding-top faq relative z-[2]">
       <Container>
         <Col className="w-full text-center">
           <CommonTitle className="mb-7 md:mb-10" subTitle='FREQUENTLY ASKED QUESTIONS' title='Frequently asked Questions' />

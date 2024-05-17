@@ -116,23 +116,12 @@ button {
 // social 
 .social {
     &-link {
-        --width: 48px;
+        --width: 42px;
         width: var(--width);
         height: var(--width);
-        background-color: $primary;
-        color: $heading;
-        box-shadow: 2px 2px 0 $black;
+        color: $white;
         @include font-24;
-        &:hover {
-            box-shadow: 0 0 0;
-        }
-        @include sm {
-            --width: 38px;
-            & svg {
-                width: 18px;
-                height: 18px;
-            }
-        }
+        &:hover {}
     }
 }
 

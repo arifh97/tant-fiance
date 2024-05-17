@@ -210,3 +210,31 @@
         }
     }
 }
+
+// cta
+.cta {
+    &-wrap {
+        &::before {
+            content: "";
+            width: 100%;
+            height: var(--height, 660px);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(181deg, #060706 28.61%, #0152FF 105.9%);
+        }
+        & .common-title {
+            & span {
+                margin-bottom: 16px;
+            }
+            & p {
+                @apply text-white text-opacity-70;
+            }
+        }
+        & a {
+            @apply inline-flex mx-auto justify-center items-center;
+            gap: 14px;
+        }
+    }
+}
