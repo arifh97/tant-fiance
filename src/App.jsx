@@ -17,7 +17,7 @@ export default function App() {
       <Banner />
       <About />
       <Features />
-      {/* <HowToWork /> */}
+      <HowToWork />
       <RoadMap />
       <Specification />
       <WhyUs />

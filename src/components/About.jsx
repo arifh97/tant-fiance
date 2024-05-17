@@ -1,6 +1,7 @@
 import { Container, Col } from './CAllComponent'
 import a_img from '../assets/img/about-img.png'
 import about_img from '../assets/img/about-card.svg'
+import card_shape from '../assets/img/card-bg-shape.png'
 
 export default function About() {
   const about_card = [
@@ -71,9 +72,13 @@ export default function About() {
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape two sm right-[var(--position)] top-[10%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape four sm right-[var(--position)] bottom-[10%]"></div>
+      
       <Container>
         <Col className="w-full text-center">
           <div className="about-wrap !pt-0 p-8 md:p-12 lg:p-[60px] flex flex-wrap items-center gap-6 relative z-[1]">
+            <div className="absolute top-0 left-0 w-full h-auto -z-[1]">
+              <img src={card_shape} alt="" className='w-full h-auto' />
+            </div>
             <div className="about-img relative -top-12">
               <img src={about_img} alt="" />
             </div>
