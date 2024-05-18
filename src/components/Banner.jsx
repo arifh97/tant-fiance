@@ -1,4 +1,5 @@
 import { Container, Col, CButton } from './CAllComponent'
+import { motion } from 'framer-motion'
 import BannerRight from './BannerRight'
 import b_img_1 from '../assets/img/brands/1.png'
 import b_img_2 from '../assets/img/brands/2.png'
@@ -8,20 +9,36 @@ import b_img_5 from '../assets/img/brands/5.png'
 import b_img_6 from '../assets/img/brands/6.png'
 
 export default function Banner() {
-  const brands = [b_img_1,b_img_2,b_img_3,b_img_4,b_img_5,b_img_6];
+  const brands = [b_img_1, b_img_2, b_img_3, b_img_4, b_img_5, b_img_6];
   return (
     <div className="banner pt-[164px] bg-contain bg-right-top bg-no-repeat bg-banner relative z-1 bg-[url('../img/banner-bg.png')]">
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape left-[var(--position)] top-[var(--position)]"></div>
       <Container rowClass="items-center">
         <Col className="w-full lg:w-6/12">
           <div className="banner-content">
-            <span className="common-meta block mb-3">TANT Finance Presale!</span>
-            <h1 className='mb-6 font-semibold text-4xl md:text-[54px] lg:text-[68px] leading-tight'>Make your future with <span>TANT Finance</span></h1>
-            <p className='mb-5 md:mb-7 lg:mb-10 text-lg lg:text-[22px] leading-relaxed'>TANT Finance pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions.</p>
-            <div className="flex items-center flex-wrap gap-4">
+            <motion.span
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0 }}
+              className="common-meta block mb-3">TANT Finance Presale!</motion.span>
+            <motion.h1
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className='mb-6 font-semibold text-4xl md:text-[54px] lg:text-[68px] leading-tight'>Make your future with <span>TANT Finance</span></motion.h1>
+            <motion.p
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className='mb-5 md:mb-7 lg:mb-10 text-lg lg:text-[22px] leading-relaxed'>TANT Finance pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions.</motion.p>
+            <motion.div
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.5, delay: .2 }}
+              className="flex items-center flex-wrap gap-4">
               <CButton>Buy TANT</CButton>
               <CButton className="bg-[#1F1F1F] text-white" color=''>Whitepaper</CButton>
-            </div>
+            </motion.div>
           </div>
         </Col>
         <Col className="w-full lg:w-6/12">
@@ -31,9 +48,9 @@ export default function Banner() {
           <span className='block text-xl mb-5 md:mb-7 uppercase text-white'>AS SEEN IN</span>
           <div className="overflow-auto">
             <div className="flex items-center gap-6 justify-between">
-                {brands.map((item,index) => (
-                  <div className='w-full' key={index}><img src={item} alt="" /></div>
-                ))}
+              {brands.map((item, index) => (
+                <div className='w-full' key={index}><img src={item} alt="" /></div>
+              ))}
             </div>
           </div>
         </Col>
