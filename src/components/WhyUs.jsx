@@ -56,7 +56,7 @@ export default function WhyUs() {
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0.8 }}
-              className="mx-auto w-full md:w-10/12 lg:w-7/12 relative top-14 lg:top-11 mt-2 text-center">
+              className="mx-auto w-full md:w-10/12 lg:w-7/12 relative top-14 lg:top-24 mt-2 text-center">
               <p className='font-regular text-white text-xl md:text-2xl !leading-[145%] mb-4 md:mb-6'>Subscribe for offers and rewards</p>
               <div className="why-form rounded-full overflow-hidden relative z-10">
                 <input type="text" className='text-lg leading-[145%] py-5 px-6 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />
