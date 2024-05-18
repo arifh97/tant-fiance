@@ -145,12 +145,12 @@ export default function RoadMap() {
     <div className="roadmap common-padding">
       <Container>
         <Col className="w-full">
-          <div className="flex items-center gap-4 mb-10 md:mb-16 lg:mb-20">
+          <div className="flex flex-wrap md:flex-nowrap items-center gap-4 mb-10 md:mb-16 lg:mb-20">
             <div className="w-full md:w-9/12 lg:w-7/12">
               <CommonTitle className="!mb-0" title="Our Roadmap" des="TANT Finance pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions." />
             </div>
             <div className="w-full md:w-3/12 lg:w-5/12">
-              <div className="flex items-center gap-4 md:gap-5 justify-end">
+              <div className="flex items-center gap-4 md:gap-5 md:justify-end">
                 <Button onClick={prevSlide} disabled={isPrevSlide} color="" className="bg-[#181819] hover:bg-primary w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
                   <FaAngleLeft />
                 </Button>
@@ -200,7 +200,7 @@ export default function RoadMap() {
                   className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-6 pb-8 pt-7 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-6">
                   <div className='circle w-6 h-6 rounded-full bg-[#8B8B8B] border-5 border-[#343435] relative top-6'>
                     <div className="absolute bottom-full left-1/2">
-                      <svg width="1" height="113" viewBox="0 0 1 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg className='h-20 md:h-auto' width="1" height="113" viewBox="0 0 1 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line opacity="0.3" x1="0.5" y1="-2.18557e-08" x2="0.500005" y2="113" stroke="url(#paint0_linear_0_478)" />
                         <defs>
                           <linearGradient id="paint0_linear_0_478" x1="0" y1="0" x2="1.01049e-05" y2="116.139" gradientUnits="userSpaceOnUse">

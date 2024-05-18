@@ -76,7 +76,7 @@ export default function About() {
 
       <Container>
         <Col className="w-full text-center">
-          <div className="about-wrap !pt-0 p-8 md:p-12 lg:p-[60px] flex flex-wrap items-center gap-6 relative z-[1]">
+          <div className="about-wrap !pt-0 p-6 md:p-7 lg:p-[54px] xl:p-[60px] flex flex-wrap items-center relative z-[1]">
             <div className="absolute top-0 left-0 w-full h-auto -z-[1]">
               <img src={card_shape} alt="" className='w-full h-auto' />
             </div>
@@ -84,18 +84,18 @@ export default function About() {
               initial={{ x: -100 }}
               whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0.8 }}
-              className="about-img relative -top-12">
+              className="about-img relative -top-6 md:-top-12 w-full lg:w-7/12 xl:w-8/12 2xl:w-auto">
               <img src={about_img} alt="" />
             </motion.div>
-            <div className="about-des ps-1">
+            <div className="about-des flex flex-wrap lg:block pl-1 lg:pl-5 lg:w-5/12 xl:pl-3 w-full xl:w-4/12 2xl:w-auto">
               {cardDes.map((item, index) => (
                 <motion.div
                   initial={{ x: 100 }}
                   whileInView={{ x: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
                   viewport={{ once: true, amount: 0.8 }}
-                  className={`text-left mt-[34px] ${index == cardDes.length - 1 ? "" : 'mb-6 md:mb-10 lg:mb-14'}`} key={index}>
+                  className={`text-left xl:mt-[34px] w-full md:w-1/3 lg:w-auto ${index == cardDes.length - 1 ? "md:mb-6 lg:mb-0" : 'mb-8 md:mb-6 lg:mb-4 xl:mb-14'}`} key={index}>
                   <h4 className="font-medium text-xl lg:text-2xl text-white mb-2">{item.title}</h4>
-                  <p className='font-regular text-lg md:text-xl text-white text-opacity-70'>{item.des}</p>
+                  <p className='font-regular text-lg lg:text-xl text-white text-opacity-70'>{item.des}</p>
                 </motion.div>
               ))}
             </div>
@@ -103,7 +103,7 @@ export default function About() {
         </Col>
       </Container>
       <Container className='relative z-[2]' rowClass='items-center'>
-        <Col className="w-full md:w-6/12">
+        <Col className="w-full md:w-7/12 xl:w-6/12">
           <div className="about-content lg:pr-[8%]">
             <motion.span
               initial={{ y: 100 }}
@@ -127,19 +127,19 @@ export default function About() {
               className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-6 md:mt-7 lg:mt-10 text-[#B2B0B9]">Our platform harnesses the power of artificial intelligence (AI), primarily focused on lending, to optimize lending processes, improve risk assessment, and enhance overall user experience.</motion.p>
           </div>
         </Col>
-        <Col className="w-full md:w-6/12 text-center">
+        <Col className="w-full md:w-5/12 xl:w-6/12 text-center">
           <motion.div
             initial={{ x: 100 }}
             whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0.8 }}
-            className="w-full">
+            className="w-[80%] mx-auto md:w-full">
             <img src={a_img} alt="" />
           </motion.div>
         </Col>
       </Container>
       <Container rowClass='common-row mt-12 md:mt-16 lg:mt-20'>
         {about_card.map((item, index) => (
-          <Col className="w-full lg:w-4/12" key={index}>
+          <Col className="w-full md:w-4/12" key={index}>
             <motion.div
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index+1}` } }}

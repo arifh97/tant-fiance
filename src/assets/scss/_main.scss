@@ -47,7 +47,7 @@ input[type=number] {
 }
 
 #root {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
     --padding-y: 130px;
     --padding-x: 0;
     @include xl {

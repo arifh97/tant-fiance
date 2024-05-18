@@ -11,12 +11,12 @@ export default function CommonTitle({ subTitle, title, des, className = "" }) {
                     initial={{ y: 100 }}
                     whileInView={{ y: 0, transition: { duration: .5, delay: 0.15 } }}
                     viewport={{ once: true, amount: 0.8 }}
-                    className='mb-0 !leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-semibold'>{title}</motion.h2>
+                    className='mb-0 !leading-[145%] text-[28px] md:text-4xl lg:text-[44px] font-semibold'>{title}</motion.h2>
             {des ? (<motion.p
                             initial={{ y: 100 }}
                             whileInView={{ y: 0, transition: { duration: .5, delay: 0.2 } }}
                             viewport={{ once: true, amount: 0.8 }}
-                            className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-5 text-[#B2B0B9]">{des}</motion.p>) : ''}
+                            className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-3 md:mt-5 text-[#B2B0B9]">{des}</motion.p>) : ''}
         </div>
     )
 }

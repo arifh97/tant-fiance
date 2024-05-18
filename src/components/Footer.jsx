@@ -44,21 +44,21 @@ export default function Footer() {
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0.8 }}
-              className="flex flex-wrap gap-6 justify-between">
+              className="flex flex-wrap gap-6 md:justify-around xl:justify-between">
               <div>
                 <Logo />
               </div>
               <div>
-                <p className={`mb-3 md:mb-4 ${font20}`}>Support</p>
+                <p className={`mb-2 md:mb-4 ${font20}`}>Support</p>
                 <a href="mailto:support@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>support@tantfinance.io</a>
               </div>
               <div>
-                <p className={`mb-3 md:mb-4 ${font20}`}>Marketing</p>
+                <p className={`mb-2 md:mb-4 ${font20}`}>Marketing</p>
                 <a href="mailto:socials@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>socials@tantfinance.io</a>
               </div>
               <div className='w-auto xl:w-[16%]'>
-                <p className={`mb-3 md:mb-4 ${font20}`}>We support</p>
-                <div className="flex items-center flex-wrap gap-[10px] w-7/12">
+                <p className={`mb-2 md:mb-4 ${font20}`}>We support</p>
+                <div className="flex items-center flex-wrap gap-[10px]">
                   {acceptMethods.map((item, index) => (
                     <Avatar src={item} key={index} className='w-8 h-8' />
                   ))}
@@ -92,7 +92,7 @@ export default function Footer() {
               <motion.p
                 initial={{ y: 100 }}
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0 }}
                 className='text-white mb-0 !leading-relaxed'>
                 <strong className='fw-bold block text-lg md:text-xl'>Disclaimer: </strong>
                 <span className='text-base'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>

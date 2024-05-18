@@ -45,7 +45,7 @@ export default function Specification() {
         </Col>
         <Col className="w-full">
           <div className="sp-wrap relative z-[1] overflow-hidden rounded-[20px] mb-6 md:mb-8 lg:mb-11">
-            <div className="rounded-[20px] flex items-center flex-wrap gap-6 bg-[#0C0C0D] justify-between p-8 md:p-11 lg:p-14 xl:p-[70px]">
+            <div className="rounded-[20px] flex items-center flex-wrap gap-6 bg-[#0C0C0D] justify-around lg:justify-between p-8 md:p-11 lg:p-14 xl:p-[70px]">
               <motion.div
                 initial={{ y: 100 }}
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
@@ -82,7 +82,7 @@ export default function Specification() {
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0.8 }}
-            className="flex items-center justify-center gap-4 md:gap-6 mb-6 md:mb-12 lg:mb-16">
+            className="flex items-center justify-center gap-4 md:gap-6 mb-6 lg:mb-16">
             <p className='text-xl md:text-2xl text-white leading-relaxed'>Audited by</p>
             <img src={img} alt="" />
           </motion.div>

@@ -60,7 +60,7 @@ export default function BannerRight() {
   ]
   const acceptMethods = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, icon_7, icon_8, icon_9]
   return (
-    <div className='pl-0 md:pl-4 lg:pl-6 xl:pl-8'>
+    <div className='pl-0 lg:pl-6 xl:pl-8'>
       <div className='banner-inner bg-[#101012] rounded-3xl p-6 md:p-8'>
         <motion.h4
           initial={{ y: 100 }}
@@ -77,8 +77,8 @@ export default function BannerRight() {
               <p className="uppercase mb-2 text-[#8E8C94]">STAGE 1 PRICE</p>
               <div className="flex items-center gap-2 flex-wrap justify-between">
                 <strong className='text-white font-medium leading-tight text-lg lg:text-[28px]'>$ 0.01</strong>
-                <div className="rounded-full text-center bg-[#00EEB5] bg-opacity-10 px-3 py-2 flex items-center gap-2 text-xl leading-tight text-[#00EEB5]">
-                  <div className='w-5 h-5 flex-auto bg-[#00EEB5] rounded-full border-[5px] border-[#125345]'></div>
+                <div className="rounded-full text-center bg-[#00EEB5] bg-opacity-10 px-2 py-1 md:px-3 md:py-2 flex items-center gap-2 text-sm lg:text-xl leading-tight text-[#00EEB5]">
+                  <div className='w-3 h-3 md:w-5 md:h-5 flex-auto bg-[#00EEB5] rounded-full border-3 md:border-5 border-[#125345]'></div>
                   <span>Live</span>
                 </div>
               </div>
@@ -129,10 +129,10 @@ export default function BannerRight() {
           viewport={{ once: true, amount: 0.8 }}
           className="mb-6">
           <p className="text-center mb-4">Until Price Increase</p>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-2 md:gap-4">
             {Object.entries(timeLeft).map(([unit, value], index) => (
               <div className="text-center p-4 rounded-[20px] bg-[#18181A]" key={index}>
-                <strong className="font-medium mb-2 block text-white text-[18px] md:text-xl lg:text-[28px]">{value}</strong>
+                <strong className="font-medium mb-1 md:mb-2 block text-white text-xl lg:text-[28px]">{value}</strong>
                 <p className="text-xs text-[#8D8C94]">{unit}</p>
               </div>
             ))}
@@ -149,7 +149,7 @@ export default function BannerRight() {
           initial={{ y: 100 }}
           whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
           viewport={{ once: true, amount: 0.2 }}
-          className="mb-5">
+          className="">
           <h6 className="mb-3 md:mb-4 text-center uppercase font-medium">Connect Wallet</h6>
           <Select variant={'flat'} label="Choose Crypto" className="max-w-full custom-select mb-4" radius="md" size="md" key="" color="">
             {methods.map((methods) => (
@@ -160,10 +160,10 @@ export default function BannerRight() {
           </Select>
           <div className="mb-4">
             <div className="flex flex-wrap -mx-3 mb-4 md:mb-6">
-              <div className="px-3 w-full sm:w-1/2">
+              <div className="px-3 w-full md:w-1/2 mb-2 md:mb-0">
                 <BannerInput placeholder="Enter amount" icon={amount_1} />
               </div>
-              <div className="px-3 w-full sm:w-1/2">
+              <div className="px-3 w-full md:w-1/2">
                 <BannerInput placeholder="TANT Amount" icon={amount_2} readonly />
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function BannerRight() {
             <div>
               <h6 className="mb-0 text-base font-medium leading-tight">Supported Coins</h6>
             </div>
-            <div className="flex gap-[10px]">
+            <div className="flex flex-wrap md:flex-nowrap gap-[10px]">
               {acceptMethods.map((item, index) => (
                 <Avatar key={index} src={item} className="w-8 h-8" />
               ))}
