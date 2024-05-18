@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react";
 import { Container, Col } from './CAllComponent'
 import CommonTitle from './CommonTitle'
 import shape from '../assets/img/why-shape.svg'
+import { motion } from "framer-motion";
 
 export default function WhyUs() {
   const why = [
@@ -40,13 +41,21 @@ export default function WhyUs() {
           <CommonTitle className='mb-6 md:mb-8 lg:mb-10 text-center' title={'Why us'} />
           <div className="flex items-center flex-wrap justify-between gap-6 md:gap-8">
             {why.map((item, index) => (
-              <div className='why-card' key={index}>
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
+                viewport={{ once: true, amount: 0.8 }} Í
+                className='why-card' key={index}>
                 <div className="why-icon relative z-[1] overflow-hidden rounded-full mx-auto flex items-center justify-center w-16 h-16 md:w-20 md:h-20 lg:w-[120px] lg:h-[120px]" dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                 <h4 className='font-medium text-xl md:text-2xl !leading-[145%]'>{item.title}</h4>
-              </div>
+              </motion.div>
             ))}
           </div>
-          <div className="mx-auto w-full md:w-10/12 lg:w-7/12 relative top-6 md:top-8 lg:top-11 mt-2 text-center">
+          <motion.div
+            initial={{ y: 100 }}
+            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="mx-auto w-full md:w-10/12 lg:w-7/12 relative top-6 md:top-8 lg:top-11 mt-2 text-center">
             <p className='font-regular text-white text-xl md:text-2xl !leading-[145%] mb-4 md:mb-6'>Subscribe for offers and rewards</p>
             <div className="why-form rounded-full overflow-hidden relative z-10">
               <input type="text" className='text-lg leading-[145%] py-5 px-6 md:py-7 md:px-8 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />
@@ -54,7 +63,7 @@ export default function WhyUs() {
                 Subscribe
               </Button>
             </div>
-          </div>
+          </motion.div>
         </Col>
       </Container>
     </div>

@@ -1,5 +1,6 @@
 import { Container, Col } from './CAllComponent'
 import CommonTitle from './CommonTitle'
+import { motion } from 'framer-motion';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { Button } from "@nextui-org/react";
 import { IoIosCheckmark } from "react-icons/io";
@@ -192,7 +193,11 @@ export default function RoadMap() {
           >
             {roadmap.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-6 pb-8 pt-7 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-6">
+                <motion.div
+                  initial={{ y: 100 }}
+                  whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                  viewport={{ once: true, amount: 0 }}
+                  className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-6 pb-8 pt-7 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-6">
                   <div className='circle w-6 h-6 rounded-full bg-[#8B8B8B] border-5 border-[#343435] relative top-6'>
                     <div className="absolute bottom-full left-1/2">
                       <svg width="1" height="113" viewBox="0 0 1 113" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,14 +219,14 @@ export default function RoadMap() {
                       {item.des.map((item, index) => (
                         <li className="flex items-center gap-5 mb-2" key={index}>
                           <span className='text-base w-6 h-6 rounded-full flex items-center justify-center bg-[#18181A] text-white'>
-                            {item.isChecked?(<IoIosCheckmark />):''}
+                            {item.isChecked ? (<IoIosCheckmark />) : ''}
                           </span>
-                          <span className={`text-xl leading-[160%] capitalize text-white ${item.isChecked?'line-through':''}`}>{item.label}</span>
+                          <span className={`text-xl leading-[160%] capitalize text-white ${item.isChecked ? 'line-through' : ''}`}>{item.label}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -2,6 +2,7 @@ import { Container, Col } from './CAllComponent'
 import a_img from '../assets/img/about-img.png'
 import about_img from '../assets/img/about-card.svg'
 import card_shape from '../assets/img/card-bg-shape.png'
+import { motion } from 'framer-motion'
 
 export default function About() {
   const about_card = [
@@ -72,22 +73,30 @@ export default function About() {
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape two sm right-[var(--position)] top-[10%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape four sm right-[var(--position)] bottom-[10%]"></div>
-      
+
       <Container>
         <Col className="w-full text-center">
           <div className="about-wrap !pt-0 p-8 md:p-12 lg:p-[60px] flex flex-wrap items-center gap-6 relative z-[1]">
             <div className="absolute top-0 left-0 w-full h-auto -z-[1]">
               <img src={card_shape} alt="" className='w-full h-auto' />
             </div>
-            <div className="about-img relative -top-12">
+            <motion.div
+              initial={{ x: -100 }}
+              whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="about-img relative -top-12">
               <img src={about_img} alt="" />
-            </div>
+            </motion.div>
             <div className="about-des ps-1">
-              {cardDes.map((item,index) => (
-                <div className={`text-left mt-[34px] ${index == cardDes.length -1 ? "" : 'mb-6 md:mb-10 lg:mb-14'}`} key={index}>
+              {cardDes.map((item, index) => (
+                <motion.div
+                  initial={{ x: 100 }}
+                  whileInView={{ x: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
+                  viewport={{ once: true, amount: 0.8 }}
+                  className={`text-left mt-[34px] ${index == cardDes.length - 1 ? "" : 'mb-6 md:mb-10 lg:mb-14'}`} key={index}>
                   <h4 className="font-medium text-xl lg:text-2xl text-white mb-2">{item.title}</h4>
                   <p className='font-regular text-lg md:text-xl text-white text-opacity-70'>{item.des}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -96,26 +105,50 @@ export default function About() {
       <Container className='relative z-[2]' rowClass='items-center'>
         <Col className="w-full md:w-6/12">
           <div className="about-content lg:pr-[8%]">
-            <span className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</span>
-            <h3 className='!leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-semibold'>About TANT Finance</h3>
-            <p className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-5 text-[#B2B0B9]">At TANT Finance, we're dedicated to revolutionizing the world of decentralized finance (DeFi) by combining innovative technologies with unparalleled opportunities for growth and prosperity.</p>
-            <p className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-6 md:mt-7 lg:mt-10 text-[#B2B0B9]">Our platform harnesses the power of artificial intelligence (AI), primarily focused on lending, to optimize lending processes, improve risk assessment, and enhance overall user experience.</p>
+            <motion.span
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</motion.span>
+            <motion.h3
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className='!leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-semibold'>About TANT Finance</motion.h3>
+            <motion.p
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0.15 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-5 text-[#B2B0B9]">At TANT Finance, we're dedicated to revolutionizing the world of decentralized finance (DeFi) by combining innovative technologies with unparalleled opportunities for growth and prosperity.</motion.p>
+            <motion.p
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0.2 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-6 md:mt-7 lg:mt-10 text-[#B2B0B9]">Our platform harnesses the power of artificial intelligence (AI), primarily focused on lending, to optimize lending processes, improve risk assessment, and enhance overall user experience.</motion.p>
           </div>
         </Col>
         <Col className="w-full md:w-6/12 text-center">
-          <div className="w-full">
+          <motion.div
+            initial={{ x: 100 }}
+            whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="w-full">
             <img src={a_img} alt="" />
-          </div>
+          </motion.div>
         </Col>
       </Container>
       <Container rowClass='common-row mt-12 md:mt-16 lg:mt-20'>
         {about_card.map((item, index) => (
           <Col className="w-full lg:w-4/12" key={index}>
-            <div className="about-card">
-              <div className='mb-5 md:mb-6 lg:mb-8' dangerouslySetInnerHTML={{__html:item.icon}}></div>
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index+1}` } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="about-card">
+              <div className='mb-5 md:mb-6 lg:mb-8' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
               <h4 className='text-white font-semibold text-xl md:text-2xl mb-5 md:mb-7'>{item.title}</h4>
               <p className='pGradient !leading-relaxed'>{item.des}</p>
-            </div>
+            </motion.div>
           </Col>
         ))}
       </Container>

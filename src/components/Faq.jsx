@@ -2,6 +2,7 @@ import CommonTitle from "./CommonTitle"
 import { Container, Col } from './CAllComponent'
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { FaAngleDown } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function Faq() {
   const faqs = [
@@ -58,45 +59,49 @@ export default function Faq() {
           <CommonTitle className="mb-7 md:mb-10" subTitle='FREQUENTLY ASKED QUESTIONS' title='Frequently asked Questions' />
         </Col>
         <Col className="mx-auto w-full lg:w-10/12">
-          <div className="lg:px-8">
-            <Accordion 
-            variant="splitted"
-            motionProps={{
-              variants: {
-                enter: {
-                  y: 0,
-                  opacity: 1,
-                  height: "auto",
-                  transition: {
-                    height: {
-                      type: "spring",
-                      stiffness: 500,
-                      damping: 30,
-                      duration: 1,
+          <motion.div
+            initial={{ y: 100 }}
+            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="lg:px-8">
+            <Accordion
+              variant="splitted"
+              motionProps={{
+                variants: {
+                  enter: {
+                    y: 0,
+                    opacity: 1,
+                    height: "auto",
+                    transition: {
+                      height: {
+                        type: "spring",
+                        stiffness: 500,
+                        damping: 30,
+                        duration: 1,
+                      },
+                      opacity: {
+                        easings: "ease",
+                        duration: 1,
+                      },
                     },
-                    opacity: {
-                      easings: "ease",
-                      duration: 1,
+                  },
+                  exit: {
+                    y: -10,
+                    opacity: 0,
+                    height: 0,
+                    transition: {
+                      height: {
+                        easings: "ease",
+                        duration: 0.25,
+                      },
+                      opacity: {
+                        easings: "ease",
+                        duration: 0.3,
+                      },
                     },
                   },
                 },
-                exit: {
-                  y: -10,
-                  opacity: 0,
-                  height: 0,
-                  transition: {
-                    height: {
-                      easings: "ease",
-                      duration: 0.25,
-                    },
-                    opacity: {
-                      easings: "ease",
-                      duration: 0.3,
-                    },
-                  },
-                },
-              },
-            }}
+              }}
             >
               {faqs.map((item, index) => (
                 <AccordionItem className="!bg-[#0C0C0D] faq-item !p-6" key={index} aria-label={index + 1} title={item.title} indicator={<FaAngleDown />}>
@@ -104,7 +109,7 @@ export default function Faq() {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
+          </motion.div>
         </Col>
       </Container>
     </div>

@@ -17,11 +17,11 @@ export default function Header() {
     },
     {
       btn_title: 'Whitepaper',
-      to: 'whitepaper'
+      to: 'cta'
     },
     {
       btn_title: 'Tokenomics',
-      to: 'tokenomics'
+      to: 'sp'
     },
     {
       btn_title: 'Roadmap',
@@ -64,7 +64,7 @@ export default function Header() {
               <ul className="lg:flex items-center">
                 {navLinks.map((link, index) => (
                   <li key={index} className='block'>
-                    <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={0} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                    <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
                   </li>
                 ))}
               </ul>

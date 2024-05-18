@@ -4,7 +4,7 @@ import CommonTitle from './CommonTitle'
 import main_icon from '../assets/img/coins/tant.svg'
 import { LuCopy, LuCopyCheck } from "react-icons/lu"
 import img from '../assets/img/sponsor.png'
-
+import { motion } from 'framer-motion'
 
 export default function Specification() {
   const base_icon = `<svg width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,34 +46,54 @@ export default function Specification() {
         <Col className="w-full">
           <div className="sp-wrap relative z-[1] overflow-hidden rounded-[20px] mb-6 md:mb-8 lg:mb-11">
             <div className="rounded-[20px] flex items-center flex-wrap gap-6 bg-[#0C0C0D] justify-between p-8 md:p-11 lg:p-14 xl:p-[70px]">
-              <div className='text-center'>
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                viewport={{ once: true, amount: 0 }}
+                className='text-center'>
                 <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">BLOCKCHAIN NETWORK</h5>
                 <div className='flex items-center justify-center' dangerouslySetInnerHTML={{ __html: base_icon }}></div>
-              </div>
-              <div className='text-center'>
+              </motion.div>
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                viewport={{ once: true, amount: 0 }}
+                className='text-center'>
                 <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">TOTAL SUPPLY</h5>
                 <div className='flex items-center justify-center gap-2'>
                   <img src={main_icon} alt="" />
                   <span className='text-white leading-relaxed font-normal text-xl md:text-2xl lg:text-4xl'>502,000,000</span>
                 </div>
-              </div>
-              <div className='text-center'>
+              </motion.div>
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                viewport={{ once: true, amount: 0 }}
+                className='text-center'>
                 <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">CONTRACT ADDRESS</h5>
                 <div className='flex items-center justify-center gap-2'>
                   <span className='text-white leading-relaxed font-normal text-xl md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span>
                   <button onClick={() => copyHandle()} className='cursor-pointer p-0 border-0 bg-transparent text-2xl text-white'>{!copied ? (<LuCopy />) : (<LuCopyCheck />)}</button>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 md:mb-12 lg:mb-16">
+          <motion.div
+            initial={{ y: 100 }}
+            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex items-center justify-center gap-4 md:gap-6 mb-6 md:mb-12 lg:mb-16">
             <p className='text-xl md:text-2xl text-white leading-relaxed'>Audited by</p>
             <img src={img} alt="" />
-          </div>
-          <div className="flex items-center flex-wrap gap-4 justify-center">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100 }}
+            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="flex items-center flex-wrap gap-4 justify-center">
             <CButton>Buy TANT</CButton>
             <CButton className="bg-[#1F1F1F] text-white" color=''>Whitepaper</CButton>
-          </div>
+          </motion.div>
         </Col>
       </Container>
     </div>

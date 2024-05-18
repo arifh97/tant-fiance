@@ -1,7 +1,7 @@
 import { Container, Col } from './CAllComponent'
-import { Link } from 'react-scroll'
 import { FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa6";
 import { Avatar } from "@nextui-org/react";
+import { motion } from 'framer-motion'
 
 import Logo from './Logo'
 import icon_1 from '../assets/img/coins/1.png'
@@ -40,7 +40,11 @@ export default function Footer() {
       <div className='mt-10 md:mt-12 lg:mt-16 xl:mt-20'>
         <Container>
           <Col className="w-full">
-            <div className="flex flex-wrap gap-6 justify-between">
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className="flex flex-wrap gap-6 justify-between">
               <div>
                 <Logo />
               </div>
@@ -52,7 +56,7 @@ export default function Footer() {
                 <p className={`mb-3 md:mb-4 ${font20}`}>Marketing</p>
                 <a href="mailto:socials@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>socials@tantfinance.io</a>
               </div>
-              <div>
+              <div className='w-auto xl:w-[16%]'>
                 <p className={`mb-3 md:mb-4 ${font20}`}>We support</p>
                 <div className="flex items-center flex-wrap gap-[10px] w-7/12">
                   {acceptMethods.map((item, index) => (
@@ -72,23 +76,31 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           </Col>
         </Container>
       </div>
       <div className="border-t border-[#fff] border-opacity-10 mt-8 md:mt-10 lg:mt-[50px] pt-6 md:pt-9 pb-10 md:pb-16 lg:pb-20 xl:pb-[104px]">
         <Container>
           <Col className="w-full">
-            <p className={`text-center mb-5 md:mb-6 lg:mb-9 tracking-[-0.8px] ${font20}`}>2024 TANT Finance - All Rights Reserved</p>
+            <motion.p
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+              className={`text-center mb-5 md:mb-6 lg:mb-9 tracking-[-0.8px] ${font20}`}>2024 TANT Finance - All Rights Reserved</motion.p>
             <div>
-              <p className='text-white mb-0 !leading-relaxed'>
+              <motion.p
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                viewport={{ once: true, amount: 0.8 }}
+                className='text-white mb-0 !leading-relaxed'>
                 <strong className='fw-bold block text-lg md:text-xl'>Disclaimer: </strong>
                 <span className='text-base'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>
-              </p>
+              </motion.p>
             </div>
           </Col>
         </Container>
       </div>
-    </div>
+    </div >
   )
 }

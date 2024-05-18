@@ -5,6 +5,7 @@ import { Select, SelectItem } from "@nextui-org/react";
 import { Avatar } from "@nextui-org/react";
 import { CButton } from './CAllComponent'
 import BannerInput from "./BannerInput";
+import { motion } from 'framer-motion'
 
 import icon_1 from '../assets/img/coins/1.png'
 import icon_2 from '../assets/img/coins/2.png'
@@ -15,7 +16,6 @@ import icon_6 from '../assets/img/coins/6.png'
 import icon_7 from '../assets/img/coins/7.png'
 import icon_8 from '../assets/img/coins/8.png'
 import icon_9 from '../assets/img/coins/9.png'
-
 import amount_1 from '../assets/img/coins/3.png'
 import amount_2 from '../assets/img/coins/tant.svg'
 
@@ -62,8 +62,16 @@ export default function BannerRight() {
   return (
     <div className='pl-0 md:pl-4 lg:pl-6 xl:pl-8'>
       <div className='banner-inner bg-[#101012] rounded-3xl p-6 md:p-8'>
-        <h4 className='text-xl lg:text-2xl leading-tight mb-4 lg:mb-6'>Buy TANT Token Now</h4>
-        <div className="flex items-center -mx-3 mb-4">
+        <motion.h4
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0.8 }}
+          className='text-xl lg:text-2xl leading-tight mb-4 lg:mb-6'>Buy TANT Token Now</motion.h4>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="flex items-center -mx-3 mb-4">
           <div className="px-3 w-1/2">
             <div className="p-4 bg-[#18181A] rounded-3xl">
               <p className="uppercase mb-2 text-[#8E8C94]">STAGE 1 PRICE</p>
@@ -87,8 +95,12 @@ export default function BannerRight() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="mb-6">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="mb-6">
           <div className="progress relative" style={{ '--position': '53%' }}>
             <Progress
               size="sm"
@@ -110,8 +122,12 @@ export default function BannerRight() {
             <span>Amount Raised</span>
             <span>$15,000,000</span>
           </p>
-        </div>
-        <div className="mb-6">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="mb-6">
           <p className="text-center mb-4">Until Price Increase</p>
           <div className="grid grid-cols-4 gap-4">
             {Object.entries(timeLeft).map(([unit, value], index) => (
@@ -121,11 +137,19 @@ export default function BannerRight() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="mb-7">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0.8 }}
+          className="mb-7">
           <p className="text-center rate">$1000 Now = $12,000 at Listing</p>
-        </div>
-        <div className="mb-5">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="mb-5">
           <h6 className="mb-3 md:mb-4 text-center uppercase font-medium">Connect Wallet</h6>
           <Select variant={'flat'} label="Choose Crypto" className="max-w-full custom-select mb-4" radius="md" size="md" key="" color="">
             {methods.map((methods) => (
@@ -155,7 +179,7 @@ export default function BannerRight() {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
