@@ -61,19 +61,17 @@ export default function BannerRight() {
   const acceptMethods = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, icon_7, icon_8, icon_9]
   return (
     <div className='pl-0 lg:pl-6 xl:pl-8'>
-      <div className='banner-inner bg-[#101012] rounded-3xl p-6 md:p-8'>
-        <motion.h4
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-          viewport={{ once: true, amount: 0.8 }}
-          className='text-xl lg:text-2xl leading-tight mb-4 lg:mb-6'>Buy TANT Token Now</motion.h4>
-        <motion.div
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-          viewport={{ once: true, amount: 0.8 }}
-          className="flex items-center -mx-3 mb-4">
-          <div className="px-3 w-1/2">
-            <div className="p-4 bg-[#18181A] rounded-3xl">
+      <motion.div
+        initial={{ y: 100 }}
+        whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
+        viewport={{ once: true, amount: 0.2 }}
+        className='banner-inner bg-[#101012] rounded-xl md:rounded-3xl p-5 md:p-8'>
+        <h4
+          className='text-lg lg:text-2xl leading-tight mb-4 lg:mb-6'>Buy TANT Token Now</h4>
+        <div
+          className="flex flex-wrap items-center -mx-3 mb-4">
+          <div className="px-3 w-full mb-3 md:mb-0 md:w-1/2">
+            <div className="p-4 bg-[#18181A] rounded-2xl md:rounded-3xl">
               <p className="uppercase mb-2 text-[#8E8C94]">STAGE 1 PRICE</p>
               <div className="flex items-center gap-2 flex-wrap justify-between">
                 <strong className='text-white font-medium leading-tight text-lg lg:text-[28px]'>$ 0.01</strong>
@@ -84,8 +82,8 @@ export default function BannerRight() {
               </div>
             </div>
           </div>
-          <div className="px-3 w-1/2">
-            <div className="p-4 bg-[#18181A] rounded-3xl">
+          <div className="px-3 w-full md:w-1/2">
+            <div className="p-4 bg-[#18181A] rounded-2xl md:rounded-3xl">
               <p className="uppercase mb-2 text-[#8E8C94]">STAGE 1 PRICE</p>
               <div className="flex items-center gap-2 flex-wrap">
                 <strong className='text-white font-medium leading-tight text-lg lg:text-[28px]'>$ 0.02</strong>
@@ -95,11 +93,8 @@ export default function BannerRight() {
               </div>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-          viewport={{ once: true, amount: 0.8 }}
+        </div>
+        <div
           className="mb-6">
           <div className="progress relative" style={{ '--position': '53%' }}>
             <Progress
@@ -122,35 +117,26 @@ export default function BannerRight() {
             <span>Amount Raised</span>
             <span>$15,000,000</span>
           </p>
-        </motion.div>
-        <motion.div
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-          viewport={{ once: true, amount: 0.8 }}
-          className="mb-6">
+        </div>
+        <div
+          className="mb-4 md:mb-6">
           <p className="text-center mb-4">Until Price Increase</p>
           <div className="grid grid-cols-4 gap-2 md:gap-4">
             {Object.entries(timeLeft).map(([unit, value], index) => (
-              <div className="text-center p-4 rounded-[20px] bg-[#18181A]" key={index}>
+              <div className="text-center p-3 md:p-4 rounded-xl md:rounded-[20px] bg-[#18181A]" key={index}>
                 <strong className="font-medium mb-1 md:mb-2 block text-white text-xl lg:text-[28px]">{value}</strong>
                 <p className="text-xs text-[#8D8C94]">{unit}</p>
               </div>
             ))}
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-          viewport={{ once: true, amount: 0.8 }}
-          className="mb-7">
+        </div>
+        <div
+          className="mb-3 md:mb-7">
           <p className="text-center rate">$1000 Now = $12,000 at Listing</p>
-        </motion.div>
-        <motion.div
-          initial={{ y: 100 }}
-          whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
-          viewport={{ once: true, amount: 0.2 }}
+        </div>
+        <div
           className="">
-          <h6 className="mb-3 md:mb-4 text-center uppercase font-medium">Connect Wallet</h6>
+          <h6 className="mb-3 md:mb-4 text-center uppercase font-medium text-sm md:text-base">Connect Wallet</h6>
           <Select variant={'flat'} label="Choose Crypto" className="max-w-full custom-select mb-4" radius="md" size="md" key="" color="">
             {methods.map((methods) => (
               <SelectItem key={methods.value} value={methods.value}>
@@ -179,8 +165,8 @@ export default function BannerRight() {
               ))}
             </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   )
 }

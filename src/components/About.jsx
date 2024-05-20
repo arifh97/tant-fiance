@@ -73,30 +73,23 @@ export default function About() {
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape two sm right-[var(--position)] top-[10%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape four sm right-[var(--position)] bottom-[10%]"></div>
-
       <Container>
         <Col className="w-full text-center">
           <div className="about-wrap !pt-0 p-6 md:p-7 lg:p-[54px] xl:p-[60px] flex flex-wrap items-center relative z-[1]">
             <div className="absolute top-0 left-0 w-full h-auto -z-[1]">
               <img src={card_shape} alt="" className='w-full h-auto' />
             </div>
-            <motion.div
-              initial={{ x: -100 }}
-              whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
-              viewport={{ once: true, amount: 0.8 }}
+            <div
               className="about-img relative -top-6 md:-top-12 w-full lg:w-7/12 xl:w-8/12 2xl:w-auto">
               <img src={about_img} alt="" />
-            </motion.div>
+            </div>
             <div className="about-des flex flex-wrap lg:block pl-1 lg:pl-5 lg:w-5/12 xl:pl-3 w-full xl:w-4/12 2xl:w-auto">
               {cardDes.map((item, index) => (
-                <motion.div
-                  initial={{ x: 100 }}
-                  whileInView={{ x: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
-                  viewport={{ once: true, amount: 0.8 }}
+                <div
                   className={`text-left xl:mt-[34px] w-full md:w-1/3 lg:w-auto ${index == cardDes.length - 1 ? "md:mb-6 lg:mb-0" : 'mb-8 md:mb-6 lg:mb-4 xl:mb-14'}`} key={index}>
                   <h4 className="font-medium text-xl lg:text-2xl text-white mb-2">{item.title}</h4>
-                  <p className='font-regular text-lg lg:text-xl text-white text-opacity-70'>{item.des}</p>
-                </motion.div>
+                  <p className='font-regular text-base md:text-lg lg:text-xl text-white text-opacity-70'>{item.des}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -104,35 +97,27 @@ export default function About() {
       </Container>
       <Container className='relative z-[2]' rowClass='items-center'>
         <Col className="w-full md:w-7/12 xl:w-6/12">
-          <div className="about-content lg:pr-[8%]">
-            <motion.span
-              initial={{ y: 100 }}
-              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-              viewport={{ once: true, amount: 0.8 }}
-              className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</motion.span>
-            <motion.h3
-              initial={{ y: 100 }}
-              whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
-              viewport={{ once: true, amount: 0.8 }}
-              className='!leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-semibold'>About TANT Finance</motion.h3>
-            <motion.p
-              initial={{ y: 100 }}
-              whileInView={{ y: 0, transition: { duration: .5, delay: 0.15 } }}
-              viewport={{ once: true, amount: 0.8 }}
-              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-5 text-[#B2B0B9]">At TANT Finance, we're dedicated to revolutionizing the world of decentralized finance (DeFi) by combining innovative technologies with unparalleled opportunities for growth and prosperity.</motion.p>
-            <motion.p
-              initial={{ y: 100 }}
-              whileInView={{ y: 0, transition: { duration: .5, delay: 0.2 } }}
-              viewport={{ once: true, amount: 0.8 }}
-              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-6 md:mt-7 lg:mt-10 text-[#B2B0B9]">Our platform harnesses the power of artificial intelligence (AI), primarily focused on lending, to optimize lending processes, improve risk assessment, and enhance overall user experience.</motion.p>
-          </div>
+          <motion.div
+            initial={{ y: 100 }}
+            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+            viewport={{ once: true, amount: 0.8 }}
+            className="about-content lg:pr-[8%] mt-10 md:mt-0">
+            <span
+              className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</span>
+            <h3
+              className='!leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-semibold'>About TANT Finance</h3>
+            <p
+              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-5 text-[#B2B0B9]">At TANT Finance, we're dedicated to revolutionizing the world of decentralized finance (DeFi) by combining innovative technologies with unparalleled opportunities for growth and prosperity.</p>
+            <p
+              className="text-lg md:text-xl lg:text-[22px] !leading-[160%] mt-4 md:mt-7 lg:mt-10 text-[#B2B0B9]">Our platform harnesses the power of artificial intelligence (AI), primarily focused on lending, to optimize lending processes, improve risk assessment, and enhance overall user experience.</p>
+          </motion.div>
         </Col>
         <Col className="w-full md:w-5/12 xl:w-6/12 text-center">
           <motion.div
-            initial={{ x: 100 }}
-            whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
-            viewport={{ once: true, amount: 0.8 }}
-            className="w-[80%] mx-auto md:w-full">
+              initial={{ x: 100 }}
+              whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+            className="w-[80%] mx-auto mt-5 md:mt-0 md:w-full">
             <img src={a_img} alt="" />
           </motion.div>
         </Col>
@@ -142,11 +127,11 @@ export default function About() {
           <Col className="w-full md:w-4/12" key={index}>
             <motion.div
               initial={{ y: 100 }}
-              whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index+1}` } }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
               viewport={{ once: true, amount: 0.8 }}
               className="about-card">
-              <div className='mb-5 md:mb-6 lg:mb-8' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
-              <h4 className='text-white font-semibold text-xl md:text-2xl mb-5 md:mb-7'>{item.title}</h4>
+              <div className='mb-4 md:mb-6 lg:mb-8' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
+              <h4 className='text-white font-semibold text-xl md:text-2xl mb-3 md:mb-7'>{item.title}</h4>
               <p className='pGradient !leading-relaxed'>{item.des}</p>
             </motion.div>
           </Col>

@@ -90,6 +90,12 @@ input[type=number] {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @include md {
+            font-size: 16px;
+        }
+        @include sm {
+            font-size: 14px;
+        }
     }
     &-title {
         margin-bottom: 60px;

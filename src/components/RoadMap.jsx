@@ -150,18 +150,26 @@ export default function RoadMap() {
               <CommonTitle className="!mb-0" title="Our Roadmap" des="TANT Finance pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions." />
             </div>
             <div className="w-full md:w-3/12 lg:w-5/12">
-              <div className="flex items-center gap-4 md:gap-5 md:justify-end">
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+                viewport={{ once: true, amount: 0 }}
+                className="flex items-center gap-4 md:gap-5 md:justify-end">
                 <Button onClick={prevSlide} disabled={isPrevSlide} color="" className="bg-[#181819] hover:bg-primary w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
                   <FaAngleLeft />
                 </Button>
                 <Button onClick={nextSlide} disabled={isNextSlide} color="" className="bg-[#181819] hover:bg-primary w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
                   <FaAngleRight />
                 </Button>
-              </div>
+              </motion.div>
             </div>
           </div>
         </Col>
-        <Col className="w-full">
+        <motion.div
+          initial={{ y: 100 }}
+          whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+          viewport={{ once: true, amount: 0 }}
+          className="w-full">
           <Swiper
             className=''
             spaceBetween={30}
@@ -193,10 +201,7 @@ export default function RoadMap() {
           >
             {roadmap.map((item, index) => (
               <SwiperSlide key={index}>
-                <motion.div
-                  initial={{ y: 100 }}
-                  whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-                  viewport={{ once: true, amount: 0 }}
+                <div
                   className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-6 pb-8 pt-7 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-6">
                   <div className='circle w-6 h-6 rounded-full bg-[#8B8B8B] border-5 border-[#343435] relative top-6'>
                     <div className="absolute bottom-full left-1/2">
@@ -226,11 +231,11 @@ export default function RoadMap() {
                       ))}
                     </ul>
                   </div>
-                </motion.div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
-        </Col>
+        </motion.div>
       </Container>
     </div>
   )

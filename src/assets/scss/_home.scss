@@ -43,7 +43,11 @@
             & button {
                 @apply bg-[#18181A];
                 & label {
-                    @apply text-white font-medium text-lg leading-tight opacity-70;
+                    font-size: 18px;
+                    @include sm {
+                        font-size: 16px
+                    }
+                    @apply text-white font-medium leading-tight opacity-70;
                 }
                 & span {
                     @apply text-white font-medium text-sm leading-tight;
@@ -73,6 +77,17 @@
         --tw-radius: 64px;
         border-radius: var(--tw-radius);
         --height: 880px;
+        @include lg {
+            --tw-radius: 44px;
+        }
+        @include md {
+            --tw-radius: 32px;
+            --height: 500px;
+        }
+        @include sm {
+            --tw-radius: 24px;
+            --height: 100%;
+        }
         &::before {
             content: "";
             background: linear-gradient(178deg, #060706 27.27%, #0152FF 167.15%);
