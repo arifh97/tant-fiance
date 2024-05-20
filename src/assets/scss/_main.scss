@@ -64,10 +64,19 @@ input[type=number] {
     }
 }
 
+.container {
+    @include sm {
+        max-width: 100%;
+    }
+}
+
 .common {
     &-row {
         --tw-mb: 30px;
         margin-bottom: calc(var(--tw-mb) * -1);
+        @include sm {
+            --tw-mb: 20px;
+        }
         &>div {
             margin-bottom: var(--tw-mb);
         }

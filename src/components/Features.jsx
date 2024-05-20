@@ -132,7 +132,7 @@ export default function Features() {
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index}` } }}
             viewport={{ once: true, amount: 0 }}
-            className="px-[15px] w-full md:w-1/2 lg:w-4/12 flex" key={index}>
+            className="px-1 w-full md:w-1/2 lg:w-4/12 flex" key={index}>
             <div className="feature-item relative z-[1] overflow-hidden w-full flex">
               <div className="p-5 md:p-6 lg:p-8 bg-[#0C0C0D] rounded-[20px] w-full">
                 <div className="icon mb-4 md:mb-5 w-10 h-10 lg:w-[60px] lg:h-[60px] rounded-full p-1 relative z-[1] overflow-hidden">

@@ -202,10 +202,10 @@ export default function RoadMap() {
             {roadmap.map((item, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-6 pb-8 pt-7 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-6">
-                  <div className='circle w-6 h-6 rounded-full bg-[#8B8B8B] border-5 border-[#343435] relative top-6'>
+                  className="roadmap-item w-full bg-contain bg-left-top bg-[url('../img/roadmap-bg.png')] bg-[#0D0D0D] border border-[transparent] rounded-xl px-4 py-5 md:px-8 md:pt-10 lg:px-12 lg:pt-[60px] flex gap-4 lg:gap-6">
+                  <div className='circle w-6 h-6 rounded-full bg-[#8B8B8B] border-5 border-[#343435] relative top-[9px] md:top-6'>
                     <div className="absolute bottom-full left-1/2">
-                      <svg className='h-20 md:h-auto' width="1" height="113" viewBox="0 0 1 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg className='h-14 md:h-auto' width="1" height="113" viewBox="0 0 1 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line opacity="0.3" x1="0.5" y1="-2.18557e-08" x2="0.500005" y2="113" stroke="url(#paint0_linear_0_478)" />
                         <defs>
                           <linearGradient id="paint0_linear_0_478" x1="0" y1="0" x2="1.01049e-05" y2="116.139" gradientUnits="userSpaceOnUse">
@@ -217,16 +217,16 @@ export default function RoadMap() {
                     </div>
                   </div>
                   <div>
-                    <div className="title mb-4 md:mb-5 inline-block p-4 md:p-5 capitalize font-normal leading-[108%] text-2xl md:text-[32px] border-[#131315] border rounded-[10px] bg-[#F1F2F6] bg-opacity-5">
+                    <div className="title mb-4 md:mb-5 inline-block p-3 md:p-5 capitalize font-normal leading-[108%] text-lg md:text-[28px] border-[#131315] border rounded-[10px] bg-[#F1F2F6] bg-opacity-5">
                       <span className='block'>{item.title} {index + 1}</span>
                     </div>
                     <ul>
                       {item.des.map((item, index) => (
-                        <li className="flex items-center gap-5 mb-2" key={index}>
+                        <li className="flex items-center gap-2 md:gap-3 sm:gap-5 mb-2" key={index}>
                           <span className='text-base w-6 h-6 rounded-full flex items-center justify-center bg-[#18181A] text-white'>
                             {item.isChecked ? (<IoIosCheckmark />) : ''}
                           </span>
-                          <span className={`text-xl leading-[160%] capitalize text-white ${item.isChecked ? 'line-through' : ''}`}>{item.label}</span>
+                          <span className={`text-base md:text-lg lg:text-xl leading-[160%] capitalize text-white ${item.isChecked ? 'line-through' : ''}`}>{item.label}</span>
                         </li>
                       ))}
                     </ul>

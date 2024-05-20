@@ -7,7 +7,7 @@ import img from '../assets/img/sponsor.png'
 import { motion } from 'framer-motion'
 
 export default function Specification() {
-  const base_icon = `<svg width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+  const base_icon = `<svg class="h-full" width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_0_586)">
                       <path d="M20.4648 49C31.5304 49 40.5 40.0464 40.5 29C40.5 17.9536 31.5304 9 20.4648 9C9.9672 9 1.356 17.0608 0.5 27.3184H26.9816V30.6816H0.5C1.356 40.9392 9.9672 49 20.4648 49Z" fill="#0052FF"/>
                       </g>
@@ -49,25 +49,25 @@ export default function Specification() {
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0 }}
             className="sp-wrap relative z-[1] overflow-hidden rounded-[20px] mb-6 md:mb-8 lg:mb-11">
-            <div className="rounded-[20px] flex items-center flex-wrap gap-6 bg-[#0C0C0D] justify-around lg:justify-between p-8 md:p-11 lg:p-14 xl:p-[70px]">
+            <div className="rounded-[20px] flex items-center flex-wrap gap-4 lg:gap-6 bg-[#0C0C0D] justify-around lg:justify-between p-6 md:p-11 lg:p-14 xl:p-[70px]">
               <div
                 className='text-center'>
-                <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">BLOCKCHAIN NETWORK</h5>
-                <div className='flex items-center justify-center' dangerouslySetInnerHTML={{ __html: base_icon }}></div>
+                <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">BLOCKCHAIN NETWORK</h5>
+                <div className='flex items-center justify-center h-11 md:h-auto' dangerouslySetInnerHTML={{ __html: base_icon }}></div>
               </div>
               <div
                 className='text-center'>
-                <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">TOTAL SUPPLY</h5>
+                <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">TOTAL SUPPLY</h5>
                 <div className='flex items-center justify-center gap-2'>
                   <img src={main_icon} alt="" />
-                  <span className='text-white leading-relaxed font-normal text-xl md:text-2xl lg:text-4xl'>502,000,000</span>
+                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>502,000,000</span>
                 </div>
               </div>
               <div
                 className='text-center'>
-                <h5 className="font-normal text-xl leading-relaxed mb-3 text-white text-opacity-70 text-center uppercase">CONTRACT ADDRESS</h5>
+                <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">CONTRACT ADDRESS</h5>
                 <div className='flex items-center justify-center gap-2'>
-                  <span className='text-white leading-relaxed font-normal text-xl md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span>
+                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span>
                   <button onClick={() => copyHandle()} className='cursor-pointer p-0 border-0 bg-transparent text-2xl text-white'>{!copied ? (<LuCopy />) : (<LuCopyCheck />)}</button>
                 </div>
               </div>

@@ -74,9 +74,9 @@
         }
     }
     &-wrap {
+        --height: 880px;
         --tw-radius: 64px;
         border-radius: var(--tw-radius);
-        --height: 880px;
         @include lg {
             --tw-radius: 44px;
         }
@@ -160,10 +160,19 @@
 // how to work
 .howTo {
     &-wrap {
-        --tw-radius: 64px;
         border-radius: var(--tw-radius);
         --height: 880px;
+        --tw-radius: 64px;
+        border-radius: var(--tw-radius);
+        @include lg {
+            --tw-radius: 44px;
+        }
+        @include md {
+            --tw-radius: 32px;
+            --height: 500px;
+        }
         @include sm {
+            --tw-radius: 24px;
             --height: 100%;
         }
         &::before {
@@ -255,6 +264,11 @@
             z-index: -1;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(153, 153, 153, 0.00) 55.04%);
         }
+        & svg {
+            @include sm {
+                transform: scale(.8);
+            }
+        }
     }
     &-form {
         padding: 1px;
@@ -304,6 +318,9 @@
         & .common-title {
             & span {
                 margin-bottom: 16px;
+                @include sm {
+                    margin-bottom: 10px;
+                }
             }
             & p {
                 @apply text-white text-opacity-70;

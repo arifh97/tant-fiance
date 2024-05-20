@@ -30,7 +30,7 @@ export default function HowToWork() {
                 initial={{ y: 100 }}
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0.8 }}
-                className="text-center relative bottom-7 md:bottom-12 lg:bottom-14 xl:bottom-[70px] w-28 h-28 md:w-36 md:h-36 lg:w-auto lg:h-auto mx-auto">
+                className="text-center relative bottom-7 md:bottom-12 lg:bottom-14 xl:bottom-[70px] w-16 h-16 md:w-36 md:h-36 lg:w-auto lg:h-auto mx-auto">
                 <img src={solana} className='mx-auto' alt="" />
               </motion.div>
               <div>
@@ -38,22 +38,20 @@ export default function HowToWork() {
                   initial={{ y: 100 }}
                   whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
                   viewport={{ once: true, amount: 0.8 }}
-                  className='!leading-[145%] text-xl md:text-[26px] lg:text-[44px] font-medium text-white text-opacity-70'>The World's 1st DeFi Platform embracing Artificial Intelligence, Debit Card Technology and a Decentralized Exchange whilst being built for the people</motion.h3>
+                  className='!leading-[145%] text-lg md:text-[26px] lg:text-[44px] font-medium text-white text-opacity-70'>The World's 1st DeFi Platform embracing Artificial Intelligence, Debit Card Technology and a Decentralized Exchange whilst being built for the people</motion.h3>
               </div>
             </div>
 
-            <div>
-              <motion.h3
-                initial={{ y: 100 }}
-                whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-                viewport={{ once: true, amount: 0.8 }}
-                className='mt-4 md:mt-5 lg:mt-7 !leading-[145%] text-3xl md:text-4xl lg:text-[44px] font-medium'>How Tant Finance Works</motion.h3>
-              <motion.img
-                initial={{ y: 100 }}
-                whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
-                viewport={{ once: true, amount: 0.8 }}
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0.8 }}
+            >
+              <h3
+                className='mt-4 md:mt-5 lg:mt-7 !leading-[145%] text-xl md:text-4xl lg:text-[44px] font-medium'>How Tant Finance Works</h3>
+              <img
                 className='w-full lg:ml-4 h-auto' src={howWork} alt="" />
-            </div>
+            </motion.div>
           </div>
         </Col>
       </Container>

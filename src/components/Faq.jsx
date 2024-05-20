@@ -104,7 +104,7 @@ export default function Faq() {
               }}
             >
               {faqs.map((item, index) => (
-                <AccordionItem className="!bg-[#0C0C0D] faq-item !p-6" key={index} aria-label={index + 1} title={item.title} indicator={<FaAngleDown />}>
+                <AccordionItem className="!bg-[#0C0C0D] faq-item !px-4 !py-3 md:!p-6" key={index} aria-label={index + 1} title={item.title} indicator={<FaAngleDown />}>
                   {item.des}
                 </AccordionItem>
               ))}
