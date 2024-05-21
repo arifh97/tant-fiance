@@ -30,7 +30,7 @@
                 }
             }
             &-bar {
-                background: linear-gradient(90deg, #01BEFF 0%, #017299 100%);
+                background: linear-gradient(90deg, #00BCFD 0%, #007299 100%);
             }
         }
         & .rate {
@@ -159,6 +159,9 @@
 
 // how to work
 .howTo {
+    & .shape {
+        --width: 316px;
+    }
     &-wrap {
         border-radius: var(--tw-radius);
         --height: 880px;
@@ -200,8 +203,13 @@
                 --width: 80px;
             }
             @include lg {
-                --width: 10px;
-                width: 150px;
+                --width: 0px;
+                width: 100px;
+                height: 100px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
             @include md {
                 --width: 20px;
@@ -259,6 +267,12 @@
                 }
             }
         }
+    }
+    &-inner {
+        background-image: url(../img/why-bg.png);
+        background-size: contain;
+        background-position: 70% center;
+        background-repeat: no-repeat;
     }
 }
 

@@ -104,7 +104,7 @@ export default function Features() {
       </svg>
       `,
       title: 'Built on base',
-      des: `We built on base chain for its lower transaction fees, faster processing times, and enhanced scalability.`
+      des: `Our project is built on a base chain, leveraging its unparalleled security, robust infrastructure, lower transaction fees, and extensive ecosystem to ensure maximum reliability and broad accessibility for our users.`
     },
     {
       icon: `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

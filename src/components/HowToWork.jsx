@@ -56,6 +56,7 @@ export default function HowToWork() {
   ];
   return (
     <div className='howTo common-padding-top'>
+      <div className="shape w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <Container>
         <Col className="w-full">
           <div className="howTo-wrap gap-6 relative z-[1]">
@@ -64,14 +65,14 @@ export default function HowToWork() {
                 initial={{ x: -100 }}
                 whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
-                className="absolute hidden md:block bottom-0 -left-[var(--width)/2] icon">
+                className="absolute hidden md:block top-full -left-[var(--width)/2] icon -mt-5">
                 <img src={bitcoin} alt="" />
               </motion.div>
               <motion.div
                 initial={{ x: 100 }}
                 whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
-                className="absolute hidden md:block bottom-0 -right-[var(--width)/2] icon">
+                className="absolute hidden md:block top-full -right-[var(--width)/2] icon -mt-5">
                 <img src={usd} alt="" />
               </motion.div>
               <motion.div
@@ -86,7 +87,9 @@ export default function HowToWork() {
                   initial={{ y: 100 }}
                   whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
                   viewport={{ once: true, amount: 0 }}
-                  className='!leading-[145%] text-lg md:text-[26px] lg:text-[44px] font-medium text-white text-opacity-70'>The World's 1st DeFi Platform embracing Artificial Intelligence, Debit Card Technology and a Decentralized Exchange whilst being built for the people</motion.h3>
+                  className='!leading-[145%] text-lg md:text-[26px] lg:text-[44px] font-medium text-white text-opacity-70'>
+                  The world's first DeFi platform integrating AI, debit card technology, and a decentralized exchange, designed for the people.
+                </motion.h3>
               </div>
             </div>
             <motion.div
@@ -94,10 +97,10 @@ export default function HowToWork() {
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0 }}>
               <h3 className='text-center mt-4 md:mt-5 lg:mt-7 !leading-[145%] text-xl md:text-4xl lg:text-[44px] font-medium'>How Tant Finance Works</h3>
-              <div className='flex flex-wrap items-center mt-14 md:mt-20 lg:mt-24 xl:mt-[160px]'>
+              <div className='howTo-inner flex flex-wrap items-center mt-14 md:mt-20 lg:mt-24 xl:mt-[160px]'>
                 {workItem.map((item, index) => (
                   <>
-                    <div className={`w-full lg:w-1/2 ${index != workItem.length - 1 ? 'mb-6 md:mb-8 mb:lg-0' : ''}`} key={index}>
+                    <div className={`w-full lg:w-1/2 ${index != workItem.length - 1 ? 'mb-6 md:mb-8 lg:mb-0' : ''}`} key={index}>
                       <div className={`howTo-card flex items-center ${index % 2 != 0 ? 'ms-auto' : ''}`} key={index}>
                         {item.user ? (
                           <>
