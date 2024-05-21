@@ -4,7 +4,7 @@ export default function CommonTitle({ subTitle, title, des, className = "" }) {
         <motion.div
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0 }}
             className={`common-title ${className}`}>
             {subTitle ? (<span className="common-meta block mb-2 uppercase">{subTitle}</span>) : ""}
             <h2 className='mb-0 !leading-[145%] text-[26px] md:text-4xl lg:text-[44px] font-semibold'>{title}</h2>

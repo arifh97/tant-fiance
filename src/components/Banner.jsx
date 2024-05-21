@@ -20,7 +20,7 @@ export default function Banner() {
           <motion.div
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0 }}
             className="banner-content text-center mb-10 lg:mb-0 md:px-[10%] lg:p-0 lg:text-left pt-0 md:10 lg:pt-16 xl:pt-28">
             <span className="common-meta block mb-2 md:mb-3">TANT Finance Presale!</span>
             <h1 className='mb-3 md:mb-6 font-semibold text-[32px] md:text-[54px] lg:text-[62px] 2xl:text-[68px] leading-tight'>Make your future with <span>TANT Finance</span></h1>

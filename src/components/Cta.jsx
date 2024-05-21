@@ -14,7 +14,7 @@ export default function Cta() {
               <motion.div
                 initial={{ y: 100 }}
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0 }}
                 className="text-center">
                 <CButton target="_blank">Contact us <BsArrowRight /></CButton>
               </motion.div>

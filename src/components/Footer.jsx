@@ -43,7 +43,7 @@ export default function Footer() {
             <motion.div
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0 }}
               className="flex flex-wrap gap-6 md:justify-around xl:justify-between">
               <div>
                 <Logo />
@@ -86,7 +86,7 @@ export default function Footer() {
             <motion.p
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0 }}
               className={`text-center mb-5 md:mb-6 lg:mb-9 tracking-[-0.8px] ${font20}`}>2024 TANT Finance - All Rights Reserved</motion.p>
             <div>
               <motion.p

@@ -100,7 +100,7 @@ export default function About() {
           <motion.div
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0 }}
             className="about-content lg:pr-[8%] mt-10 md:mt-0">
             <span
               className="common-meta mb-2 block uppercase">ABOUT TANT FINANCE</span>
@@ -116,7 +116,7 @@ export default function About() {
           <motion.div
               initial={{ x: 100 }}
               whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0 }}
             className="w-[80%] mx-auto mt-5 md:mt-0 md:w-full">
             <img src={a_img} alt="" />
           </motion.div>
@@ -128,7 +128,7 @@ export default function About() {
             <motion.div
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index + 1}` } }}
-              viewport={{ once: true, amount: 0.8 }}
+              viewport={{ once: true, amount: 0 }}
               className="about-card">
               <div className='mb-4 md:mb-6 lg:mb-8' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
               <h4 className='text-white font-semibold text-xl md:text-2xl mb-3 md:mb-7'>{item.title}</h4>
