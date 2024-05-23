@@ -78,7 +78,7 @@ export default function Footer() {
                 <p className={`mb-2 md:mb-4 ${font20}`}>We’re Social!</p>
                 <div className="flex flex-wrap items-center gap-3">
                   {social.map((item, index) => (
-                    <a href="#" target='_blank' className='social-link flex items-center justify-center rounded-full relative z-[1]' key={index}>
+                    <a href={item.url} target='_blank' className='social-link flex items-center justify-center rounded-full relative z-[1]' key={index}>
                       <span className='w-full h-full flex items-center justify-center bg-[#060B0D] hover:bg-primary transition-all rounded-full'>
                         {item.icon}
                       </span>
