@@ -1,13 +1,8 @@
 import { Container, Col, CButton } from './CAllComponent'
 import BannerRight from './BannerRight'
-import b_img_1 from '../assets/img/brands/1.svg'
-import b_img_2 from '../assets/img/brands/2.svg'
-import b_img_3 from '../assets/img/brands/3.svg'
-import b_img_4 from '../assets/img/brands/4.svg'
-import b_img_5 from '../assets/img/brands/5.svg'
-import b_img_6 from '../assets/img/brands/6.svg'
 import { motion } from "framer-motion";
 import BuyButton from './BuyButton';
+import pdf from '../assets/whitepaper.pdf'
 
 
 export default function Banner() {
@@ -104,7 +99,7 @@ export default function Banner() {
             <p className='mb-5 md:mb-7 lg:mb-10 text-base md:text-lg lg:text-[22px] leading-relaxed'>TANT Finance pioneers DeFi with futuristic debit cards, smart gateways and AI lending, setting new standards in secure transactions.</p>
             <div className="flex items-center flex-wrap gap-4 justify-center lg:justify-start">
               <BuyButton />
-              <CButton className="bg-[#1F1F1F] text-white" color=''>Whitepaper</CButton>
+              <CButton className="bg-[#1F1F1F] text-white" url={pdf} target="_blank" color=''>Whitepaper</CButton>
             </div>
           </motion.div>
         </Col>

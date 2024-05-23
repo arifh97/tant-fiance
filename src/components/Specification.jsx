@@ -6,6 +6,7 @@ import { LuCopy, LuCopyCheck } from "react-icons/lu"
 import img from '../assets/img/sponsor.png'
 import { motion } from 'framer-motion'
 import BuyButton from './BuyButton';
+import pdf from '../assets/whitepaper.pdf'
 
 export default function Specification() {
   const base_icon = `<svg class="h-full" width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +89,7 @@ export default function Specification() {
             viewport={{ once: true, amount: 0 }}
             className="flex items-center flex-wrap gap-4 justify-center">
             <BuyButton />
-            <CButton className="bg-[#1F1F1F] text-white" color=''>Whitepaper</CButton>
+            <CButton className="bg-[#1F1F1F] text-white" target="_blank" url={pdf} color=''>Whitepaper</CButton>
           </motion.div>
         </Col>
       </Container>

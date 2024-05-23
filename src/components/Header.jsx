@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
-import Container from './Container';
-import Col from './Col';
-import BuyButton from './BuyButton';
+import { useEffect, useState } from 'react'
+import { Link } from 'react-scroll'
+import Container from './Container'
+import Col from './Col'
+import BuyButton from './BuyButton'
 import Logo from './Logo'
+import pdf from '../assets/whitepaper.pdf'
 
 export default function Header() {
   const navLinks = [
@@ -66,7 +67,7 @@ export default function Header() {
                 {navLinks.map((link, index) => (
                   <li key={index} className='block'>
                     {link.isBlank ? (
-                      <a href={link.to} target="_blank" className="heading-link cursor-pointer" to={link.to}>{link.btn_title}</a>
+                      <a href={pdf} target="_blank" className="heading-link cursor-pointer" to={link.to}>{link.btn_title}</a>
                     ) : (
                       <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onClick={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
                     )}
