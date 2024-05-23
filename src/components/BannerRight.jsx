@@ -87,7 +87,7 @@ export default function BannerRight() {
               <p className="uppercase mb-2 text-[#8E8C94]">NEXT STAGE PRICE</p>
               <div className="flex items-center gap-2 flex-wrap">
                 <strong className='text-white font-medium leading-tight text-lg lg:text-[28px]'>$ 0.02</strong>
-                <p className="text-base flex items-center gap-1 text-[#00EEB5]">
+                <p className="text-base flex items-center gap-1 text-[#00EEB5] md:min-h-[44px]">
                   <FaArrowUp /> 26%
                 </p>
               </div>
