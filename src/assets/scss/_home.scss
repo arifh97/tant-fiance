@@ -235,6 +235,9 @@
             position: relative;
             z-index: 1;
             border-radius: 20px;
+            @include sm {
+                border-radius: 14px;
+            }
             &::before {
                 content: '';
                 width: 100%;
@@ -246,9 +249,15 @@
                 z-index: -1;
                 opacity: .4;
                 border-radius: 20px;
+                @include sm {
+                    border-radius: 14px;
+                }
             }
             &>div {
                 border-radius: 20px;
+                @include sm {
+                    border-radius: 14px;
+                }
             }
             &:not(.howTo-user) {
                 box-shadow: 0px 4px 100px 0px rgba(1, 100, 255, 0.20);

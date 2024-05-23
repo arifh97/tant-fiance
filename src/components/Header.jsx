@@ -66,16 +66,16 @@ export default function Header() {
                 {navLinks.map((link, index) => (
                   <li key={index} className='block'>
                     {link.isBlank ? (
-                      <a href={link.to} target="_blank" className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</a>
+                      <a href={link.to} target="_blank" className="heading-link cursor-pointer" to={link.to}>{link.btn_title}</a>
                     ) : (
-                      <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                      <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onClick={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
                     )}
                   </li>
                 ))}
               </ul>
             </nav>
             <div className="heading-actions flex items-center flex-wrap">
-              <BuyButton />
+              <BuyButton className="hidden md:inline-block" />
               <button className="heading-toggler lg:hidden" onClick={() => setIsMenu(!isMenu)}>
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.08984 6H21.0898" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

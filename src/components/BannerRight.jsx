@@ -103,7 +103,7 @@ export default function BannerRight() {
               color="main"
               classNames={{
                 base: "",
-                track: "h-7",
+                track: "h-7 bg-[#1D1D20]",
                 indicator: "progress-bar",
                 label: "tracking-wider font-medium text-default-600",
                 value: "text-sm",
@@ -156,10 +156,10 @@ export default function BannerRight() {
             <CButton isLink={false} className="w-full text-center">Connect Wallet</CButton>
           </div>
           <div className="flex items-center flex-wrap gap-3 justify-between">
-            <div>
+            <div className="text-center md:text-start w-full md:w-auto">
               <h6 className="mb-0 text-base font-medium leading-tight">Supported Coins</h6>
             </div>
-            <div className="flex flex-wrap md:flex-nowrap gap-[10px]">
+            <div className="flex flex-wrap justify-center md:justify-start md:flex-nowrap gap-[10px]">
               {acceptMethods.map((item, index) => (
                 <Avatar key={index} src={item} className="w-8 h-8" />
               ))}

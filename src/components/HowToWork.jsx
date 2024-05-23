@@ -55,7 +55,7 @@ export default function HowToWork() {
 
   ];
   return (
-    <div className='howTo common-padding-top'>
+    <div className='howTo common-padding-top relative'>
       <div className="shape w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] bottom-[42%]"></div>
       <Container>
         <Col className="w-full">

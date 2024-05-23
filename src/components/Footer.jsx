@@ -25,7 +25,7 @@ export default function Footer() {
     },
     {
       icon: <FaTelegram />,
-      url: '',
+      url: 'https://t.me/tantfinanceofficial',
       name: 'telegram',
     },
     {
@@ -55,18 +55,18 @@ export default function Footer() {
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0 }}
               className="flex flex-wrap gap-6 md:justify-around xl:justify-between">
-              <div>
+              <div className='w-full md:w-auto'>
                 <Logo />
               </div>
-              <div>
+              <div className='w-full md:w-auto'>
                 <p className={`md:mb-4 ${font20}`}>Support</p>
                 <a href="mailto:support@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>support@tantfinance.io</a>
               </div>
-              <div>
+              <div className='w-full md:w-auto'>
                 <p className={`md:mb-4 ${font20}`}>Marketing</p>
                 <a href="mailto:socials@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>socials@tantfinance.io</a>
               </div>
-              <div className='w-auto xl:w-[16%]'>
+              <div className='w-full md:w-auto xl:w-[16%]'>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We support</p>
                 <div className="flex items-center flex-wrap gap-[10px]">
                   {acceptMethods.map((item, index) => (
@@ -74,7 +74,7 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
-              <div>
+              <div className='w-full md:w-auto'>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We’re Social!</p>
                 <div className="flex flex-wrap items-center gap-3">
                   {social.map((item, index) => (

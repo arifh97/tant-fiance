@@ -118,9 +118,9 @@ export default function Banner() {
             viewport={{ once: true, amount: 0.2 }}
           >
             <span
-              className='block text-sm md:text-base lg:text-xl mb-4 lg:mb-7 uppercase text-white'>AS SEEN IN</span>
+              className='block text-center md:text-start text-base lg:text-xl mb-3 md:mb-4 lg:mb-7 uppercase text-white'>AS SEEN IN</span>
             <div
-              className="overflow-auto">
+              className="overflow-auto hide-scroll">
               <div className="flex items-center gap-6 justify-between w-max lg:w-auto">
                 {brands.map((item, index) => (
                   <div className='w-full' key={index} dangerouslySetInnerHTML={{ __html: item }}>

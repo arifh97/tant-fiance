@@ -16,11 +16,6 @@
     @include sm {
         --bs-navbar-padding-y: 20px;
     }
-    & .logo {
-        @include sm {
-            width: 140px;
-        }
-    }
     &.fixed {
         animation: headerAnimation .5s linear;
         background-color: rgba($color: $bg, $alpha: .6);

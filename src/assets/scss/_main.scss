@@ -74,9 +74,6 @@ input[type=number] {
     &-row {
         --tw-mb: 30px;
         margin-bottom: calc(var(--tw-mb) * -1);
-        @include sm {
-            --tw-mb: 20px;
-        }
         &>div {
             margin-bottom: var(--tw-mb);
         }
@@ -157,4 +154,17 @@ button {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.hide-scroll {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.logo {
+    @include sm {
+        display: block;
+        width: 130px;
+    }
 }
