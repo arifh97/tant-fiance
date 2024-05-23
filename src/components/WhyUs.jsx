@@ -1,3 +1,6 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import { Button } from "@nextui-org/react";
 import { Container, Col } from './CAllComponent'
 import CommonTitle from './CommonTitle'
@@ -30,7 +33,23 @@ export default function WhyUs() {
       </svg>`,
       title: 'Token Burn'
     },
-  ]
+  ];
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm('service_jpmrs7n', 'template_rko6bnh', form.current, {
+        publicKey: 'yEj4uR_S3N6Y2WGKt',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div className='why'>
       <Container>
@@ -56,12 +75,12 @@ export default function WhyUs() {
             <div
               className="mx-auto w-full md:w-10/12 lg:w-7/12 relative md:top-14 lg:top-24 mt-2 text-center">
               <p className='font-regular text-white text-xl md:text-2xl !leading-[145%] mb-4 md:mb-6'>Subscribe for offers and rewards</p>
-              <div className="why-form rounded-full overflow-hidden relative z-10">
-                <input type="text" className='text-lg leading-[145%] py-[14px] md:py-5 px-6 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />
+              <form ref={form} onSubmit={sendEmail} className="why-form rounded-full overflow-hidden relative z-10">
+                <input type="email" name="name" className='text-lg leading-[145%] py-[14px] md:py-5 px-6 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />
                 <Button color="primary" className="h-[calc(100%-14px)] absolute top-1/2 right-2 -translate-y-1/2 text-white rounded-full text-lg inline-block sm:px-4 sm:py-3 md:px-6 md:py-3 lg:px-10 lg:py-[16px]" type="submit">
                   Subscribe
                 </Button>
-              </div>
+              </form>
             </div>
           </motion.div>
         </Col>
