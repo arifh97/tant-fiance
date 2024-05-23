@@ -16,7 +16,7 @@ export default function Cta() {
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
                 className="text-center">
-                <CButton target="_blank">Contact us <BsArrowRight /></CButton>
+                <CButton url="mailto:nfo@tantfinance.io">Contact us <BsArrowRight /></CButton>
               </motion.div>
             </div>
           </div>

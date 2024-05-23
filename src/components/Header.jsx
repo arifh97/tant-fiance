@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import Container from './Container';
 import Col from './Col';
-import CButton from './CButton';
+import BuyButton from './BuyButton';
 import Logo from './Logo'
 
 export default function Header() {
@@ -17,7 +17,8 @@ export default function Header() {
     },
     {
       btn_title: 'Whitepaper',
-      to: 'cta'
+      to: '/',
+      isBlank: true,
     },
     {
       btn_title: 'Tokenomics',
@@ -64,13 +65,17 @@ export default function Header() {
               <ul className="lg:flex items-center">
                 {navLinks.map((link, index) => (
                   <li key={index} className='block'>
-                    <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                    {link.isBlank ? (
+                      <a href={link.to} target="_blank" className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</a>
+                    ) : (
+                      <Link className="heading-link cursor-pointer" spy={true} smooth={true} duration={700} offset={-100} to={link.to} onTouchStart={() => handleTouchStart(link.to)}>{link.btn_title}</Link>
+                    )}
                   </li>
                 ))}
               </ul>
             </nav>
             <div className="heading-actions flex items-center flex-wrap">
-              <CButton>Buy TANT</CButton>
+              <BuyButton />
               <button className="heading-toggler lg:hidden" onClick={() => setIsMenu(!isMenu)}>
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.08984 6H21.0898" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -81,7 +86,7 @@ export default function Header() {
             </div>
           </Col>
         </Container>
-      </header>
+      </header >
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { Container, Col } from './CAllComponent'
-import { FaXTwitter, FaTelegram, FaDiscord } from "react-icons/fa6";
+import { FaXTwitter, FaTelegram, FaDiscord, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { Avatar } from "@nextui-org/react";
 import { motion } from 'framer-motion'
 
@@ -20,7 +20,7 @@ export default function Footer() {
   const social = [
     {
       icon: <FaXTwitter />,
-      url: '',
+      url: 'https://x.com/TantFinance',
       name: 'x',
     },
     {
@@ -30,8 +30,18 @@ export default function Footer() {
     },
     {
       icon: <FaDiscord />,
-      url: '',
+      url: 'https://discord.gg/6SAEzHsS',
       name: 'discord',
+    },
+    {
+      icon: <FaTiktok />,
+      url: 'https://www.tiktok.com/@tant.finance?is_from_webapp=1&sender_device=pc',
+      name: 'tiktok',
+    },
+    {
+      icon: <FaYoutube />,
+      url: 'https://www.youtube.com/@TantFinance',
+      name: 'youtube',
     }
   ];
   return (
@@ -66,7 +76,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We’re Social!</p>
-                <div className="flex flex-wrap items-center gap-4">
+                <div className="flex flex-wrap items-center gap-3">
                   {social.map((item, index) => (
                     <a href="#" target='_blank' className='social-link flex items-center justify-center rounded-full relative z-[1]' key={index}>
                       <span className='w-full h-full flex items-center justify-center bg-[#060B0D] hover:bg-primary transition-all rounded-full'>

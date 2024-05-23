@@ -5,6 +5,7 @@ import main_icon from '../assets/img/coins/tant.svg'
 import { LuCopy, LuCopyCheck } from "react-icons/lu"
 import img from '../assets/img/sponsor.png'
 import { motion } from 'framer-motion'
+import BuyButton from './BuyButton';
 
 export default function Specification() {
   const base_icon = `<svg class="h-full" width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +87,7 @@ export default function Specification() {
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0 }}
             className="flex items-center flex-wrap gap-4 justify-center">
-            <CButton>Buy TANT</CButton>
+            <BuyButton />
             <CButton className="bg-[#1F1F1F] text-white" color=''>Whitepaper</CButton>
           </motion.div>
         </Col>
