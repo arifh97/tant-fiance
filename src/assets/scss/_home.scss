@@ -57,6 +57,25 @@
     }
 }
 
+.brands {
+    &::before,
+    &::after {
+        content: '';
+        --width: 112px;
+        width: var(--width);
+        height: 95px;
+        background: var(--Black, #060706);
+        filter: blur(22px);
+        position: absolute;
+        top: 50%;
+        left: calc(var(--width) / 2 * -1);
+    }
+    &::after {
+        left: auto;
+        right: calc(var(--width) / 2 * -1);
+    }
+}
+
 [data-slot="content"] {
     @apply bg-[#18181A];
 }
@@ -86,7 +105,7 @@
         }
         @include sm {
             --tw-radius: 24px;
-            --height: 100%;
+            --height: 580px;
         }
         &::before {
             content: "";
@@ -99,6 +118,9 @@
             top: 0;
             left: 0;
             border-radius: var(--tw-radius);
+            @include sm {
+                background: linear-gradient(181deg, #060706 17.29%, #0152FF 103.8%);
+            }
         }
     }
 }

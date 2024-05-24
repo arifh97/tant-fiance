@@ -47,14 +47,14 @@ export default function Footer() {
   return (
     <div className='footer relative z-[1]'>
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1]"></div>
-      <div className='mt-10 md:mt-12 lg:mt-16 xl:mt-20'>
+      <div className='mt-[50px] md:mt-12 lg:mt-16 xl:mt-20'>
         <Container>
           <Col className="w-full">
             <motion.div
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0 }}
-              className="flex flex-wrap gap-6 md:justify-around xl:justify-between">
+              className="flex flex-wrap gap-6 text-center md:text-start md:justify-around xl:justify-between">
               <div className='w-full md:w-auto'>
                 <Logo />
               </div>
@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
               <div className='w-full md:w-auto xl:w-[16%]'>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We support</p>
-                <div className="flex items-center flex-wrap gap-[10px]">
+                <div className="flex items-center flex-wrap gap-[10px] mx-auto md:mx-0 w-6/12 md:w-auto justify-center mdd:justify-start">
                   {acceptMethods.map((item, index) => (
                     <Avatar src={item} key={index} className='w-7 h-7 md:w-8 md:h-8' />
                   ))}
@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
               <div className='w-full md:w-auto'>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We’re Social!</p>
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="flex flex-wrap items-center gap-3 justify-center md:justify-start">
                   {social.map((item, index) => (
                     <a href={item.url} target='_blank' className='social-link flex items-center justify-center rounded-full relative z-[1]' key={index}>
                       <span className='w-full h-full flex items-center justify-center bg-[#060B0D] hover:bg-primary transition-all rounded-full'>
@@ -90,9 +90,9 @@ export default function Footer() {
           </Col>
         </Container>
       </div>
-      <div className="border-t border-[#fff] border-opacity-10 mt-8 md:mt-10 lg:mt-[50px] pt-6 md:pt-9 pb-10 md:pb-16 lg:pb-20 xl:pb-[104px]">
+      <div className="md:border-t border-[#fff] border-opacity-10 mt-8 md:mt-10 lg:mt-[50px] pt-6 md:pt-9 pb-10 md:pb-16 lg:pb-20 xl:pb-[104px]">
         <Container>
-          <Col className="w-full">
+          <Col className="w-full text-center md:text-left">
             <motion.p
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
@@ -103,9 +103,9 @@ export default function Footer() {
                 initial={{ y: 100 }}
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
-                className='text-white mb-0 !leading-relaxed'>
-                <strong className='fw-bold block text-lg md:text-xl'>Disclaimer: </strong>
-                <span className='text-base'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>
+                className='text-white mb-0 !leading-relaxed mt-8 md:mt-0'>
+                <strong className='fw-bold block text-sm md:text-lg lg:text-xl'>Disclaimer: </strong>
+                <span className='text-sm text-opacity-70 block md:text-opacity-100 mt-6 !leading-relaxed md:mt-0'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>
               </motion.p>
             </div>
           </Col>

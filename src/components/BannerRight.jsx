@@ -60,7 +60,7 @@ export default function BannerRight() {
   ]
   const acceptMethods = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, icon_7, icon_8, icon_9]
   return (
-    <div className='pl-0 lg:pl-6 xl:pl-8'>
+    <div className='pl-0 lg:pl-6 xl:pl-8 hidden md:block'>
       <motion.div
         initial={{ y: 100 }}
         whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}

@@ -81,16 +81,17 @@
         }
     }
     &-toggler {
-        --btn-padding-x: 4px;
-        --btn-padding-y: 5px;
-        padding: var(--btn-padding-y) var(--btn-padding-x);
+        padding: 0;
         border: none;
-        background-color: transparent;
-        color: $heading;
+        color: #B2B4B2;
+        --width: 36px;
+        width: var(--width);
+        height: var(--width);
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 8px;
+        background-color: rgba($color: #141618, $alpha: .80);
         & svg {
             --width: 40px;
             width: var(--width);

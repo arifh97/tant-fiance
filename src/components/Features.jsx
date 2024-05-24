@@ -132,13 +132,13 @@ export default function Features() {
             initial={{ y: 100 }}
             whileInView={{ y: 0, transition: { duration: .5, delay: `0.${index}` } }}
             viewport={{ once: true, amount: 0 }}
-            className="px-[15px] w-full md:w-1/2 lg:w-4/12 flex" key={index}>
+            className="feature-single px-[15px] w-full md:w-1/2 lg:w-4/12 flex" key={index}>
             <div className="feature-item relative z-[1] overflow-hidden w-full flex">
-              <div className="p-5 md:p-6 lg:p-8 bg-[#0C0C0D] rounded-[20px] w-full">
-                <div className="icon mb-4 md:mb-5 w-10 h-10 lg:w-[60px] lg:h-[60px] rounded-full p-1 relative z-[1] overflow-hidden">
+              <div className="p-[30px] md:p-6 lg:p-8 bg-[#0C0C0D] rounded-[20px] w-full">
+                <div className="icon mb-5 w-[60px] h-[60px] rounded-full p-1 relative z-[1] overflow-hidden">
                   <div className='flex items-center justify-center bg-[#0D0D0D] w-full h-full rounded-full' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                 </div>
-                <h4 className='font-semibold text-white leading-[145%] mb-2 text-xl lg:text-2xl'>{item.title}</h4>
+                <h4 className='font-semibold text-white leading-[145%] mb-2 text-2xl'>{item.title}</h4>
                 <p className='text-base pGradient'>{item.des}</p>
               </div>
             </div>

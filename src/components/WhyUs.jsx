@@ -51,7 +51,7 @@ export default function WhyUs() {
       );
   };
   return (
-    <div className='why'>
+    <div className='why mb-10 md:mb-0'>
       <Container>
         <Col className="w-full">
           <motion.div
@@ -73,7 +73,7 @@ export default function WhyUs() {
               ))}
             </div>
             <div
-              className="mx-auto w-full md:w-10/12 lg:w-7/12 relative md:top-14 lg:top-24 mt-2 text-center">
+              className="mx-auto w-full md:w-10/12 lg:w-7/12 relative top-12 md:top-14 lg:top-24 text-center">
               <p className='font-regular text-white text-xl md:text-2xl !leading-[145%] mb-4 md:mb-6'>Subscribe for offers and rewards</p>
               <form ref={form} onSubmit={sendEmail} className="why-form rounded-full overflow-hidden relative z-10">
                 <input type="email" name="name" className='text-lg leading-[145%] py-[14px] md:py-5 px-6 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />

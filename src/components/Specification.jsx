@@ -51,14 +51,14 @@ export default function Specification() {
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0 }}
             className="sp-wrap relative z-[1] overflow-hidden rounded-[20px] mb-6 md:mb-8 lg:mb-11">
-            <div className="rounded-[20px] flex items-center flex-wrap gap-4 lg:gap-6 bg-[#0C0C0D] justify-around lg:justify-between p-6 md:p-11 lg:p-14 xl:p-[70px]">
+            <div className="rounded-[20px] flex items-center flex-wrap gap-4 lg:gap-6 bg-[#0C0C0D] justify-around lg:justify-between md:p-11 lg:p-14 xl:p-[70px]">
               <div
-                className='text-center'>
+                className='text-center border-b border-[#1C1C1D] md:border-0 p-6 md:p-0 w-full md:w-auto'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">BLOCKCHAIN NETWORK</h5>
                 <div className='flex items-center justify-center h-11 md:h-auto' dangerouslySetInnerHTML={{ __html: base_icon }}></div>
               </div>
               <div
-                className='text-center'>
+                className='text-center border-b border-[#1C1C1D] md:border-0 py-6 md:pb-0 w-full md:w-auto'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">TOTAL SUPPLY</h5>
                 <div className='flex items-center justify-center gap-2'>
                   <img src={main_icon} alt="" />
@@ -66,7 +66,7 @@ export default function Specification() {
                 </div>
               </div>
               <div
-                className='text-center'>
+                className='text-center py-6 md:py-0'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">CONTRACT ADDRESS</h5>
                 <div className='flex items-center justify-center gap-2'>
                   <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span>

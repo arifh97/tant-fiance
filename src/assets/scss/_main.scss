@@ -167,4 +167,17 @@ button {
         display: block;
         width: 130px;
     }
+    .footer & {
+        @include sm {
+            @apply mx-auto;
+        }
+    }
+}
+
+.feature {
+    &-single {
+        @include sm {
+            margin-bottom: 30px;
+        }
+    }
 }
