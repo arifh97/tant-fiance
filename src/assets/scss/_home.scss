@@ -242,6 +242,14 @@
                     height: auto;
                 }
             }
+            @include sm {
+                --width: 80px;
+                left: -10px;
+                &:nth-child(2) {
+                    left: auto;
+                    right: -10px;
+                }
+            }
         }
     }
     &-card {
@@ -295,6 +303,9 @@
                 background: linear-gradient(292deg, #051637 -34.93%, #052A38 84.08%);
                 @include lg {
                     padding: 24px 30px;
+                }
+                @include sm {
+                    padding: 18px 20px;
                 }
             }
         }

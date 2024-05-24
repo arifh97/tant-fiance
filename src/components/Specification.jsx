@@ -51,7 +51,7 @@ export default function Specification() {
             whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
             viewport={{ once: true, amount: 0 }}
             className="sp-wrap relative z-[1] overflow-hidden rounded-[20px] mb-6 md:mb-8 lg:mb-11">
-            <div className="rounded-[20px] flex items-center flex-wrap gap-4 lg:gap-6 bg-[#0C0C0D] justify-around lg:justify-between md:p-11 lg:p-14 xl:p-[70px]">
+            <div className="rounded-[20px] flex items-center flex-wrap md:gap-4 lg:gap-6 bg-[#0C0C0D] justify-around lg:justify-between md:p-11 lg:p-14 xl:p-[70px]">
               <div
                 className='text-center border-b border-[#1C1C1D] md:border-0 p-6 md:p-0 w-full md:w-auto'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">BLOCKCHAIN NETWORK</h5>
