@@ -146,7 +146,7 @@ export default function BannerRight() {
               <div className="method-card relative z-[1] border-both mb-2 md:mb-4 flex items-center justify-between rounded-md p-3 md:p-5 border-[.6px] md:border border-[#222225]">
                 <div className="flex-grow">
                   <p className="text-[10px] md:text-base leading-relaxed mb-2">You Pay</p>
-                  <input type="text" id="amount" className="bg-transparent border-none outline-none text-white text-lg leading-relaxed" defaultValue={0} placeholder={0} />
+                  <input type="text" id="amount" className="bg-transparent w-28 border-none outline-none text-white text-lg leading-relaxed" defaultValue={0} placeholder={0} />
                 </div>
                 <div className="flex-grow md:min-w-[180px]">
                   <Select variant={'flat'} label="Select Payment" className="max-w-full custom-select" key="" color="">

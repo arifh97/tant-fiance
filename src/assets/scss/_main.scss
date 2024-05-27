@@ -165,7 +165,7 @@ button {
 .logo {
     @include sm {
         display: block;
-        width: 130px;
+        width: 100px;
     }
     .footer & {
         @include sm {
