@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
               <div className='w-full md:w-auto xl:w-[16%]'>
                 <p className={`mb-2 md:mb-4 ${font20}`}>We support</p>
-                <div className="flex items-center flex-wrap gap-[10px] mx-auto md:mx-0 w-6/12 md:w-auto justify-center mdd:justify-start">
+                <div className="flex items-center flex-wrap gap-[10px] mx-auto md:mx-0 w-6/12 md:w-auto justify-center md:justify-start">
                   {acceptMethods.map((item, index) => (
                     <Avatar src={item} key={index} className='w-7 h-7 md:w-8 md:h-8' />
                   ))}

@@ -15,8 +15,31 @@
         --width: 432px;
         --position: -100px;
     }
-    &-inner {
-        box-shadow: 0px 0px 12px 0px #1B1B1E inset;
+    &-wrap {
+        padding: 3px;
+        border-radius: 24px;
+        background: linear-gradient(319deg, #0FF -5.03%, #0053FF 76.05%);
+        @include lg {
+            border-radius: 20px;
+        }
+        @include md {
+            border-radius: 18px;
+        }
+        @include sm {
+            border-radius: 14px;
+            padding: 1.7px;
+        }
+    }
+    &-progress {
+        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+        & span {
+            background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 500;
+            margin-left: -.5rem;
+        }
         & .progress {
             &>.flex {
                 &>.flex {
@@ -30,8 +53,17 @@
                 }
             }
             &-bar {
-                background: linear-gradient(90deg, #00BCFD 0%, #007299 100%);
+                @apply bg-white;
             }
+        }
+    }
+    &-inner {
+        box-shadow: 0px 0px 12px 0px #1B1B1E inset;
+        & h4 {
+            background: linear-gradient(289deg, #0FF 11.26%, #0152FF 113.74%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         & .rate {
             background: linear-gradient(298deg, #0FF 1.19%, #0152FF 120.86%);
@@ -41,18 +73,49 @@
         }
         & .custom-select {
             & button {
-                @apply bg-[#18181A];
+                background-color: #0053FF;
+                border-radius: 100px;
+                padding: 8px 20px;
+                min-height: 48px;
+                height: auto;
+                @include sm {
+                    padding: 4px 12px;
+                    padding-right: 20px;
+                    min-height: 36px;
+                }
                 & label {
-                    font-size: 18px;
+                    font-size: 14px;
                     @include sm {
-                        font-size: 16px
+                        font-size: 10px
                     }
-                    @apply text-white font-medium leading-tight opacity-70;
+                    @apply text-white font-normal leading-tight;
                 }
                 & span {
-                    @apply text-white font-medium text-sm leading-tight;
+                    @apply text-white font-normal text-sm leading-tight;
                 }
             }
+            & svg {
+                color: $white;
+            }
+        }
+    }
+    & .method-card.border-both {
+        &::before,
+        &::after {
+            content: "";
+            top: 10px;
+            left: 0;
+            width: 160px;
+            height: 1px;
+            background-color: #262629;
+            position: absolute;
+            @include sm {
+                display: none;
+            }
+        }
+        &::after {
+            left: auto;
+            right: 0;
         }
     }
 }
