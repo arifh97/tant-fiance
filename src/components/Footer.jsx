@@ -15,7 +15,7 @@ import icon_8 from '../assets/img/coins/8.png'
 import icon_9 from '../assets/img/coins/9.png'
 
 export default function Footer() {
-  const font20 = 'text-lg md:text-xl !leading-relaxed text-white text-opacity-55';
+  const font20 = 'text-lg md:text-xl !leading-relaxed text-white';
   const acceptMethods = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, icon_7, icon_8, icon_9];
   const social = [
     {
@@ -59,15 +59,15 @@ export default function Footer() {
                 <Logo />
               </div>
               <div className='w-full md:w-auto'>
-                <p className={`md:mb-4 ${font20}`}>Support</p>
+                <p className={`md:mb-4 text-opacity-55 ${font20}`}>Support</p>
                 <a href="mailto:support@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>support@tantfinance.io</a>
               </div>
               <div className='w-full md:w-auto'>
-                <p className={`md:mb-4 ${font20}`}>Marketing</p>
+                <p className={`md:mb-4 text-opacity-55 ${font20}`}>Marketing</p>
                 <a href="mailto:socials@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>socials@tantfinance.io</a>
               </div>
               <div className='w-full md:w-auto xl:w-[16%]'>
-                <p className={`mb-2 md:mb-4 ${font20}`}>We support</p>
+                <p className={`mb-2 md:mb-4 text-opacity-55 ${font20}`}>We support</p>
                 <div className="flex items-center flex-wrap gap-[10px] mx-auto md:mx-0 w-6/12 md:w-auto justify-center md:justify-start">
                   {acceptMethods.map((item, index) => (
                     <Avatar src={item} key={index} className='w-7 h-7 md:w-8 md:h-8' />

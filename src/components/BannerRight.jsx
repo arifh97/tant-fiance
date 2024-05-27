@@ -110,7 +110,15 @@ export default function BannerRight() {
               />
             </div>
           </div>
-          <h4 className='text-lg lg:text-2xl leading-tight mb-4 lg:mb-6 text-center font-semibold'>Buy Now before next price increase</h4>
+          <div className="mb-4 lg:mb-6 flex items-center justify-center gap-2">
+            <h4 className='text-lg lg:text-2xl leading-tight text-center font-semibold'>Listing Price - 0.12</h4>
+            <div className="flex items-center gap-1 text-[#00EEB5] text-xs md:text-base lg:text-lg xl:text-xl">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.19609 10.7109C5.01175 10.5263 4.9082 10.2761 4.9082 10.0152C4.9082 9.75439 5.01175 9.50419 5.19609 9.31962L10.7742 3.7415C10.9588 3.55716 11.209 3.45361 11.4698 3.45361C11.7307 3.45361 11.9809 3.55716 12.1655 3.7415L17.7436 9.31962C17.9177 9.50619 18.0125 9.75307 18.0081 10.0082C18.0037 10.2633 17.9004 10.5068 17.72 10.6872C17.5395 10.8677 17.2961 10.971 17.0409 10.9754C16.7858 10.9798 16.5389 10.885 16.3523 10.7109L12.4542 6.81275V16.5777C12.4542 16.8388 12.3505 17.0892 12.1659 17.2738C11.9813 17.4584 11.7309 17.5621 11.4698 17.5621C11.2088 17.5621 10.9584 17.4584 10.7738 17.2738C10.5892 17.0892 10.4855 16.8388 10.4855 16.5777V6.81275L6.58734 10.7109C6.40277 10.8952 6.15257 10.9988 5.89171 10.9988C5.63085 10.9988 5.38066 10.8952 5.19609 10.7109Z" fill="#00EEB5" />
+              </svg>
+              712%
+            </div>
+          </div>
           {/* <div className="mb-4 md:mb-6">
             <p className="text-center mb-4">Until Price Increase</p>
             <div className="grid grid-cols-4 gap-2 md:gap-4">
@@ -173,8 +181,8 @@ export default function BannerRight() {
               <CButton isLink={false} className="w-full text-center">Connect Wallet</CButton>
             </div>
             <div className="mb-3 md:h-6 lg:mb-8 flex items-center justify-center mt-5 md:mt-10 gap-3 md:gap-4 lg:gap-6">
-                <p className="text-base md:text-xl lg:text-2xl leading-relaxed">Audited by</p>
-                <img className="h-7 md:h-10 lg:h-auto" src={sponsor} alt="" />
+              <p className="text-base md:text-xl lg:text-2xl leading-relaxed">Audited by</p>
+              <img className="h-7 md:h-10 lg:h-auto" src={sponsor} alt="" />
             </div>
             <div className="flex items-center flex-wrap gap-3 justify-between">
               <div className="text-center md:text-start w-full md:w-auto">
@@ -182,7 +190,7 @@ export default function BannerRight() {
               </div>
               <div className="flex flex-wrap justify-center mx-auto md:mx-auto md:justify-start md:flex-nowrap gap-[10px]">
                 {acceptMethods.map((item, index) => (
-                  <Avatar key={index} src={item} className="h-[18px] w-[18px] md:w-8 md:h-8" />
+                  <Avatar key={index} src={item} className="h-6 w-6 md:w-8 md:h-8" />
                 ))}
               </div>
             </div>

@@ -28,8 +28,8 @@ export default function WhyUs() {
       title: 'Profit Sharing'
     },
     {
-      icon: `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M22 43.875C16.1984 43.875 10.6344 41.5703 6.53204 37.468C2.42968 33.3656 0.125 27.8016 0.125 22C0.125 16.1984 2.42968 10.6344 6.53204 6.53204C10.6344 2.42968 16.1984 0.125 22 0.125C27.8016 0.125 33.3656 2.42968 37.468 6.53204C41.5703 10.6344 43.875 16.1984 43.875 22C43.875 27.8016 41.5703 33.3656 37.468 37.468C33.3656 41.5703 27.8016 43.875 22 43.875ZM9.6275 34.3725C6.43973 31.072 4.67583 26.6514 4.7157 22.063C4.75558 17.4745 6.59603 13.0853 9.84067 9.84067C13.0853 6.59603 17.4745 4.75558 22.063 4.7157C26.6514 4.67583 31.072 6.43973 34.3725 9.6275C34.39 9.68437 9.67562 34.4513 9.6275 34.3725Z" fill="white"/>
+      icon: `<svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.1076 45C8.10943 38.7591 9.70693 35.1844 12.0104 31.815C14.5332 28.125 15.1857 24.4744 15.1857 24.4744C15.1857 24.4744 17.1713 27.0534 16.3754 31.0894C19.8797 27.1884 20.5435 20.97 20.0119 18.5878C27.9347 24.1256 31.321 36.1153 26.7591 45.0028C51.0338 31.2694 32.7976 10.7184 29.6222 8.40374C30.6797 10.7184 30.8822 14.6362 28.7419 16.5403C25.1222 2.81812 16.1757 0.00561523 16.1757 0.00561523C17.2332 7.08187 12.3394 14.8219 7.62005 20.6044C7.45411 17.7834 7.27693 15.8344 5.79474 13.1344C5.46287 18.2616 1.54505 22.4409 0.481928 27.5766C-0.95526 34.5319 1.55911 39.6253 11.1047 45.0056L11.1076 45Z" fill="white"/>
       </svg>`,
       title: 'Token Burn'
     },
@@ -67,7 +67,7 @@ export default function WhyUs() {
               {why.map((item, index) => (
                 <div
                   className='why-card w-1/2 md:w-auto text-center mb-6 md:mb-0' key={index}>
-                  <div className="why-icon relative z-[1] overflow-hidden rounded-full mx-auto flex items-center justify-center w-16 h-16 md:w-20 md:h-20 lg:w-[120px] lg:h-[120px]" dangerouslySetInnerHTML={{ __html: item.icon }}></div>
+                  <div className="why-icon relative z-[1] overflow-hidden rounded-full mx-auto flex items-center justify-center w-20 h-20 md:w-20 md:h-20 lg:w-[120px] lg:h-[120px]" dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                   <h4 className='font-medium text-xl md:text-2xl !leading-[145%]'>{item.title}</h4>
                 </div>
               ))}

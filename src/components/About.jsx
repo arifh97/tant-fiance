@@ -83,7 +83,7 @@ export default function About() {
             <div
               className="about-img relative -top-6 md:-top-12 w-full lg:w-7/12 xl:w-8/12 2xl:w-auto">
               <img src={about_img} className='hidden md:block' alt="" />
-              <img src={about_img_2} alt="" className='md:hidden mx-auto' />
+              <img src={about_img_2} alt="" className='md:hidden mx-auto w-full' />
             </div>
             <div className="about-des flex flex-wrap lg:block md:pl-1 lg:pl-5 lg:w-5/12 xl:pl-3 w-full xl:w-4/12 2xl:w-auto">
               {cardDes.map((item, index) => (

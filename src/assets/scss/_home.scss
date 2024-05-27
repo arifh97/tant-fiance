@@ -86,7 +86,7 @@
                 & label {
                     font-size: 14px;
                     @include sm {
-                        font-size: 10px
+                        font-size: 11px
                     }
                     @apply text-white font-normal leading-tight;
                 }
@@ -123,7 +123,9 @@
 .brands {
     &::before,
     &::after {
-        content: '';
+        @include sm {
+            content: '';
+        }
         --width: 112px;
         width: var(--width);
         height: 95px;
@@ -131,6 +133,7 @@
         filter: blur(22px);
         position: absolute;
         top: 50%;
+        margin-top: -25px;
         left: calc(var(--width) / 2 * -1);
     }
     &::after {
