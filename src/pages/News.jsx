@@ -80,7 +80,7 @@ export default function News() {
           </Tab>
           <Tab key="Latest" title="Latest" className="py-2 px-0 text-[#6B7280]">
             <Card>
-              <CardBody className="bg-[#03060D] border-none text-white"></CardBody>
+              <CardBody className="bg-[#03060D] border-0 rounded-none text-white"></CardBody>
             </Card>
           </Tab>
         </Tabs>
