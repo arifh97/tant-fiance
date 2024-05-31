@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link, NavLink } from "react-router-dom"
 import logo from '../../assets/img/logo.svg'
 
@@ -43,8 +42,6 @@ export default function Menu() {
             url: '/news'
         }
     ];
-
-    const [activeIndex, setActiveIndex] = useState(0);
     return (
         <div className="dashboard-menu p-5 lg:py-9">
             <div className="mb-10 flex items-center justify-between">
@@ -60,13 +57,9 @@ export default function Menu() {
             </div>
              {menu.map((item, index) => (
                  <NavLink 
-                 className={`color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg 
-                 ${index === activeIndex ? 'text-white' : ''}`} 
+                 className={`color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg`} 
                  to={item.url} 
-                 key={index}
-                 onClick={() => setActiveIndex(index)}
-                 style={index === activeIndex ? { background: 'linear-gradient(292.05deg, #00FFFF -34.93%, #0152FF 84.08%)' } : {}}
-             >
+                 key={index} >
                     <span dangerouslySetInnerHTML={{ __html: item.icon }} /> {item.name}
                 </NavLink>
             ))}

@@ -14,4 +14,10 @@
         max-height: calc(100vh - 88px);
         @include custom-scroll(6px);
     }
+    &-menu {
+        & .active {
+            background: linear-gradient(292.05deg, #00FFFF -34.93%, #0152FF 84.08%);
+            color: $white;
+        }
+    }
 }
