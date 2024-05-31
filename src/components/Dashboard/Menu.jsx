@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, NavLink } from "react-router-dom"
 import logo from '../../assets/img/logo.svg'
 
@@ -41,12 +42,14 @@ export default function Menu() {
             name: 'News',
             url: '/news'
         }
-    ]
+    ];
+
+    const [activeIndex, setActiveIndex] = useState(0);
     return (
         <div className="dashboard-menu p-5 lg:py-9">
             <div className="mb-10 flex items-center justify-between">
                 <Link to="/" className="dashboard-logo">
-                    <img src={logo} alt="" />
+                    <img width={112} height={30} src={logo} alt="" />
                 </Link>
                 <button className="p-0 mb-0 bg-transparent border-0 md:hidden">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,8 +58,15 @@ export default function Menu() {
                     </svg>
                 </button>
             </div>
-            {menu.map((item, index) => (
-                <NavLink className="color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg" to={item.url} key={index}>
+             {menu.map((item, index) => (
+                 <NavLink 
+                 className={`color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg 
+                 ${index === activeIndex ? 'text-white' : ''}`} 
+                 to={item.url} 
+                 key={index}
+                 onClick={() => setActiveIndex(index)}
+                 style={index === activeIndex ? { background: 'linear-gradient(292.05deg, #00FFFF -34.93%, #0152FF 84.08%)' } : {}}
+             >
                     <span dangerouslySetInnerHTML={{ __html: item.icon }} /> {item.name}
                 </NavLink>
             ))}
