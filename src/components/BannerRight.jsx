@@ -180,7 +180,7 @@ export default function BannerRight() {
                 </div>
               </div>
               <CButton isLink={false} className="w-full text-center">
-                <Link className="d-block" to="/dashboard">Connect Wallet</Link>
+                <Link className="block" to="/dashboard">Connect Wallet</Link>
               </CButton>
             </div>
             <div className="mb-3 md:h-6 lg:mb-8 flex items-center justify-center mt-5 md:mt-10 gap-3 md:gap-4 lg:gap-6">
