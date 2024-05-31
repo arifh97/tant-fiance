@@ -11,7 +11,7 @@
         flex: 0 0 auto;
     }
     &-main {
-        max-height: calc(100vh - 88px);
+        max-height: calc(100vh - var(--height-minus, 106px));
         @include custom-scroll(6px);
     }
     &-menu {
