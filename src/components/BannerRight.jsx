@@ -16,6 +16,7 @@ import icon_8 from '../assets/img/coins/8.png'
 import icon_9 from '../assets/img/coins/9.png'
 import tant from '../assets/img/coins/tant.svg'
 import sponsor from '../assets/img/sponsor.png'
+import { Link } from "react-router-dom";
 
 export default function BannerRight() {
   // const endDate = "2024-06-18";
@@ -178,7 +179,9 @@ export default function BannerRight() {
                   </div>
                 </div>
               </div>
-              <CButton isLink={false} className="w-full text-center">Connect Wallet</CButton>
+              <CButton isLink={false} className="w-full text-center">
+                <Link className="d-block" to="/dashboard">Connect Wallet</Link>
+              </CButton>
             </div>
             <div className="mb-3 md:h-6 lg:mb-8 flex items-center justify-center mt-5 md:mt-10 gap-3 md:gap-4 lg:gap-6">
               <p className="text-base md:text-xl lg:text-2xl leading-relaxed">Audited by</p>

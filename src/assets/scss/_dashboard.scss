@@ -1,0 +1,13 @@
+.dashboard {
+    --left: 250px;
+    &-left {
+        width: var(--left);
+        flex: 0 0 auto;
+        background-color: #0A0C14;
+    }
+    &-right {
+        width: calc(100% - var(--left));
+        background-color: #03060D;
+        flex: 0 0 auto;
+    }
+}
