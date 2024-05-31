@@ -7,7 +7,7 @@ import MainContent from '../components/Dashboard/MainContent'
 export default function Layout() {
     
   return (
-    <div className="dashboard flex flex-wrap">
+    <div className="dashboard flex flex-wrap min-h-screen">
         <div className="dashboard-left">
             <Menu />
         </div>

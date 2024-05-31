@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
+import logo from '../../assets/img/logo.svg'
 
 export default function Menu() {
     const menu = [
@@ -42,11 +43,22 @@ export default function Menu() {
         }
     ]
     return (
-        <div className="dashboard-menu">
-            {menu.map((item, index) => (
-                <Link className="flex items-center flex-wrap gap-4" to={item.url} key={index}>
-                    <span dangerouslySetInnerHTML={{__html:item.icon}} /> {item.name}
+        <div className="dashboard-menu p-5 lg:py-9">
+            <div className="mb-10 flex items-center justify-between">
+                <Link to="/" className="dashboard-logo">
+                    <img src={logo} alt="" />
                 </Link>
+                <button className="p-0 mb-0 bg-transparent border-0 md:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1193 15.2649L9.35986 9.50488M9.36048 15.2649L15.1199 9.50488" stroke="#6B7280" strokeWidth="1.44" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M21.8401 12.3847C21.8401 7.08273 17.542 2.78467 12.2401 2.78467C6.9382 2.78467 2.64014 7.08273 2.64014 12.3847C2.64014 17.6866 6.9382 21.9847 12.2401 21.9847C17.542 21.9847 21.8401 17.6866 21.8401 12.3847Z" stroke="#6B7280" strokeWidth="1.44" />
+                    </svg>
+                </button>
+            </div>
+            {menu.map((item, index) => (
+                <NavLink className="color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg" to={item.url} key={index}>
+                    <span dangerouslySetInnerHTML={{ __html: item.icon }} /> {item.name}
+                </NavLink>
             ))}
         </div>
     )
