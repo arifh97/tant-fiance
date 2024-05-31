@@ -249,10 +249,12 @@
         height: $inset;
     }
     &::-webkit-scrollbar-track {
-        background-color: rgba($color: $primary, $alpha: .30);
+        background-color: rgba($color: $black, $alpha: .5);
+        border-radius: 100px;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: rgba($color: $primary, $alpha: .60);
+        background-color: rgba($color: $white, $alpha: .20);
+        border-radius: 100px;
     }
 }
 
