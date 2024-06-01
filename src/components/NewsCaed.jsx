@@ -4,7 +4,7 @@ export default function NewsCaed({item}) {
   return (
     <div className="cards bg-[#080B13] p-8 rounded-[10px] w-[350px] h-[350px] md:w-[400px] md:h-[400px] lg:w-[477px] lg:h-[477px]">
     <img src={item.img} alt="" className="mb-4 w-full h-[203px] rounded-[10px] " />
-    <p className="flex items-center text-[#6B7280] text-sm md:text-base leading-[26px]">
+    <p className="flex items-center text-[#6B7280] text-[12px] md:text-base leading-[26px]">
       <svg
         className="mr-1"
         width="22"
@@ -25,11 +25,15 @@ export default function NewsCaed({item}) {
     </p>
     <p className="text-sm md:text-base text-[#6B7280] leading-[26px]">
      {item.des}
-      <span className="text-[#EDEDED] underline leading-[26px]">
-        Read all
-      </span>
+      
+     {
+      item.des.length>195 &&<a href="#" className="text-[#EDEDED] !underline text-sm md:text-base  leading-[26px] ml-1">
+      Read all
+    </a>
+     }
+     
     </p>
-    <div className="mt-4 flex items-center bg-[#121722] py-[10px] rounded-[10px]">
+    <div className="mt-4 flex items-center bg-[#121722] py-[10px] rounded-[10px]  ">
       <img
         src={item.icon}
         alt=""
@@ -37,7 +41,6 @@ export default function NewsCaed({item}) {
       />
       <p className="text-base text-[#EDEDED] mr-4">{item.iconname}</p>
       <p className="flex  items-center text-sm text-[#6B7280]">
-        {" "}
         <svg
         className="mr-1"
           width="17"

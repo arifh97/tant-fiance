@@ -67,9 +67,9 @@ export default function News() {
     <div>
       <div className="flex w-full flex-col">
         <Tabs aria-label="Options">
-          <Tab key="Top" title="Top" className="tab-btn text-[#6B7280]">
-            <Card className="!border-none">
-              <CardBody className="bg-[#03060D] border-none text-white">
+          <Tab key="Top" title="Top" className="tab-btn text-[#6B7280] py-2 px-[63px] text-[17px] leading-[26px] font-normal ">
+            <Card className="!border-none w-full card-card ">
+              <CardBody className="bg-[#03060D] text-white border-none card-des">
                 <div className="flex flex-wrap gap-[26px]">
                   {
                     newscards.map((item,idx)=><NewsCaed item={item} key={idx}/>)
@@ -78,7 +78,7 @@ export default function News() {
               </CardBody>
             </Card>
           </Tab>
-          <Tab key="Latest" title="Latest" className="py-2 px-0 text-[#6B7280]">
+          <Tab key="Latest" title="Latest" className="py-2 px-0 text-[#6B7280] py-2 px-[63px]">
             <Card>
               <CardBody className="bg-[#03060D] border-0 rounded-none text-white"></CardBody>
             </Card>
