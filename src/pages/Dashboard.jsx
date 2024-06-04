@@ -2,6 +2,9 @@ import dcicon from "../assets/img/dashboard-card-icon.png";
 import CandlestickChart from "../components/CandlestickChart";
 import minicardicon from "../assets/img/mincardicon.svg"
 import minicardicon2 from "../assets/img/minicardicon2.svg"
+import website from  "../assets/img/webside.svg"
+import document from  "../assets/img/document.svg"
+import github from  "../assets/img/github.svg"
 export default function Dashboard() {
   return (
     <div className="dashboard-main flex gap-8">
@@ -39,7 +42,8 @@ export default function Dashboard() {
           </div>
         </div>
         {/* bar  section */}
-        <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+       <div>
+       <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
          <div className="mb-2 md:mb-4 flex justify-between items-center">
            <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">Market cap <img className="ml-1" src={minicardicon} alt="" /></p>
            <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px]  text-[#FFFFFF]"><svg
@@ -86,7 +90,7 @@ export default function Dashboard() {
          <div className="flex items-center gap-6 relative z-10 mb-[5px]">
              <img src={minicardicon2} alt="" className="absolute z-20 top-1 left-[2px]" />
             <div className="bg-[#232B3D] w-full  h-[5px] rounded-[30px]"></div>
-            <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">#1</p>
+            <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">#2</p>
          </div>
         </div>
         <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
@@ -111,9 +115,41 @@ export default function Dashboard() {
          <div className="flex items-center gap-6 relative z-10 mb-[5px]">
              <img src={minicardicon2} alt="" className="absolute z-20 top-1 left-[2px]" />
             <div className="bg-[#232B3D] w-full  h-[5px] rounded-[30px]"></div>
-            <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">#1</p>
+            <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">#3</p>
          </div>
         </div>
+       </div>
+       {/* Total supply */}
+       <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <div className="flex justify-between items-center mb-3 md:mb-6">
+            <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">Total supply <img  className="ml-1 w-3 h-3" src={minicardicon} alt="" /></p>
+            <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">$847,847,191,990</p>
+          </div>
+          <div className=" flex justify-between items-center mb-3 md:mb-6">
+            <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">Max. supply <img  className="ml-1 w-3 h-3" src={minicardicon} alt="" /></p>
+            <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">$847,847,191,990</p>
+          </div>
+          <div className="flex justify-between items-center">
+            <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">Fully diluted market cap<img  className="ml-1 w-3 h-3" src={minicardicon} alt="" /></p>
+            <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">$847,847,191,990</p>
+          </div>
+       </div>
+       {/* Official links */}
+       <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <p className="text-sm md:text-base font-semibold text-[#FFFFFF]">Official links</p>
+          <div className="mt-2 md:mt-4 flex gap-2">
+            <button className="text-[12px] md:text-sm bg-[#232B3D]  leading-[21px] text-[#FFFFFF] flex items-center gap-[4px] py-1 px-[6px]  rounded-lg"><img className="w-4 h-4/5" src={website} alt="" />Website</button>
+            <button className="text-[12px] md:text-sm bg-[#232B3D]  leading-[21px] text-[#FFFFFF] flex items-center gap-[4px] py-1 px-[6px]  rounded-lg"><img className="w-4 h-4/5" src={document} alt="" />Whitepaper</button>
+          </div>
+       </div>
+       <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <p className="text-sm md:text-base font-semibold text-[#FFFFFF]">Socials</p>
+          <div className="mt-2 md:mt-4 flex gap-2">
+            <button className="text-[12px] md:text-sm bg-[#232B3D]  leading-[21px] text-[#FFFFFF] flex items-center gap-[4px] py-1 px-[6px]  rounded-lg"><img className="w-4 h-4/5" src={website} alt="" />Twitter</button>
+            <button className="text-[12px] md:text-sm bg-[#232B3D]  leading-[21px] text-[#FFFFFF] flex items-center gap-[4px] py-1 px-[6px]  rounded-lg"><img className="w-4 h-4/5" src={document} alt="" />Whitepaper</button>
+            <button className="text-[12px] md:text-sm bg-[#232B3D]  leading-[21px] text-[#FFFFFF] flex items-center gap-[4px] py-1 px-[6px]  rounded-lg"><img className="w-4 h-4/5" src={github} alt="" />Telegram</button>
+          </div>
+       </div>
       </div>
       <div className="dashboard-main-right flex-1 bg-gray-100">
         <CandlestickChart />
