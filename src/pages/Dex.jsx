@@ -26,21 +26,21 @@ export default function Dex() {
       title: "Bitcoin",
       icon: `${icon1}`,
       volume: "$10,000,00",
-      Profit: "$50,0000",
+      Profit: "$500,000",
       Signup: "100",
     },
     {
       title: "Ethereum",
       icon: `${icon2}`,
       volume: "$5,000,00",
-      Profit: "$50,0000",
+      Profit: "$20,0000",
       Signup: "80",
     },
     {
       title: "USDT",
       icon: `${icon3}`,
       volume: "$2,000,00",
-      Profit: "$50,0000",
+      Profit: "$1,0000",
       Signup: "70",
     },
     {
@@ -53,29 +53,29 @@ export default function Dex() {
     {
       title: "USDC",
       icon: `${icon5}`,
-      volume: "$10,000,00",
+      volume: "$1,0,000,00",
       Profit: "$100,000",
       Signup: "60",
     },
     {
       title: "BNB",
       icon: `${icon6}`,
-      volume: "$10,000,00",
+      volume: "$80,000",
       Profit: "$80,000",
       Signup: "50",
     },
     {
       title: "Dodge",
       icon: `${icon7}`,
-      volume: "$10,000,00",
-      Profit: "$50,000",
+      volume: "$50,000",
+      Profit: "$30,000",
       Signup: "40",
     },
     {
       title: "Litecoin",
       icon: `${icon8}`,
-      volume: "$10,000,00",
-      Profit: "$30,000",
+      volume: "$30,00",
+      Profit: "$15,000",
       Signup: "30",
     },
   ];
@@ -83,55 +83,56 @@ export default function Dex() {
   return (
     <div className="dex">
       <div className="flex gap-[20px] flex-wrap mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
-        <div className="flex gap-4 bg-[#080B13] p-6 rounded-[10px] w-[357px]">
-          <div className="p-3 bg-[#0257FF] rounded-[10px]">
-            <img className="w-10 h-10 mt-[5px]" src={dexicon} alt="" />
+        
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-lg leading-6 font-medium text-[#6B7280] mb-4 uppercase ">
+            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
               Volume Today
             </p>
-            <p className="text-[30px]  leading-[40px]  font-semibold text-[#D9DCE4]">
+            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
               $74,097,895,234
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] p-6 rounded-[10px] w-[357px]">
-          <div className="p-3 bg-[#0257FF] rounded-[10px]">
-            <img className="w-10 h-10 mt-[5px]" src={dexicon2} alt="" />
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-lg leading-6 font-medium text-[#6B7280] mb-4 uppercase ">
-              Profit Today
+            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+              Volume Today
             </p>
-            <p className="text-[30px]  leading-[40px]  font-semibold text-[#D9DCE4]">
-              $2000
+            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
+              $74,097,895,234
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] p-6 rounded-[10px] w-[357px]">
-          <div className="p-3 bg-[#5302FF] rounded-[10px]">
-            <img className="w-10 h-10 mt-[5px]" src={dexicon3} alt="" />
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-lg leading-6 font-medium text-[#6B7280] mb-4 uppercase ">
-              Signups
+            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+              Volume Today
             </p>
-            <p className="text-[30px]  leading-[40px]  font-semibold text-[#D9DCE4]">
-              200
+            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
+              $74,097,895,234
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] p-6 rounded-[10px] w-[357px]">
-          <div className="p-3 bg-[#5302FF] rounded-[10px]">
-            <img className="w-10 h-10 mt-[5px]" src={dexicon4} alt="" />
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-lg leading-6 font-medium text-[#6B7280] mb-4 uppercase ">
-              User Registered
+            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+              Volume Today
             </p>
-            <p className="text-[30px]  leading-[40px]  font-semibold text-[#D9DCE4]">
-              122
+            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
+              $74,097,895,234
             </p>
           </div>
         </div>
