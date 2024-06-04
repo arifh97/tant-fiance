@@ -103,10 +103,10 @@ export default function Dex() {
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Volume Today
+            Profit Today
             </p>
             <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-              $74,097,895,234
+              $2000
             </p>
           </div>
         </div>
@@ -116,10 +116,10 @@ export default function Dex() {
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Volume Today
+            Signups
             </p>
             <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-              $74,097,895,234
+          200
             </p>
           </div>
         </div>
@@ -129,10 +129,10 @@ export default function Dex() {
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Volume Today
+            User Registered
             </p>
             <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-              $74,097,895,234
+              122
             </p>
           </div>
         </div>

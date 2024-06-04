@@ -3,7 +3,7 @@ import card from "../assets/img/card.png"
 
 export default function Card() {
   return (
-    <div className='card bg-[#080B13]'>
+    <div className='card bg-[#080B13] '>
       <div className='max-w-[1490px] mb-[32px]'>
         <div className=' flex gap-10 md:gap-[60px] lg:gap-[80px] p-8 md:p-10  lg:p-[50px] '>
          <div className='w-4/12'><img className='w-[415px] h-[261px]' src={card} alt="" /></div>
