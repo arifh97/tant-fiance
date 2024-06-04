@@ -2,7 +2,7 @@ import dexicon from "../assets/img/dexicon.png";
 import dexicon2 from "../assets/img/dexicon.png";
 import dexicon3 from "../assets/img/dexicon2.png";
 import dexicon4 from "../assets/img/dexicon3.png";
-import bitcoin from "../assets/img/Bitcoin.svg";
+// import bitcoin from "../assets/img/Bitcoin.svg";
 import icon1 from "../assets/img/ticon1.svg"
 import icon2 from "../assets/img/ticon2.svg"
 import icon3 from "../assets/img/ticon3.svg"
@@ -99,7 +99,7 @@ export default function Dex() {
         </div>
         <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
           <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon2} alt="" />
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
@@ -112,7 +112,7 @@ export default function Dex() {
         </div>
         <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
           <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon3} alt="" />
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
@@ -125,7 +125,7 @@ export default function Dex() {
         </div>
         <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
           <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
+            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon4} alt="" />
           </div>
           <div>
             <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">

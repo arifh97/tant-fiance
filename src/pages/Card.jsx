@@ -1,5 +1,6 @@
-import React from 'react'
+
 import card from "../assets/img/card.png"
+
 
 export default function Card() {
   return (
