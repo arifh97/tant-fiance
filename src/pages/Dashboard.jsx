@@ -5,7 +5,86 @@ import minicardicon2 from "../assets/img/minicardicon2.svg"
 import website from  "../assets/img/webside.svg"
 import document from  "../assets/img/document.svg"
 import github from  "../assets/img/github.svg"
+import icon1 from "../assets/img/ticon1.svg"
+import dicon1 from "../assets/img/dicon1.svg"
+import dicon2 from "../assets/img/dicon2.svg"
+import dicon3 from "../assets/img/dicon3.svg"
+import dicon4 from "../assets/img/dicon4.svg"
+import dicon5 from "../assets/img/dicon5.svg"
+import {
+  Table,
+  TableHeader,
+  TableColumn,
+  TableBody,
+  TableRow,
+  TableCell,
+} from "@nextui-org/react";
 export default function Dashboard() {
+  const tabledata = [
+    {
+      Exchange: "Coinbase",
+      icon: `${dicon1}`,
+      Pair: `TANT/USDT`,
+      Price: "$2.0751",
+      "Depth": "$554.079",
+      "Depth2": "$729.558",
+      Volume: "$13,984.992",
+      Volume2: "30.92%",
+      Confidence: "High",
+      Updated: "Recently",
+    },
+    {
+      Exchange: "Coinbase",
+      icon: `${dicon2}`,
+      Pair: `TANT/USDT`,
+      Price: "$2.0751",
+      "Depth": "$554.079",
+      "Depth2": "$729.558",
+      Volume: "$13,984.992",
+      Volume2: "30.92%",
+      Confidence: "High",
+      Updated: "Recently",
+    },
+    {
+      Exchange: "Coinbase",
+      icon: `${dicon3}`,
+      Pair: `TANT/USDT`,
+      Price: "$2.0751",
+      "Depth": "$554.079",
+      "Depth2": "$729.558",
+      Volume: "$13,984.992",
+      Volume2: "30.92%",
+      Confidence: "High",
+      Updated: "Recently",
+    },
+    {
+      Exchange: "Coinbase",
+      icon: `${dicon4}`,
+      Pair: `TANT/USDT`,
+      Price: "$2.0751",
+      "Depth": "$554.079",
+      "Depth2": "$729.558",
+      Volume: "$13,984.992",
+      Volume2: "30.92%",
+      Confidence: "High",
+      Updated: "Recently",
+    },
+    {
+      Exchange: "Coinbase",
+      icon: `${dicon5}`,
+      Pair: `TANT/USDT`,
+      Price: "$2.0751",
+      "Depth": "$554.079",
+      "Depth2": "$729.558",
+      Volume: "$13,984.992",
+      Volume2: "30.92%",
+      Confidence: "High",
+      Updated: "Recently",
+    }
+ 
+  
+    
+  ];
   return (
     <div className="dashboard-main flex gap-8">
       <div className="dashboard-main-left w-[389px] bg-gray-200 ">
@@ -153,6 +232,97 @@ export default function Dashboard() {
       </div>
       <div className="dashboard-main-right flex-1 bg-gray-100">
         <CandlestickChart />
+        <div className="w-full">
+        <Table removeWrapper aria-label="Example static collection" className="table">
+          <TableHeader>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Exchange
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Pair
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Price
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            +2% Depth
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            -2% Depth
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Volume (24h)
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Volume %
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Confidence
+            </TableColumn>
+            <TableColumn className=" py- md:py-[21px]  text-[10px] md:text-[12px] leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            Updated
+            </TableColumn>
+          </TableHeader>
+          <TableBody>
+          {
+            tabledata.map((item,idx)=>(<TableRow key={idx} className=" mb-5">
+            <TableCell className="bg-[#080B13] mb-5 ">
+              <div className="flex items-center -ml-6  md:pl-6 w-full text-[12px] md:text-sm  leading-5 font-medium text-[#FFFFFF]">
+                <img
+                  className=" mr-3 h-5 w-5 md:h-[25px] md:w-[25px] "
+                  src={item.icon}
+                  alt=""
+                />
+                {item.Exchange}
+              </div>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+              <p className=" text-[12px] md:text-sm -ml-5 mt-3 leading-5 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Pair}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+            <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Price}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+              <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Depth}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+            <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Depth2}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+            <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Volume}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+            <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Volume2}
+              </p>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+              <button className=" text-[12px] md:text-sm py-1 px-2 mt-3 bg-[#029955] rounded-[4PX]  leading-5 font-medium text-[#FFFFFF] ">
+                {item.Confidence}
+              </button>
+            </TableCell>
+            <TableCell className="bg-[#080B13] mb-[5px]">
+            <p className=" text-[12px] md:text-sm -ml-5  leading-5 mt-3 font-medium text-[#FFFFFF]  px-5 mb-4">
+                {item.Updated}
+              </p>
+            </TableCell>
+          
+          </TableRow>))
+          }
+
+          </TableBody>
+        </Table>
+        </div>
       </div>
     </div>
   );
