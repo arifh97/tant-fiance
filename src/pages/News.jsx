@@ -31,7 +31,7 @@ export default function News() {
     },
     {
       "title" : " $BTC Bitcoin could hit 51K within hours.",
-      "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
+      "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to  spot",
       "img": `${newscard3}`,
       "icon": `${icon3}`,
       "iconname" : "Shane",
@@ -82,12 +82,12 @@ export default function News() {
     }
   ]
   return (
-    <div className="news flex w-full flex-col">
+    <div className="news  w-full flex-col">
       <Tabs aria-label="Options">
         <Tab key="Top" title="Top" className="tab-btn text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
           <Card className="!border-none w-full card-card ">
-            <CardBody className="bg-[#03060D] text-white border-none card-des">
-              <div className="flex flex-wrap gap-4 md:gap-[26px]">
+            <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
+              <div className=" grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-4 lg:gap-[26px]">
                 {
                   newscards.map((item,idx)=><NewsCaed item={item} key={idx}/>)
                 }
@@ -96,9 +96,9 @@ export default function News() {
           </Card>
         </Tab>
         <Tab key="Latest" title="Latest" className=" text-[#6B7280] px-[30px] py-[10px]">
-          <Card className="card-card">
-            <CardBody className="bg-[#03060D] border-0 rounded-none text-white card-des">
-            <div className="flex flex-wrap gap-4 md:gap-[26px]">
+        <Card className="!border-none w-full card-card ">
+          <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-[26px]">
                 {
                   newscards2.map((item,idx)=><NewsCaed item={item} key={idx}/>)
                 }
