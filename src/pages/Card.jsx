@@ -1,5 +1,6 @@
 import React from 'react'
 import card from "../assets/img/card.png"
+import ChartTwo from '../components/ChartTwo'
 
 export default function Card() {
   return (
@@ -37,6 +38,23 @@ export default function Card() {
             </div>
           </div>
         </div>
+
+        <div className=' flex gap-10 md:gap-[60px] lg:gap-[80px] p-8 md:p-10  lg:p-[50px] '>
+          <div className='w-6/12'>
+            <div className="line-chart">
+              <h4>Load Volume</h4>
+            </div>
+          </div>
+          <div className='w-6/12'>
+            <div className="chart-issu-chart">
+              <h4>Card Issued</h4>
+              <ChartTwo />
+            </div>
+          </div>
+        </div>
+
+
+
       </div> 
       <div>
         
