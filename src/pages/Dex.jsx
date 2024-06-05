@@ -82,23 +82,22 @@ export default function Dex() {
 
   return (
     <div className="dex">
-      <div className="flex gap-[20px] flex-wrap mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
-        
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
           <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
             <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+            <p className="text-[12px] md:text-lg  leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
               Volume Today
             </p>
-            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
+            <p className=" text-lg md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
               $74,097,895,234
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#0276FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
             <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon2} alt="" />
           </div>
           <div>
@@ -110,8 +109,8 @@ export default function Dex() {
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#5302FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
             <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon3} alt="" />
           </div>
           <div>
@@ -123,8 +122,8 @@ export default function Dex() {
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px] w-full  xl:w-[375px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
+        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
+          <div className="p-3 bg-[#6202FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
             <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon4} alt="" />
           </div>
           <div>
@@ -141,16 +140,16 @@ export default function Dex() {
       <div>
         <Table removeWrapper aria-label="Example static collection" className="table">
           <TableHeader>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Coin
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Volume (USD)
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Profit (USD)
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
+            <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Signup
             </TableColumn>
           </TableHeader>
