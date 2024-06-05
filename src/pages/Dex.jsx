@@ -139,18 +139,18 @@ export default function Dex() {
       </div>
 
       <div>
-        <Table removeWrapper aria-label="Example static collection table">
+        <Table removeWrapper aria-label="Example static collection" className="table">
           <TableHeader>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13]  mb-[5px] ">
+            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Coin
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13]  mb-[5px] ">
+            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Volume (USD)
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13]  mb-[5px] ">
+            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Profit (USD)
             </TableColumn>
-            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13]  mb-[5px] ">
+            <TableColumn className=" py-3 md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Signup
             </TableColumn>
           </TableHeader>

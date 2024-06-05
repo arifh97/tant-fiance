@@ -64,27 +64,25 @@ export default function News() {
     
   ]
   return (
-    <div>
-      <div className="flex w-full flex-col">
-        <Tabs aria-label="Options">
-          <Tab key="Top" title="Top" className="tab-btn text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
-            <Card className="!border-none w-full card-card ">
-              <CardBody className="bg-[#03060D] text-white border-none card-des">
-                <div className="flex flex-wrap gap-4 md:gap-[26px]">
-                  {
-                    newscards.map((item,idx)=><NewsCaed item={item} key={idx}/>)
-                  }
-                </div>
-              </CardBody>
-            </Card>
-          </Tab>
-          <Tab key="Latest" title="Latest" className=" text-[#6B7280] px-[30px] py-[10px]">
-            <Card>
-              <CardBody className="bg-[#03060D] border-0 rounded-none text-white"></CardBody>
-            </Card>
-          </Tab>
-        </Tabs>
-      </div>
+    <div className="news flex w-full flex-col">
+      <Tabs aria-label="Options">
+        <Tab key="Top" title="Top" className="tab-btn text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
+          <Card className="!border-none w-full card-card ">
+            <CardBody className="bg-[#03060D] text-white border-none card-des">
+              <div className="flex flex-wrap gap-4 md:gap-[26px]">
+                {
+                  newscards.map((item,idx)=><NewsCaed item={item} key={idx}/>)
+                }
+              </div>
+            </CardBody>
+          </Card>
+        </Tab>
+        <Tab key="Latest" title="Latest" className=" text-[#6B7280] px-[30px] py-[10px]">
+          <Card className="card-card">
+            <CardBody className="bg-[#03060D] border-0 rounded-none text-white card-des"></CardBody>
+          </Card>
+        </Tab>
+      </Tabs>
     </div>
   );
 }
