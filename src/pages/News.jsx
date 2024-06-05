@@ -63,6 +63,24 @@ export default function News() {
     }
     
   ]
+  const newscards2 = [
+    {
+      "title" : "$BTC Bitcoin could hit 51K within hours.",
+      "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
+      "img": `${newscard1}`,
+      "icon": `${icon1}`,
+      "iconname" : "Soham",
+      "social" :"@soham . 6h"
+    },
+    {
+      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
+      "img": `${newscard2}`,
+      "icon": `${icon2}`,
+      "iconname" : "Darrell",
+      "social" :"@darrell . 6h"
+    }
+  ]
   return (
     <div className="news flex w-full flex-col">
       <Tabs aria-label="Options">
@@ -79,7 +97,13 @@ export default function News() {
         </Tab>
         <Tab key="Latest" title="Latest" className=" text-[#6B7280] px-[30px] py-[10px]">
           <Card className="card-card">
-            <CardBody className="bg-[#03060D] border-0 rounded-none text-white card-des"></CardBody>
+            <CardBody className="bg-[#03060D] border-0 rounded-none text-white card-des">
+            <div className="flex flex-wrap gap-4 md:gap-[26px]">
+                {
+                  newscards2.map((item,idx)=><NewsCaed item={item} key={idx}/>)
+                }
+              </div>
+            </CardBody>
           </Card>
         </Tab>
       </Tabs>
