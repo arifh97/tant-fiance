@@ -29,7 +29,7 @@ export default function Card() {
     labels: ['jan', 'Reb', 'Mar', 'Apr', 'May',"Jun",'Jul','Aug','Sep','Oct','Nov','Dec'],
     datasets: [
       {
-        label: '#',
+        label: '',
         data: ['0', '1','2','3','4','5','6','7','8','9','10','0'],
         borderWidth: 1,
         backgroundColor: [
@@ -43,8 +43,21 @@ export default function Card() {
   const options = {
     responsive: true,
     scales: {
+      x: {
+        title: {
+          display: false, // Hide x-axis label
+        },
+      },
       y: {
         beginAtZero: true,
+        title: {
+          display: false, // Hide y-axis label
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        display: false, // Hide the legend
       },
     },
   };
@@ -87,7 +100,7 @@ export default function Card() {
         <div className=' flex gap-[10px] md:gap-[20px] lg:gap-[30px] py-[18px] md:py-[20px]  lg:py-[30px] w-full'>
           <div className='w-6/12  p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]'>
             <div className="line-chart">
-              <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">Load Volume</h4>
+              <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3] mb-4 md:mb-5 lg:mb-[28px] ">Load Volume</h4>
               <div>
               <Bar data={data} options={options} />
               </div>
