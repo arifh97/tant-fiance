@@ -85,7 +85,7 @@ export default function Dashboard() {
 
   ];
   return (
-    <div className="dashboard-main flex gap-8">
+    <div className="dashboard-main flex gap-8 hasa">
       <div className="dashboard-main-left w-[389px] bg-gray-200 ">
         <div className="card p-6 bg-[#080B13] mb-3 md:mb-5">
           <div className="flex items-center mb-2 md:mb-[10px]">

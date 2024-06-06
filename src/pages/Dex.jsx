@@ -82,63 +82,63 @@ export default function Dex() {
 
   return (
     <div className="dex">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
+      <div className="grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
+        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
+          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
+            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
           </div>
           <div>
-            <p className="text-[12px] md:text-lg  leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
               Volume Today
             </p>
-            <p className=" text-lg md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
               $74,097,895,234
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#0276FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon2} alt="" />
+        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
+          <div className="p-3 bg-[#0276FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
+            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon2} alt="" />
           </div>
           <div>
-            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
             Profit Today
             </p>
-            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-              $2000
+            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+            $2000
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#5302FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon3} alt="" />
+        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
+          <div className="p-3 bg-[#5302FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
+            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon3} alt="" />
           </div>
           <div>
-            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
             Signups
             </p>
-            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-          200
+            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+            200
             </p>
           </div>
         </div>
-        <div className="flex gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-6 ">
-          <div className="p-3 bg-[#6202FF] rounded-[10px] w-[80px] h-[80px]   flex-non xl:2  xxl:p-3">
-            <img className="w-8  md:w-10 h-8 md:h-10 l  mt-2 ml-1 md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon4} alt="" />
+        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
+          <div className="p-3 bg-[#6202FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
+            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon4} alt="" />
           </div>
           <div>
-            <p className="text-[12px] md:text-lg xl:text-lg xxl:text-lg leading-6 font-medium text-[#6B7280] mb-1 md:mb-2 lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
+            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
             User Registered
             </p>
-            <p className=" text-lg md:text-[30px] xxl:text-[30px] leading-[40px]  font-semibold text-[#D9DCE4]">
-              122
+            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+     200
             </p>
           </div>
         </div>
       </div>
 
       <div>
-        <Table removeWrapper aria-label="Example static collection" className="table">
+        <Table removeWrapper aria-label="Example static collection" className="table overflow-y-auto">
           <TableHeader>
             <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Coin
@@ -159,7 +159,7 @@ export default function Dex() {
             <TableCell className="bg-[#080B13] mb-5 ">
               <div className="flex items-center -ml-6  md:pl-6 w-full text-sm md:text-base leading-5 font-medium text-white">
                 <img
-                  className=" mr-1 h-10 w-10 md:h-12 md:w-12 py-2"
+                  className=" mr-1 h-10 w-10 md:h-12 md:w-12 py-2 flex-none"
                   src={item.icon}
                   alt=""
                 />

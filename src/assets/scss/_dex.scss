@@ -2,3 +2,59 @@
     border-collapse: separate !important;
     border-spacing: 0px 5px !important;
 }
+
+
+@include xxl {
+    .dashboard-main {
+        padding: 20px;
+    }
+}
+
+.dex {
+   
+    @include xxl {
+        .imtitem {
+       gap: 12px;
+        }
+        .title{
+            font-size: 13px;
+        }
+        .des{
+            font-size: 19px;
+            margin-top: 19px;
+        }
+    }
+
+    @include sm {
+        .des {
+            font-size: 16px;
+        }
+    }
+
+    @include md {
+        .des {
+            margin-top: 18px;
+        }
+    }
+
+    @include lg {
+        .des {
+            margin-top: 18px;
+            font-size: 24px;
+        }
+    }
+    @include ssm {
+        .title{
+            margin-top: 3px;
+            margin-bottom: -3px;
+        }
+    }
+}
+
+@include xl {}
+
+@include lg {}
+
+@include sm {}
+
+@include ssm {}
