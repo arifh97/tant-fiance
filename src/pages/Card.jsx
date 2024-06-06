@@ -96,7 +96,7 @@ export default function Card() {
           </div>
           <div className='w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]'>
             <div className="chart-issu-chart">
-              <h4>Card Issued</h4>
+              <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">Card Issued</h4>
               <ChartTwo />
             </div>
           </div>

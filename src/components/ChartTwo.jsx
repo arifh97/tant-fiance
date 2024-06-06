@@ -44,6 +44,7 @@ class ChartTwo extends React.Component {
         legend: {
           show: true,
           position: 'right',
+          right:'70px',
           verticalAlign: 'center',
           fontSize: '20px',
           fontWeight: '700',
