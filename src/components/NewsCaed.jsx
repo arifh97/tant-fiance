@@ -2,9 +2,9 @@ import newscard1 from "../assets/img/newscard.png";
 import newscardi from "../assets/img/newscardi.svg";
 export default function NewsCaed({item}) {
   return (
-    <div className="cards bg-[#080B13] p-8 rounded-[10px]">
-    <img src={item.img} alt="" className="mb-4 w-full h-[203px] rounded-[10px] " />
-    <p className="flex items-center text-[#6B7280] text-[12px] md:text-base leading-[26px]">
+    <div className="cards bg-[#080B13] p-1 md:py-[22px]  2xl:p-8  rounded-[7px] xl:rounded-[10px]">
+    <img src={item.img} alt="" className="mb-4 w-full  rounded-[10px] " />
+    <p className="flex title items-center text-[#6B7280] text-[12px] 2xl:text-base leading-[26px]">
       <svg
         className="mr-1"
         width="22"
@@ -40,7 +40,7 @@ export default function NewsCaed({item}) {
         className="h-7 w-7 mr-[10px] ml-[10px]"
       />
       <p className="text-base text-[#EDEDED] mr-4">{item.iconname}</p>
-      <p className="flex  items-center text-sm text-[#6B7280]">
+      <p className="flex  items-center text-[10px] md:text-sm text-[#6B7280] leading-[14px]">
         <svg
         className="mr-1"
           width="17"

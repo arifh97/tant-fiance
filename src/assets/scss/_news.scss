@@ -52,3 +52,62 @@ span.absolute.z-0.inset-0.rounded-small.bg-background.dark\:bg-default.shadow-sm
     padding: 0px;
   
 }
+
+ @include ssm{
+    .news .inline-flex{
+        display: block !important;
+    }
+ }
+ @include sm{
+    .cards{
+        padding: 22px;
+    }
+ }
+ @include sm{
+    .cards{
+        padding: 22px;
+    }
+ }
+ @include lg{
+    .cardbody{
+        gap: 20px !important;
+    }
+ }
+ @include xl{
+    .cardbody{
+        gap: 15px !important;
+    }
+ }
+ @include lg{
+    .cards{
+        padding: 10px;
+      .title{
+        font-size: 13px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+ }
+ @include xl{
+    .cards{
+        padding: 5px;
+      .title{
+        font-size: 14px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+ }
+ @include xxl{
+    .cards{
+        padding: 5px;
+      .title{
+        font-size: 14px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+ }

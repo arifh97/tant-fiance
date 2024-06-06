@@ -95,10 +95,10 @@ export default function News() {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="Latest" title="Latest" className=" text-[#6B7280] px-[30px] py-[10px]">
+        <Tab key="Latest" title="Latest" className="tab-btn text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
         <Card className="!border-none w-full card-card ">
           <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-[26px]">
+            <div className=" grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-3 cardbody  2xl:gap-[26px]">
                 {
                   newscards2.map((item,idx)=><NewsCaed item={item} key={idx}/>)
                 }
