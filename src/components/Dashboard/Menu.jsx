@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import logo from '../../assets/img/logo.svg'
 
-export default function Menu() {
+export default function Menu({mobileMenu}) {
     const menu = [
         {
             icon: `<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@ export default function Menu() {
                 <Link to="/" className="dashboard-logo">
                     <img width={112} height={30} src={logo} alt="" />
                 </Link>
-                <button className="p-0 mb-0 bg-transparent border-0 md:hidden">
+                <button className="p-0 mb-0 bg-transparent border-0 lg:hidden" onClick={mobileMenu}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.1193 15.2649L9.35986 9.50488M9.36048 15.2649L15.1199 9.50488" stroke="#6B7280" strokeWidth="1.44" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M21.8401 12.3847C21.8401 7.08273 17.542 2.78467 12.2401 2.78467C6.9382 2.78467 2.64014 7.08273 2.64014 12.3847C2.64014 17.6866 6.9382 21.9847 12.2401 21.9847C17.542 21.9847 21.8401 17.6866 21.8401 12.3847Z" stroke="#6B7280" strokeWidth="1.44" />
