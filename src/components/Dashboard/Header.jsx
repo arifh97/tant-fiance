@@ -4,14 +4,13 @@ import { Link, useLocation } from 'react-router-dom'
 import { Avatar } from "@nextui-org/react";
 import avatar from '../../assets/img/avatar.png'
 
-export default function Header() {
+export default function Header({mobileMenu}) {
   const location = useLocation();
   const title = location.pathname.split('/').join('');
-
   return (
     <div className='bg-[#090B12] px-5 md:px-7 lg:px-9 py-5 md:py-6 lg:py-7 flex items-center justify-between'>
-      <h5 className='text-2xl font-medium text-white hidden md:block capitalize'>{title == "card" || title == "Card" || title == "CARD" ? "Card overview" : title}</h5>
-      <Link className='d-block cursor-pointer md:hidden'>
+      <h5 className='text-2xl font-medium text-white hidden lg:block capitalize'>{title == "card" || title == "Card" || title == "CARD" ? "Card Overview" : title}</h5>
+      <Link className='block cursor-pointer w-[105px] lg:hidden'>
         <img src={logo} alt="" />
       </Link>
       <div className="flex items-center ml-auto gap-3">
@@ -35,8 +34,13 @@ export default function Header() {
             </clipPath>
           </defs>
         </svg>
-        <button>
-          <Avatar radius="full"  className="border-2 border-[#272F43] outline-none rounded-full w-10 h-10 lg:w-[50px] lg:h-[50px]" src={avatar} />
+        <Avatar radius="full" className="border-2 border-[#272F43] outline-none rounded-full w-10 h-10 lg:w-[50px] lg:h-[50px]" src={avatar} />
+        <button className='lg:hidden' onClick={mobileMenu}>
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 5.3125H20" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M4 12.3125H20" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M4 19.3125H20" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </button>
       </div>
     </div>
