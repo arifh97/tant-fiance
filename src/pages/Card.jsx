@@ -69,35 +69,40 @@ export default function Card() {
         <div className='card-content lg:flex items-center gap-10 md:gap-[60px] lg:gap-5 xl:gap-8 2xl:gap-[80px] p-3  lg:p-4 xl:p-8   2xl:p-[50px] w-full bg-[#080B13] rounded-[20px] '>
           <div className='w-full lg:w-1/3 mb-6 lg:mb-0'><img className='w-full' src={card} alt="" /></div>
           <div className="w-full lg:w-2/3 card-content-text">
-            <div className=' text-body grid grid-cols-2 xl:grid-cols-3  gap-x-2 md:gap-y-[1.5rem] lg:gap-x-14  xl:gap-x-[36px] 2xl:gap-x-[163px] gap-y-8  lg:gap-y-[5px] uppercase '>
+            <div className='text-body grid grid-cols-2 xl:grid-cols-3  gap-x-2 md:gap-y-[1.5rem] lg:gap-x-14  xl:gap-x-[36px] 2xl:gap-x-[163px] gap-y-8  lg:gap-y-[5px] uppercase '>
               <div  className="">
                 <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >USD Load Volume Today</p>
                 <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>$74,097,895,234</p>
               </div>
-              <div>
-                <p className='text-sm md:text-base lg:text-lg text-[#6B7280] font-medium leading-6 mb-4' >Registrations</p>
-                <p className='text-lg md:text-xl lg:text-[30px] leading-10 font-semibold text-[#D9DCE4]'>100000</p>
+              <div  className="">
+                <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >Registrations</p>
+                <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>10000</p>
               </div>
-              <div>
-                <p className='text-sm md:text-base lg:text-lg text-[#6B7280] font-medium leading-6 mb-4' >Cards Issued</p>
-                <p className='text-lg md:text-xl lg:text-[30px] leading-10 font-semibold text-[#D9DCE4]'>105</p>
+              
+              <div  className="">
+                <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >Cards Issued</p>
+                <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>105</p>
               </div>
-              <div>
-                <p className='text-sm md:text-base lg:text-lg text-[#6B7280] font-medium leading-6 mb-4' >USD Load Volume Today</p>
-                <p className='text-lg md:text-xl lg:text-[30px] leading-10 font-semibold text-[#D9DCE4]'>$74,097,895,234</p>
+              
+              <div  className="">
+                <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >Profit today</p>
+                <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>$68,006.42</p>
               </div>
-              <div>
-                <p className='text-sm md:text-base lg:text-lg text-[#6B7280] font-medium leading-6 mb-4' >Token Redistributed</p>
-                <p className='text-lg md:text-xl lg:text-[30px] leading-10 font-semibold text-[#D9DCE4]'>1.22%</p>
+              
+              <div  className="">
+                <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >Token Redistributed</p>
+                <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>1.22%</p>
               </div>
-              <div className="nnc">
-                <p className='text-sm md:text-base lg:text-lg text-[#6B7280] font-medium leading-6 mb-4' >Token Burnt</p>
-                <p className='text-lg md:text-xl lg:text-[30px] leading-10 font-semibold text-[#D9DCE4]'>20</p>
+              
+              <div  className="">
+                <p className='title text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4' >Token Burnt</p>
+                <p className='des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]'>20</p>
               </div>
+              
             </div>
           </div>
         </div>
-        <div className='card-chart md:flex gap-[10px] md:gap-[20px] lg:gap-[30px] py-[18px] md:py-[20px]  lg:py-[30px] w-full'>
+        <div className='card-chart md:flex gap-[10px] md:gap-[20px] lg:gap-[30px] py-[18px] md:mt-3 md:mb-2 md:py-[20px]  lg:py-[15px] w-full'>
           <div className=' w-full md:w-6/12  p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]'>
             <div className="line-chart">
               <div className="flex items-center justify-between">
