@@ -3,3 +3,31 @@
     gap: 15px !important;
     right: 118px !important;
 }
+
+.card{
+    &-content{
+        @include xxl{
+            gap: 30px;
+            padding: 46px;
+        }
+        &-text{
+            @include xxl{
+                .title{
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                }
+                .des{
+                    font-size: 22px;
+                }
+            }
+            @include xxl{
+            .text-body{
+                column-gap: 30px;
+            }
+            }
+            @include lg{
+                
+            }
+        }
+    }
+}
