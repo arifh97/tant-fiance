@@ -1,5 +1,8 @@
 .dashboard {
     --left: 250px;
+    @include xl{
+        --left:200px;
+    }
     &-left {
         width: var(--left);
         flex: 0 0 auto;
@@ -29,11 +32,45 @@
     &-main {
         max-height: calc(100vh - var(--height-minus, 106px));
         @include custom-scroll(6px);
+        &-wrap{
+            --left-width:390px;
+            --main-gap:40px;
+            gap: var(--main-gap);
+            @include xl{
+                --left-width:340px;
+                --main-gap:30px;
+            }
+            @include lg{
+                --left-width:300px;
+                --main-gap:20px;
+            }
+        }
+        &-left{
+            width: var(--left-width);
+            flex: 0 0 auto;
+            @include mmd{
+                width: 100%;
+            }
+        }
+        &-right{
+            width: calc(100% - var(--left-width) - var(--main-gap));
+            @include mmd{
+                width: 100%;
+            }
+        }
     }
     &-menu {
         & .active {
             background: linear-gradient(292.05deg, #00FFFF -34.93%, #0152FF 84.08%);
             color: $white;
+        }
+    }
+}
+
+.apexcharts{
+    &-legend {
+        @include sm{
+            display: none !important;
         }
     }
 }

@@ -9,6 +9,7 @@ const CandlestickChart = () => {
   const [chartOptions, setChartOptions] = useState({
     chart: {
         backgroundColor: 'transparent',
+        height: 400,
       },
       plotOptions: {
         candlestick: {

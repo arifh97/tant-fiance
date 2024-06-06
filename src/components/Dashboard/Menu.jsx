@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
 import logo from '../../assets/img/logo.svg'
 
 export default function Menu({mobileMenu}) {
@@ -42,6 +42,11 @@ export default function Menu({mobileMenu}) {
             url: '/news'
         }
     ];
+    const route = useNavigate();
+    const changeRoute = (e) => {
+        route(e);
+        mobileMenu()
+    }
     return (
         <div className="dashboard-menu p-5 lg:py-9">
             <div className="mb-10 flex items-center justify-between">
@@ -57,8 +62,9 @@ export default function Menu({mobileMenu}) {
             </div>
              {menu.map((item, index) => (
                  <NavLink 
-                 className={`color-[#5D636D] flex items-center flex-wrap gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg`} 
+                 className={`color-[#5D636D] flex items-center flex-wrap gap-4 xl:gap-2 2xl:gap-4 mb-4 bg-[#0C121B] border-1 border-[#141822] p-[10px] rounded-lg`} 
                  to={item.url} 
+                 onClick={() => changeRoute(item.url)}
                  key={index} >
                     <span dangerouslySetInnerHTML={{ __html: item.icon }} /> {item.name}
                 </NavLink>

@@ -8,7 +8,7 @@ export default function Header({mobileMenu}) {
   const location = useLocation();
   const title = location.pathname.split('/').join('');
   return (
-    <div className='bg-[#090B12] px-5 md:px-7 lg:px-9 py-5 md:py-6 lg:py-7 flex items-center justify-between'>
+    <div className='bg-[#090B12] px-5 md:px-7 lg:px-9 py-5 md:py-5 lg:py-7 flex items-center justify-between'>
       <h5 className='text-2xl font-medium text-white hidden lg:block capitalize'>{title == "card" || title == "Card" || title == "CARD" ? "Card Overview" : title}</h5>
       <Link className='block cursor-pointer w-[105px] lg:hidden'>
         <img src={logo} alt="" />

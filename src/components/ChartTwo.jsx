@@ -1,7 +1,7 @@
 // src/ApexChart.js
 
-import React from 'react';
-import ReactApexChart from 'react-apexcharts';
+import React from "react";
+import ReactApexChart from "react-apexcharts";
 
 class ChartTwo extends React.Component {
   constructor(props) {
@@ -11,24 +11,27 @@ class ChartTwo extends React.Component {
       series: [85, 75, 65],
       options: {
         chart: {
-          height: 208,
-          type: 'radialBar',
+          height: 400,
+          type: "radialBar",
         },
         plotOptions: {
           radialBar: {
+            hollow: {
+              size: "30%"
+            },
             dataLabels: {
+              showOn: "always",
               name: {
-                fontSize: '22px',
-                color: "#888",
+                fontSize: "22px",
+                color: "#A8ABB3",
               },
               value: {
-                fontSize: '16px',
-                color: "#111",
+                fontSize: "24px",
+                color: "#A8ABB3",
                 show: true,
               },
               total: {
                 show: true,
-                label: ' ',
                 formatter: function (w) {
                   return 99;
                 },
@@ -40,16 +43,21 @@ class ChartTwo extends React.Component {
         stroke: {
           lineCap: "round",
         },
-        labels: ['Virtual No KYC', 'Virtual KYC', 'Physical'],
+        fill: {
+          opacity: 1,
+          colors: ["#0257FF", "#01C1FF", "#01FFA4"],
+        },
+        labels: ["Virtual No KYC", "Virtual KYC", "Physical"],
         legend: {
           show: true,
-          position: 'right',
-          right: '70px',
-          verticalAlign: 'center',
-          fontSize: '20px',
-          fontWeight: '700',
+          position: "right",
+          right: "70px",
+          verticalAlign: "center",
+          fontSize: "20px",
+          fontWeight: "700",
           labels: {
-            colors: ['#888'],
+            colors: ["#fff"],
+            fontWeight: "500",
             useSeriesColors: false,
           },
         },
@@ -59,12 +67,12 @@ class ChartTwo extends React.Component {
 
   render() {
     return (
-      <div className='w-full' id="chart">
+      <div className="w-[330px] md:w-full" id="chart">
         <ReactApexChart
           options={this.state.options}
           series={this.state.series}
           type="radialBar"
-          height={285}
+          height={400}
         />
       </div>
     );

@@ -3,14 +3,14 @@ import dexicon2 from "../assets/img/dexicon.png";
 import dexicon3 from "../assets/img/dexicon2.png";
 import dexicon4 from "../assets/img/dexicon3.png";
 // import bitcoin from "../assets/img/Bitcoin.svg";
-import icon1 from "../assets/img/ticon1.svg"
-import icon2 from "../assets/img/ticon2.svg"
-import icon3 from "../assets/img/ticon3.svg"
-import icon4 from "../assets/img/ticon4.svg"
-import icon5 from "../assets/img/ticon5.svg"
-import icon6 from "../assets/img/ticon6.svg"
-import icon7 from "../assets/img/ticon7.svg"
-import icon8 from "../assets/img/ticon8.svg"
+import icon1 from "../assets/img/ticon1.svg";
+import icon2 from "../assets/img/ticon2.svg";
+import icon3 from "../assets/img/ticon3.svg";
+import icon4 from "../assets/img/ticon4.svg";
+import icon5 from "../assets/img/ticon5.svg";
+import icon6 from "../assets/img/ticon6.svg";
+import icon7 from "../assets/img/ticon7.svg";
+import icon8 from "../assets/img/ticon8.svg";
 
 import {
   Table,
@@ -85,7 +85,11 @@ export default function Dex() {
       <div className="grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
         <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
           <div className="p-3 bg-[#0257FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon} alt="" />
+            <img
+              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
+              src={dexicon}
+              alt=""
+            />
           </div>
           <div>
             <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
@@ -98,47 +102,63 @@ export default function Dex() {
         </div>
         <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
           <div className="p-3 bg-[#0276FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon2} alt="" />
+            <img
+              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
+              src={dexicon2}
+              alt=""
+            />
           </div>
           <div>
             <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-            Profit Today
+              Profit Today
             </p>
             <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-            $2000
+              $2000
             </p>
           </div>
         </div>
         <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
           <div className="p-3 bg-[#5302FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon3} alt="" />
+            <img
+              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
+              src={dexicon3}
+              alt=""
+            />
           </div>
           <div>
             <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-            Signups
+              Signups
             </p>
             <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-            200
+              200
             </p>
           </div>
         </div>
         <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
           <div className="p-3 bg-[#6202FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]" src={dexicon4} alt="" />
+            <img
+              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
+              src={dexicon4}
+              alt=""
+            />
           </div>
           <div>
             <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-            User Registered
+              User Registered
             </p>
             <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-     200
+              200
             </p>
           </div>
         </div>
       </div>
 
-      <div>
-        <Table removeWrapper aria-label="Example static collection" className="table overflow-y-auto">
+      <div className="overflow-auto">
+        <Table
+          removeWrapper
+          aria-label="Example static collection"
+          className="table overflow-y-auto"
+        >
           <TableHeader>
             <TableColumn className=" py- md:py-[18px]  text-[10px] md:text-sm leading-[14px] font-medium text-[#6B7280]  bg-[#080B13] ">
               Coin
@@ -154,41 +174,40 @@ export default function Dex() {
             </TableColumn>
           </TableHeader>
           <TableBody>
-          {
-            tabledata.map((item,idx)=>(<TableRow key={idx} className=" mb-5">
-            <TableCell className="bg-[#080B13] mb-5 ">
-              <div className="flex items-center -ml-6  md:pl-6 w-full text-sm md:text-base leading-5 font-medium text-white">
-                <img
-                  className=" mr-1 h-10 w-10 md:h-12 md:w-12 py-2 flex-none"
-                  src={item.icon}
-                  alt=""
-                />
-                {item.title}
-              </div>
-            </TableCell>
-            <TableCell className="bg-[#080B13] mb-[5px]">
-              <p className="text-sm md:text-base -ml-5 mt-2 leading-5 font-medium text-white py- px-5 mb-4">
-                {item.volume}
-              </p>
-            </TableCell>
-            <TableCell className="bg-[#080B13] mb-[5px]">
-              <p className="text-sm md:text-base -ml-5 mt-3  leading-5 font-medium text-white py- px-5 mb-5">
-                {item.Profit}
-              </p>
-            </TableCell>
-            <TableCell className="bg-[#080B13] mb-[5px]">
-              <p className="text-sm md:text-base -ml-5  leading-5 font-medium text-white py- px-5">
-                {item.Signup}
-              </p>
-            </TableCell>
-          </TableRow>))
-          }
-
-       
+            {tabledata.map((item, idx) => (
+              <TableRow key={idx} className=" mb-5">
+                <TableCell className="bg-[#080B13] mb-5 ">
+                  <div className="flex items-center lg:-ml-6  md:pl-6 w-full text-sm md:text-base leading-5 font-medium text-white">
+                    <div className="mr-3 h-10 w-10 flex-none">
+                      <img
+                        className="w-full h-full object-cover"
+                        src={item.icon}
+                        alt=""
+                      />
+                    </div>
+                    {item.title}
+                  </div>
+                </TableCell>
+                <TableCell className="bg-[#080B13] mb-[5px]">
+                  <p className="text-sm md:text-base -ml-5 mt-2 leading-5 font-medium text-white py- px-5 mb-4">
+                    {item.volume}
+                  </p>
+                </TableCell>
+                <TableCell className="bg-[#080B13] mb-[5px]">
+                  <p className="text-sm md:text-base -ml-5 mt-3  leading-5 font-medium text-white py- px-5 mb-5">
+                    {item.Profit}
+                  </p>
+                </TableCell>
+                <TableCell className="bg-[#080B13] mb-[5px]">
+                  <p className="text-sm md:text-base -ml-5  leading-5 font-medium text-white py- px-5">
+                    {item.Signup}
+                  </p>
+                </TableCell>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </div>
-
     </div>
   );
 }
