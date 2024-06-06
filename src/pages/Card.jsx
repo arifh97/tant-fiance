@@ -30,7 +30,7 @@ export default function Card() {
     datasets: [
       {
         label: '#',
-        data: ['0', '1','2','3','4','5','6','7','8','9','10','0'],
+        data: ['8', '5','6','5','8','6','9','7','5','6','7','6'],
         borderWidth: 1,
         backgroundColor: [
           '#0257FF',
