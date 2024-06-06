@@ -4,11 +4,27 @@
         width: var(--left);
         flex: 0 0 auto;
         background-color: #0A0C14;
+        @include mmd {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            transform: translateX(-100%);
+            @include transition;
+            &.menu-show {
+                transform: translateX(0);
+            }
+        }
     }
     &-right {
         width: calc(100% - var(--left));
         background-color: #03060D;
         flex: 0 0 auto;
+        @include mmd {
+            width: 100%;
+        }
     }
     &-main {
         max-height: calc(100vh - var(--height-minus, 106px));
