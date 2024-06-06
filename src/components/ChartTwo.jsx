@@ -19,13 +19,16 @@ class ChartTwo extends React.Component {
             dataLabels: {
               name: {
                 fontSize: '22px',
+                color: "#888",
               },
               value: {
                 fontSize: '16px',
+                color: "#111",
+                show:true,
               },
               total: {
                 show: true,
-                label: false,
+                label: ' ',
                 formatter: function (w) {
                   return 99;
                 },
@@ -33,7 +36,22 @@ class ChartTwo extends React.Component {
             },
           },
         },
+        
+        stroke: {
+          lineCap: "round",
+        },
         labels: ['Virtual No KYC', 'Virtual KYC', 'Physical'],
+        legend: {
+          show: true,
+          position: 'right',
+          verticalAlign: 'center',
+          fontSize: '20px',
+          fontWeight: '700',
+          labels: {
+            colors: ['#888'],
+            useSeriesColors: false,
+          },
+        },
       },
     };
   }
