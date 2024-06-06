@@ -24,7 +24,7 @@ class ChartTwo extends React.Component {
               value: {
                 fontSize: '16px',
                 color: "#111",
-                show:true,
+                show: true,
               },
               total: {
                 show: true,
@@ -36,7 +36,7 @@ class ChartTwo extends React.Component {
             },
           },
         },
-        
+
         stroke: {
           lineCap: "round",
         },
@@ -44,7 +44,7 @@ class ChartTwo extends React.Component {
         legend: {
           show: true,
           position: 'right',
-          right:'70px',
+          right: '70px',
           verticalAlign: 'center',
           fontSize: '20px',
           fontWeight: '700',
@@ -59,15 +59,13 @@ class ChartTwo extends React.Component {
 
   render() {
     return (
-      <div>
-        <div id="chart">
-          <ReactApexChart
-            options={this.state.options}
-            series={this.state.series}
-            type="radialBar"
-            height={285}
-          />
-        </div>
+      <div className='w-full' id="chart">
+        <ReactApexChart
+          options={this.state.options}
+          series={this.state.series}
+          type="radialBar"
+          height={285}
+        />
       </div>
     );
   }
