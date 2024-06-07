@@ -3,9 +3,13 @@
     gap: 15px !important;
     right: 80px !important;
 }
-
 .card{
     &-content{
+        @include lg{
+            img{
+                top: 0;
+            }
+        }
         @include xxl{
             gap: 30px;
             padding: 46px;
