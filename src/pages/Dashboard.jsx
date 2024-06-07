@@ -113,7 +113,7 @@ export default function Dashboard() {
         {/* bar  section */}
         <div>
           <div className="w-full">
-            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center">
                 <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
@@ -148,7 +148,7 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center">
                 <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
@@ -183,7 +183,7 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+            <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center">
                 <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
@@ -220,7 +220,7 @@ export default function Dashboard() {
             </div>
           </div>
           {/* Total supply */}
-          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
             <div className="flex justify-between items-center mb-3 md:mb-6">
               <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">
                 Total supply{" "}
@@ -250,7 +250,7 @@ export default function Dashboard() {
             </div>
           </div>
           {/* Official links */}
-          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
             <p className="text-sm md:text-base font-semibold text-[#FFFFFF]">
               Official links
             </p>
@@ -271,7 +271,7 @@ export default function Dashboard() {
               </a>
             </div>
           </div>
-          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px]">
+          <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
             <p className="text-sm md:text-base font-semibold text-[#FFFFFF]">
               Socials
             </p>
