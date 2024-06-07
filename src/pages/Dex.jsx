@@ -79,78 +79,52 @@ export default function Dex() {
       Signup: "30",
     },
   ];
+const items = [
+  {
+    title: "VOLUME TODAY",
+    img:`${dexicon}`,
+    des:"$74,097,895,234"
+  },
+  {
+    title: "PROFIT TODAY",
+    img:`${dexicon2}`,
+    des:"$2000"
+  },
+  {
+    title: "SIGNUPS",
+    img:`${dexicon3}`,
+    des:"200"
+  },
+  {
+    title: "USER REGISTERED",
+    img:`${dexicon4}`,
+    des:"122"
+  },
+]
 
   return (
     <div className="dex">
       <div className="grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
-        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
-          <div className="p-3 bg-[#0257FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img
-              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
-              src={dexicon}
-              alt=""
-            />
-          </div>
-          <div>
-            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Volume Today
-            </p>
-            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-              $74,097,895,234
-            </p>
-          </div>
-        </div>
-        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
-          <div className="p-3 bg-[#0276FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img
-              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
-              src={dexicon2}
-              alt=""
-            />
-          </div>
-          <div>
-            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Profit Today
-            </p>
-            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-              $2000
-            </p>
-          </div>
-        </div>
-        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
-          <div className="p-3 bg-[#5302FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img
-              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
-              src={dexicon3}
-              alt=""
-            />
-          </div>
-          <div>
-            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              Signups
-            </p>
-            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-              200
-            </p>
-          </div>
-        </div>
-        <div className=" imtitem flex items-center gap-4 bg-[#080B13] rounded-[10px]  p-3 md:p-4 xxl:p-6 ">
-          <div className="p-3 bg-[#6202FF] rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3">
-            <img
-              className="w-5 h-5   md:w-10 md:h-10   ml-[2px] mt-[2px] md:mt-2 flex-none  lg:mt-[4px]  md:ml-[9px] lg:ml-[9px] xl:ml-[10px]"
-              src={dexicon4}
-              alt=""
-            />
-          </div>
-          <div>
-            <p className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280] -mt-[6px]  lg:mb-3 xl:mb-3 xxl:mb-5  uppercase ">
-              User Registered
-            </p>
-            <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-              200
-            </p>
-          </div>
-        </div>
+        {
+          items.map((item,idx)=>(
+            <div className=" imtitem flex  gap-4 bg-[#080B13] rounded-[10px] items-center md:items-start  p-3 md:p-6  " key={idx}>
+            <div className={`p-3 flex justify-center items-center ${idx==0 && "bg-[#0257FF]"} ${idx==1 && "bg-[#0276FF]"} ${idx==2 && "bg-[#5302FF]"}   ${idx==3 && "bg-[#6202FF]"}   rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3`}>
+              <img
+                className="w-5 h-5   md:w-10 md:h-10  flex-none "
+                src={item.img}
+                alt=""
+              />
+            </div>
+            <div>
+              <h6 className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280]   lg:mb-3 xl:mb-4   uppercase ">
+               {item.title}
+              </h6>
+              <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+              {item.des}
+              </p>
+            </div>
+          </div>))
+        }
       </div>
 
       <div className="overflow-auto">
