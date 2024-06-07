@@ -51,49 +51,63 @@ export default function Card() {
     scales: {
       x: {
         title: {
-          display: false, // Hide x-axis label
+          display: false,
         },
+        grid: {
+          display: false,
+        }
       },
       y: {
+        ticks: {
+          callback: function (value, index, values) {            
+            return `$${value}k`;
+          }
+        },
         beginAtZero: true,
+        grid: {
+          color: '#1D2129',
+        },
+        border: {
+          dash: [6, 6],
+        },
         title: {
-          display: false, // Hide y-axis label
+          display: false
         },
       },
     },
     plugins: {
       legend: {
-        display: false, // Hide the legend
+        display: false,
       },
     },
   };
 
-  const items=[
+  const items = [
     {
       title: "  USD Load Volume Today",
-      des : "$74,097,895,234"
+      des: "$74,097,895,234"
     },
     {
       title: " Registrations",
-      des : "10000"
+      des: "10000"
     },
     {
       title: "CARDS ISSUED",
-      des : "105"
+      des: "105"
     },
     {
       title: "PROFIT TODAY",
-      des : "$68,006.42"
+      des: "$68,006.42"
     },
     {
       title: "TOKEN REDISTRIBUTED",
-      des : "1.22%"
+      des: "1.22%"
     },
     {
       title: "TOKEN BURNT",
-      des : "20"
+      des: "20"
     },
-  
+
   ]
 
   return (
@@ -106,27 +120,27 @@ export default function Card() {
           <div className="w-full lg:w-2/3 card-content-text">
             <div className="text-body grid grid-cols-2 xl:grid-cols-3 justify-center gap-x-[6.5rem] md:gap-y-[1.5rem] lg:gap-x-14  xl:gap-x-[36px] 2xl:gap-x-[163px] gap-y-8  lg:gap-y-[5px] xl:gap-y-[58px] uppercase ">
               {
-                items.map((item,idx)=><div key={idx}>
-                <p className="title text-nowrap text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4">
-                  {item.title}
-                </p>
-                <p className="des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]">
-                {item.des}
-                </p>
-              </div>)
+                items.map((item, idx) => <div key={idx}>
+                  <p className="title text-nowrap text-[12px] md:text-base lg:text-[12px] 2xl:text-lg text-[#6B7280] font-medium leading-4 lg:leading-6 mb-2 lg:mb-1 2xl:mb-4">
+                    {item.title}
+                  </p>
+                  <p className="des text-base leading-[22px] md:text-xl lg:text-6 xl:text-[18px] 2xl:text-[30px] lg:leading-10 font-semibold text-[#D9DCE4]">
+                    {item.des}
+                  </p>
+                </div>)
               }
             </div>
           </div>
         </div>
-        <div className="card-chart lg:flex gap-[10px] md:gap-[20px] lg:gap-[30px] py-[18px] md:mt-3 md:mb-2 md:py-[20px]  lg:py-[15px] w-full">
-          <div className=" w-full lg:w-6/12  p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]">
+        <div className="card-chart lg:flex gap-[10px] md:gap-[20px] lg:gap-[30px] mt-6 lg:mt-[30px] w-full">
+          <div className=" w-full lg:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]">
             <div className="line-chart">
               <div className="flex items-center justify-between mb-4 md:mb-5 lg:mb-[28px] ">
                 <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">
                   Load Volume
                 </h4>
                 <a href="#">
-                  
+
                   <svg
                     width="29"
                     height="30"
@@ -149,14 +163,13 @@ export default function Card() {
               </div>
             </div>
           </div>
-          <div className=" w-full lg:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]">
+          <div className=" w-full lg:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px] mt-6 xl:mt-0">
             <div className="chart-issu-chart h-full flex flex-col">
               <div className="flex items-center justify-between mb-4 md:mb-5 lg:mb-[28px] ">
                 <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">
                   Card Issued
                 </h4>
                 <a href="#">
-                  
                   <svg
                     width="29"
                     height="30"

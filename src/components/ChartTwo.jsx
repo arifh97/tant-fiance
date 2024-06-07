@@ -9,7 +9,7 @@ class ChartTwo extends React.Component {
 
     this.state = {
       series: [85, 75, 65],
-      colors: ["#000"],
+      colors: ['red'],
       options: {
         chart: {
           height: 400,
@@ -19,6 +19,11 @@ class ChartTwo extends React.Component {
           radialBar: {
             hollow: {
               size: "40%"
+            },
+             track: {
+              show: true,
+              background: '#121824',
+              
             },
             dataLabels: {
               showOn: "always",
