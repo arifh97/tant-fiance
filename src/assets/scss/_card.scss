@@ -3,7 +3,16 @@
     gap: 15px !important;
     right: 80px !important;
 }
-
+.apexcharts-legend-marker{
+    margin-right: 6px !important;
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 14px !important;
+}
+.apexcharts-legend-text{
+    font-family: $font-1 !important;
+    color: $white !important;
+}
 .card{
     &-content{
         @include xxl{
