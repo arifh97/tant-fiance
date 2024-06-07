@@ -132,8 +132,8 @@ export default function Card() {
             </div>
           </div>
         </div>
-        <div className="card-chart lg:flex gap-[10px] md:gap-[20px] lg:gap-[30px] mt-6 lg:mt-[30px] w-full">
-          <div className=" w-full lg:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]">
+        <div className="card-chart xl:flex gap-[10px] md:gap-[20px] lg:gap-[30px] mt-6 lg:mt-[30px] w-full">
+          <div className=" w-full xl:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px]">
             <div className="line-chart">
               <div className="flex items-center justify-between mb-4 md:mb-5 lg:mb-[28px] ">
                 <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">
@@ -163,7 +163,7 @@ export default function Card() {
               </div>
             </div>
           </div>
-          <div className=" w-full lg:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px] mt-6 xl:mt-0">
+          <div className=" w-full xl:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px] mt-6 xl:mt-0">
             <div className="chart-issu-chart h-full flex flex-col">
               <div className="flex items-center justify-between mb-4 md:mb-5 lg:mb-[28px] ">
                 <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">

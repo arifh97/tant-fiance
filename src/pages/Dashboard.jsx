@@ -114,7 +114,7 @@ export default function Dashboard() {
         <div>
           <div className="w-full">
             <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
-              <div className="mb-2 md:mb-4 flex justify-between items-center">
+              <div className="mb-2 md:mb-4 flex justify-between items-center rounded-lg">
                 <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
                 </p>
@@ -306,13 +306,15 @@ export default function Dashboard() {
       </div>
 
       <div className="dashboard-main-right flex-1 bg-gray-100">
-        <div className="card block lg:hidden  p-6 bg-[#080B13] mb-3 md:mb-5">
-          <div className="flex items-center mb-2 md:mb-[10px]">
-            <img src={dcicon} alt="" className="h-5 w-5" />
-            <h5 className="ml-2 text-sm md:text-base lg:text-lg font-normal text-white">
+        <div className="card block lg:hidden  p-5 bg-[#080B13] mb-3 md:mb-5">
+          <div className="flex items-center">
+            <div className="h-[19px] w-[18px] -mt-2">
+            <img src={dcicon} alt="" className="h-full w-full object-cover" />
+            </div>
+            <h5 className="ml-2 text-base mb-2 font-normal text-white">
               TANT Finance
             </h5>
-            <span className="ml-1 mt-2 text-[10px] md-[12px] text-[#8591B1] uppercase ">
+            <span className="ml-1 text-[10px] text-[#8591B1] uppercase ">
               TANT
             </span>
           </div>

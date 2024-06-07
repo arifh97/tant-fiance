@@ -23,7 +23,7 @@ export default function NewsCaed({item}) {
         />
       </svg> {item.title}
     </p>
-    <p className="text-sm md:text-base text-[#6B7280] leading-[26px]">
+    <p className="text-sm des md:text-base text-[#6B7280] leading-[26px]">
      {item.des}
       
      {

@@ -1,11 +1,25 @@
+
+.card{
+    @include xl{
+        .apexcharts-legend{
+            position: absolute;
+            left: 45%;
+            right: 24px;
+        }
+    }
+}
+
 .apexcharts {
     &-legend {
         justify-content: center !important;
         gap: 15px !important;
-        right: 80px !important;
-        @media (min-width: 1440px) and (max-width: 1700px) {
-            right: 40px !important;
-        }
+        right: 8% !important;
+    //     @media (min-width: 1440px) and (max-width: 1700px) {
+    //         right: 40px !important;
+    //     }
+    //    @include lg{
+    //     right: 30px !important;
+    //    }
         &-marker {
             margin-right: 6px !important;
             width: 14px !important;
