@@ -1,7 +1,7 @@
 .dashboard {
     --left: 250px;
-    @include xl{
-        --left:200px;
+    @include xl {
+        --left: 200px;
     }
     &-left {
         width: var(--left);
@@ -32,29 +32,29 @@
     &-main {
         max-height: calc(100vh - var(--height-minus, 106px));
         @include custom-scroll(6px);
-        &-wrap{
-            --left-width:390px;
-            --main-gap:40px;
+        &-wrap {
+            --left-width: 390px;
+            --main-gap: 40px;
             gap: var(--main-gap);
-            @include xl{
-                --left-width:340px;
-                --main-gap:30px;
+            @include xl {
+                --left-width: 340px;
+                --main-gap: 30px;
             }
-            @include lg{
-                --left-width:300px;
-                --main-gap:20px;
+            @include lg {
+                --left-width: 300px;
+                --main-gap: 20px;
             }
         }
-        &-left{
+        &-left {
             width: var(--left-width);
             flex: 0 0 auto;
-            @include mmd{
+            @include mmd {
                 width: 100%;
             }
         }
-        &-right{
+        &-right {
             width: calc(100% - var(--left-width) - var(--main-gap));
-            @include mmd{
+            @include mmd {
                 width: 100%;
             }
         }
@@ -67,10 +67,18 @@
     }
 }
 
-.apexcharts{
+.apexcharts {
     &-legend {
-        @include sm{
+        @include sm {
             display: none !important;
         }
+    }
+}
+
+.highcharts {
+    &-root {
+        padding: 6px;
+        border-radius: 8px;
+        background-color: #080B13;
     }
 }

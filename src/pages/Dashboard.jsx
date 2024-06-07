@@ -74,6 +74,7 @@ export default function Dashboard() {
       Updated: "Recently",
     },
   ];
+  const chartFilter = ['1D', '7D', '1M', '1Y', 'All']
   return (
     <div className="flex flex-col-reverse lg:flex-row dashboard-main-wrap">
       <div className="dashboard-main-left w-full bg-gray-200 ">
@@ -337,7 +338,53 @@ export default function Dashboard() {
             </p>
           </div>
         </div>
-        <CandlestickChart />
+        <div className="mb-0 lg:mb-5">
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center gap-2">
+              <div className="hidden lg:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
+                <span className="cursor-pointer inline-block  px-[10px] py-1 rounded-[4px] bg-[#121822] text-white text-xs leading-normal">Price</span>
+                <span className="cursor-pointer inline-block px-[10px] py-1 rounded-[4px] text-[#6B7280] text-xs leading-normal">Market cap</span>
+              </div>
+              <div className="hidden lg:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
+                <span className="cursor-pointer inline-block px-2 py-1 rounded-[4px] bg-[#121822] text-white text-xs leading-normal">
+                  <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 8.36686L4.06 4.79354C4.56667 4.20687 5.46667 4.16686 6.01333 4.72019L6.64667 5.35354C7.19333 5.9002 8.09333 5.86686 8.6 5.28019L11.6667 1.7002" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <span className="cursor-pointer inline-block px-2 py-1 rounded-[4px] text-[#6B7280] text-xs leading-normal">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.6665 1.33333L4.6665 8" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M5.00049 12.6665V14.6665" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12.3325 1.3335V3.3335" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12.3325 9.99984V14.6665" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6.6665 11.7332V8.93317C6.6665 8.41984 6.33317 7.99984 5.33317 7.99984H3.99984C2.99984 7.99984 2.6665 8.41984 2.6665 8.93317V11.7332C2.6665 12.2465 2.99984 12.6665 3.99984 12.6665H5.33317C6.33317 12.6665 6.6665 12.2465 6.6665 11.7332Z" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M14.3325 8.66667V4.66667C14.3325 3.93333 13.9992 3.33333 12.9992 3.33333H11.6659C10.6659 3.33333 10.3325 3.93333 10.3325 4.66667V8.66667C10.3325 9.4 10.6659 10 11.6659 10H12.9992C13.9992 10 14.3325 9.4 14.3325 8.66667Z" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center bg-[#080B12] rounded-lg p-[10px] lg:p-1 gap-[10px]">
+              {chartFilter.map((item, index) => (
+                <button key={index} className={`cursor-pointer inline-block  py-[5px] rounded-[4px] text-xs leading-normal ${index == 0 ? 'px-[10px] bg-[#121822] text-white' : ' bg-transparent text-[#6B7280]'}`}>{item}</button>
+              ))}
+              <svg width="1" height="12" viewBox="0 0 1 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.25" y1="-1.09279e-08" x2="0.250001" y2="12" stroke="#2F3443" strokeWidth="0.5" />
+              </svg>
+              <button className={`cursor-pointer inline-block py-[5px] rounded-[4px] text-xs leading-normal bg-transparent text-[#6B7280] uppercase`}>log</button>
+              <svg width="1" height="12" viewBox="0 0 1 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.25" y1="-1.09279e-08" x2="0.250001" y2="12" stroke="#2F3443" strokeWidth="0.5" />
+              </svg>
+              <button className={`cursor-pointer inline-block pr-[10px] py-[5px] rounded-[4px] text-xs leading-normal bg-transparent text-[#6B7280] uppercase`}>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.21289 7.78662L7.91956 9.49329L9.62622 7.78662" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M7.91992 2.6665V9.4465" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M13.3346 8.12012C13.3346 11.0668 11.3346 13.4535 8.0013 13.4535C4.66797 13.4535 2.66797 11.0668 2.66797 8.12012" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <CandlestickChart />
+        </div>
         <div className="hidden lg:block">
           <Dashboardtable tabledata={tabledata} />
         </div>

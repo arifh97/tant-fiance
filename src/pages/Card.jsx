@@ -100,7 +100,7 @@ export default function Card() {
     <div className="card  ">
       <div className=" mb-[32px] w-full ">
         <div className="card-content lg:flex items-center gap-10 md:gap-[60px] lg:gap-5 xl:gap-8 2xl:gap-[80px] p-3  lg:p-4 xl:p-8   2xl:p-[50px] w-full bg-[#080B13] rounded-[20px] ">
-          <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
+          <div className="w-full lg:w-[64.33%] xl:w-1/3 mb-6 lg:mb-0">
             <img className="w-full" src={card} alt="" />
           </div>
           <div className="w-full lg:w-2/3 card-content-text">
