@@ -82,3 +82,7 @@
         background-color: #080B13;
     }
 }
+
+.overflow-auto{
+    @include custom-scroll(6px)
+}
