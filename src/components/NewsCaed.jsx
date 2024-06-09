@@ -40,7 +40,7 @@ export default function NewsCaed({item}) {
         className="h-7 w-7 mr-[10px] ml-[10px]"
       />
       <p className="text-base text-[#EDEDED] mr-4">{item.iconname}</p>
-      <p className="flex  items-center text-[10px] md:text-sm text-[#6B7280] leading-[14px]">
+      <p className="flex  items-center text-xs md:text-sm text-[#6B7280] leading-[14px]">
         <svg
         className="mr-1"
           width="17"

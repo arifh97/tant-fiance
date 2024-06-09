@@ -115,10 +115,10 @@ export default function Dashboard() {
           <div className="w-full">
             <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center rounded-lg">
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
                 </p>
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px]  text-[#FFFFFF]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px]  text-[#FFFFFF]">
                   <svg
                     className="mr-1 text-[12px] md:text-sm font-normal text-[#16C784] "
                     width="16"
@@ -143,17 +143,17 @@ export default function Dashboard() {
                   className="absolute z-20 top-1 left-[2px]"
                 />
                 <div className="bg-[#232B3D] w-full  h-[5px] rounded-[30px]"></div>
-                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
+                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[12px] md:text-[14px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
                   #1
                 </p>
               </div>
             </div>
             <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center">
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
                 </p>
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px]  text-[#FFFFFF]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px]  text-[#FFFFFF]">
                   <svg
                     className="mr-1 text-[12px] md:text-sm font-normal text-[#16C784] "
                     width="16"
@@ -178,17 +178,17 @@ export default function Dashboard() {
                   className="absolute z-20 top-1 left-[2px]"
                 />
                 <div className="bg-[#232B3D] w-full  h-[5px] rounded-[30px]"></div>
-                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
+                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[12px] md:text-[14px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
                   #2
                 </p>
               </div>
             </div>
             <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
               <div className="mb-2 md:mb-4 flex justify-between items-center">
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1]">
                   Market cap <img className="ml-1" src={minicardicon} alt="" />
                 </p>
-                <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px]  text-[#FFFFFF]">
+                <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px]  text-[#FFFFFF]">
                   <svg
                     className="mr-1 text-[12px] md:text-sm font-normal text-[#16C784] "
                     width="16"
@@ -213,7 +213,7 @@ export default function Dashboard() {
                   className="absolute z-20 top-1 left-[2px]"
                 />
                 <div className="bg-[#232B3D] w-full  h-[5px] rounded-[30px]"></div>
-                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[10px] md:text-[12px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
+                <p className="py-[2px] px-[6px] bg-[#232B3D] text-[12px] md:text-[14px]  leading-[18px] rounded-[4px] font-normal  text-[#8591B1]">
                   #3
                 </p>
               </div>
@@ -222,29 +222,29 @@ export default function Dashboard() {
           {/* Total supply */}
           <div className="bg-[#080B13] p-2 md:p-4 mb-[5px] rounded-lg">
             <div className="flex justify-between items-center mb-3 md:mb-6">
-              <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">
+              <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1] ">
                 Total supply{" "}
                 <img className="ml-1 w-3 h-3" src={minicardicon} alt="" />
               </p>
-              <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">
+              <p className="text-[12px] md:text-[14px]  leading-[18px] text-[#FFFFFF]">
                 $847,847,191,990
               </p>
             </div>
             <div className=" flex justify-between items-center mb-3 md:mb-6">
-              <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">
+              <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1] ">
                 Max. supply{" "}
                 <img className="ml-1 w-3 h-3" src={minicardicon} alt="" />
               </p>
-              <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">
+              <p className="text-[12px] md:text-[14px]  leading-[18px] text-[#FFFFFF]">
                 $847,847,191,990
               </p>
             </div>
             <div className="flex justify-between items-center">
-              <p className="flex items-center text-[10px] md:text-[12px]  leading-[18px] text-[#8591B1] ">
+              <p className="flex items-center text-[12px] md:text-[14px]  leading-[18px] text-[#8591B1] ">
                 Fully diluted market cap
                 <img className="ml-1 w-3 h-3" src={minicardicon} alt="" />
               </p>
-              <p className="text-[10px] md:text-[12px]  leading-[18px] text-[#FFFFFF]">
+              <p className="text-[12px] md:text-[14px]  leading-[18px] text-[#FFFFFF]">
                 $847,847,191,990
               </p>
             </div>
@@ -343,18 +343,18 @@ export default function Dashboard() {
         <div className="mb-0 lg:mb-5">
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-2">
-              <div className="hidden lg:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
-                <span className="cursor-pointer inline-block  px-[10px] py-1 rounded-[4px] bg-[#121822] text-white text-xs leading-normal">Price</span>
-                <span className="cursor-pointer inline-block px-[10px] py-1 rounded-[4px] text-[#6B7280] text-xs leading-normal">Market cap</span>
+              <div className="hidden xl:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
+                <span className="cursor-pointer inline-block  px-[10px] py-1 rounded-[4px] bg-[#121822] text-white text-sm leading-normal">Price</span>
+                <span className="cursor-pointer inline-block px-[10px] py-1 rounded-[4px] text-[#6B7280] text-sm leading-normal">Market cap</span>
               </div>
-              <div className="hidden lg:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
-                <span className="cursor-pointer inline-block px-2 py-1 rounded-[4px] bg-[#121822] text-white text-xs leading-normal">
+              <div className="hidden xl:flex items-center bg-[#080B12] rounded-lg p-1 gap-[10px]">
+                <span className="cursor-pointer inline-block px-2 py-1 rounded-[4px] bg-[#121822] text-white text-sm leading-normal">
                   <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.36686L4.06 4.79354C4.56667 4.20687 5.46667 4.16686 6.01333 4.72019L6.64667 5.35354C7.19333 5.9002 8.09333 5.86686 8.6 5.28019L11.6667 1.7002" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <span className="cursor-pointer inline-block px-2 py-1 rounded-[4px] text-[#6B7280] text-xs leading-normal">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="19" height="17" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.6665 1.33333L4.6665 8" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M5.00049 12.6665V14.6665" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M12.3325 1.3335V3.3335" stroke="#6B7280" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -365,19 +365,19 @@ export default function Dashboard() {
                 </span>
               </div>
             </div>
-            <div className="flex items-center bg-[#080B12] rounded-lg p-[10px] lg:p-1 gap-[10px]">
+            <div className="flex items-center bg-[#080B12] rounded-lg p-[10px] lg:p-1 gap-[10px] w-full md:w-auto">
               {chartFilter.map((item, index) => (
-                <button key={index} className={`cursor-pointer inline-block  py-[5px] rounded-[4px] text-xs leading-normal ${index == 0 ? 'px-[10px] bg-[#121822] text-white' : ' bg-transparent text-[#6B7280]'}`}>{item}</button>
+                <button key={index} className={`cursor-pointer inline-block w-full  py-[5px] rounded-[4px] text-sm leading-normal ${index == 0 ? 'px-[10px] bg-[#121822] text-white' : ' bg-transparent text-[#6B7280]'}`}>{item}</button>
               ))}
               <svg width="1" height="12" viewBox="0 0 1 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0.25" y1="-1.09279e-08" x2="0.250001" y2="12" stroke="#2F3443" strokeWidth="0.5" />
               </svg>
-              <button className={`cursor-pointer inline-block py-[5px] rounded-[4px] text-xs leading-normal bg-transparent text-[#6B7280] uppercase`}>log</button>
+              <button className={`cursor-pointer inline-block py-[5px] rounded-[4px] text-sm leading-normal bg-transparent text-[#6B7280] uppercase`}>log</button>
               <svg width="1" height="12" viewBox="0 0 1 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0.25" y1="-1.09279e-08" x2="0.250001" y2="12" stroke="#2F3443" strokeWidth="0.5" />
               </svg>
               <button className={`cursor-pointer inline-block pr-[10px] py-[5px] rounded-[4px] text-xs leading-normal bg-transparent text-[#6B7280] uppercase`}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.21289 7.78662L7.91956 9.49329L9.62622 7.78662" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M7.91992 2.6665V9.4465" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M13.3346 8.12012C13.3346 11.0668 11.3346 13.4535 8.0013 13.4535C4.66797 13.4535 2.66797 11.0668 2.66797 8.12012" stroke="#6B7280" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
