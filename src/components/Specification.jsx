@@ -104,7 +104,7 @@ export default function Specification() {
             viewport={{ once: true, amount: 0 }}
             className="flex items-center flex-wrap gap-4 justify-center">
             <BuyButton />
-            <CButton className="bg-[#1F1F1F] text-white" target="_blank" url={"https://t.me/solifysolana"} color=''>Whitepaper</CButton>
+            <CButton className="bg-[#1F1F1F] text-white" target="_blank" url={"https://t.me/solifysolana"} color=''>Telegram</CButton>
           </motion.div>
         </Col>
       </Container>
