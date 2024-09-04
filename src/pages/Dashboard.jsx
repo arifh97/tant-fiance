@@ -11,6 +11,8 @@ import dicon3 from "../assets/img/dicon3.svg";
 import dicon4 from "../assets/img/dicon4.svg";
 import dicon5 from "../assets/img/dicon5.svg";
 import Dashboardtable from "./Dashboardtable";
+import coming_soon from '../assets/img/coming-soon.png'
+
 export default function Dashboard() {
   const tabledata = [
     {
@@ -387,7 +389,8 @@ export default function Dashboard() {
           </div>
           <CandlestickChart />
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block relative">
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10" style={{backdropFilter:'blur(12px)'}}><img src={coming_soon} className="w-full h-full" alt="" /></div>
           <Dashboardtable tabledata={tabledata} />
         </div>
       </div>
