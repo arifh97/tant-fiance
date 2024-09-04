@@ -7,52 +7,52 @@ import { motion } from "framer-motion";
 export default function Faq() {
   const faqs = [
     {
-      title: `What is Tant Finance?`,
-      des: `Tant Finance is a decentralised finance platform that aims to change the way people use financial services on the blockchain.
+      title: `What is SOLIFY?`,
+      des: `SOLIFY is a decentralised finance platform that aims to change the way people use financial services on the blockchain.
       `
     },
     {
-      title: `What is the Tant Finance presale token?`,
-      des: `Tant Finance presale token is a digital asset offered to early investors during the presale stage of the project, providing them with an opportunity to acquire tokens at a discounted price before the public sale.
+      title: `When will Solify launch?`,
+      des: `SOLIFY presale token is a digital asset offered to early investors during the presale stage of the project, providing them with an opportunity to acquire tokens at a discounted price before the public sale.
       `
     },
     {
-      title: `When will Tant Finance launch?`,
-      des: `Tant Finance tokens can be acquired on two major exchanges.
+      title: `How can I participate in Solify tokens?`,
+      des: `SOLIFY tokens can be acquired on two major exchanges.
       `
-    },
-    {
-      title: `How can I participate in Tant Finance tokens?`,
-      des: `To participate in buying Tant Finance tokens, you can visit our how to buy link and follow the instructions provided on the token pre sale page. You'll find all the necessary details and steps to purchase Tant Finance tokens securely.`
     },
     {
       title: `When can I apply for my Virtual crypto debit card?`,
+      des: `To participate in buying SOLIFY tokens, you can visit our how to buy link and follow the instructions provided on the token pre sale page. You'll find all the necessary details and steps to purchase SOLIFY tokens securely.`
+    },
+    {
+      title: `When can I apply for my Physical Crypto debit Card?`,
       des: `Once phase two has conclude you will be able to apply for your Virtual crypto debit card.`
     },
     {
       title: `When can I apply for my Physical Crypto debit Card?`,
-      des: `Once Tant finance pre sale stage 10 has been completed, 3 months later we will launch the physical Crypto debit card.`
+      des: `Once SOLIFY pre sale stage 10 has been completed, 3 months later we will launch the physical Crypto debit card.`
     },
     {
-      title: `What is the minimum investment required to participate in the Tant Finance presale token event?`,
-      des: `he minimum investment requirement for participation in the Tant Finance presale is $50`
-    },
-    {
-      title: `Can I stake Tant Finance tokens?`,
-      des: `Yes, Tant Finance may offer staking opportunities where token holders can lock up their tokens to support the network's security, earn rewards, or participate in governance decisions.`
-    },
-    {
-      title: `Does Tant Finance offer a crypto debit card?`,
-      des: `Yes, Tant Finance is in the process of offering crypto debit card that allows users to spend their cryptocurrency holdings  worldwide, offering convenience and flexibility in managing digital assets.`
-    },
-    {
-      title: `When will I receive my pre tokens?`,
-      des: `You will be able to claim tokens once the pre sale concludes at stage 10.`
+      title: `Does Solify Finance offer a crypto debit card?`,
+      des: `he minimum investment requirement for participation in the SOLIFY presale is $50`
     },
     {
       title: `When will the Crypto currency exchange launch?`,
-      des: `Once the pre sale token has been completely sold out. 9 months later we will launch the Crypto currency exchange.`
+      des: `Yes, SOLIFY may offer staking opportunities where token holders can lock up their tokens to support the network's security, earn rewards, or participate in governance decisions.`
     },
+    // {
+    //   title: `Does SOLIFY offer a crypto debit card?`,
+    //   des: `Yes, SOLIFY is in the process of offering crypto debit card that allows users to spend their cryptocurrency holdings  worldwide, offering convenience and flexibility in managing digital assets.`
+    // },
+    // {
+    //   title: `When will I receive my pre tokens?`,
+    //   des: `You will be able to claim tokens once the pre sale concludes at stage 10.`
+    // },
+    // {
+    //   title: `When will the Crypto currency exchange launch?`,
+    //   des: `Once the pre sale token has been completely sold out. 9 months later we will launch the Crypto currency exchange.`
+    // },
   ]
 
   return (

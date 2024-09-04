@@ -65,14 +65,14 @@ export default function HowToWork() {
                 initial={{ x: -100 }}
                 whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
-                className="absolute top-full -left-[var(--width)/2] icon -mt-5">
+                className="absolute top-full -left-[var(--width)/2] icon -mt-[100px]">
                 <img src={bitcoin} alt="" />
               </motion.div>
               <motion.div
                 initial={{ x: 100 }}
                 whileInView={{ x: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
-                className="absolute top-full -right-[var(--width)/2] icon -mt-5">
+                className="absolute top-full -right-[var(--width)/2] icon -mt-[100px]">
                 <img src={usd} alt="" />
               </motion.div>
               <motion.div
@@ -96,9 +96,9 @@ export default function HowToWork() {
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0 }}>
-              <h3 className='text-center mt-16 md:mt-5 lg:mt-7 px-[25%] md:px-0 !leading-[145%] text-2xl md:text-4xl lg:text-[44px] font-medium'>How Tant Finance Works</h3>
+              <h3 className='text-center mt-16 md:mt-5 lg:mt-7 px-[25%] md:px-0 !leading-[145%] text-2xl md:text-4xl lg:text-[44px] font-medium opacity-0'>How SOLIFY Works</h3>
               {/* for mobile */}
-              <div className='mt-10 md:hidden px-4'>
+              {/* <div className='mt-10 md:hidden px-4 opacity-0'>
                 <div className="flex items-center justify-between">
                   <div className="howTo-card">
                     <div className="w-[96px] h-[94px] mx-auto bg-gradient p-[1px] rounded-3 md:rounded-[20px] overflow-hidden flex-auto flex-grow-0 flex-shrink-0">
@@ -263,9 +263,9 @@ export default function HowToWork() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* for mobile */}
-              <div className='howTo-inner hidden md:flex flex-wrap items-center mt-14 md:mt-20 lg:mt-24 xl:mt-[160px]'>
+              {/* <div className='howTo-inner opacity-0 hidden md:flex flex-wrap items-center mt-14 md:mt-20 lg:mt-24 xl:mt-[160px]'>
                 {workItem.map((item, index) => (
                   <>
                     <div className={`w-full lg:w-1/2 ${index != workItem.length - 1 ? 'mb-6 md:mb-8 lg:mb-0' : ''}`} key={index}>
@@ -378,7 +378,7 @@ export default function HowToWork() {
                     ) : ''}
                   </>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </Col >

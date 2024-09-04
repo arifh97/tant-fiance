@@ -3,7 +3,7 @@
 @tailwind utilities;
 // 
 body {
-    @apply bg-bg text-body font-main font-normal text-base leading-normal;
+    @apply bg-black text-body font-main font-normal text-base leading-normal;
 }
 
 h1,
@@ -46,6 +46,12 @@ input[type=number] {
     appearance: textfield;
 }
 
+.hover\:bg-primary {
+    &:hover {
+        background-color: $primary !important;
+    }
+}
+
 #root {
     overflow: hidden !important;
     --padding-y: 130px;
@@ -80,7 +86,7 @@ input[type=number] {
     }
     &-shape {
         opacity: 0.4;
-        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+        background: var(--Liner, linear-gradient(97deg, #161BBE -0.25%, #BD09E0 100.69%));
         filter: blur(300px);
     }
     &-padding {
@@ -92,7 +98,7 @@ input[type=number] {
     &-meta {
         font-size: 18px;
         line-height: 125%;
-        background: linear-gradient(260deg, #0FF 12.71%, #0152FF 132.82%);
+        background: linear-gradient(97deg, #6C70FF -11.9%, #BD09E0 100.74%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -117,7 +123,7 @@ input[type=number] {
 a,
 button {
     &.bg-primary {
-        background: var(--web_gradient, linear-gradient(292deg, #0FF -34.93%, #0152FF 84.08%));
+        background: var(--Liner, linear-gradient(97deg, #161BBE -0.25%, #BD09E0 100.69%));
         background-size: var(--size, 100%) auto;
         &:hover {
             --size: 200%;

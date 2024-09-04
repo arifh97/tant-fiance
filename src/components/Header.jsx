@@ -49,6 +49,7 @@ export default function Header() {
 
   return (
     <>
+      <div className="heading-clear"></div>
       <header className={`heading top-0 left-0 z-10 w-full ${scrolled ? 'fixed' : 'absolute'}`}>
         <Container>
           <Col className="w-full flex items-center justify-between">

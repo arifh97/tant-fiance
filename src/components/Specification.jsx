@@ -43,7 +43,7 @@ export default function Specification() {
       <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape three left-[var(--position)] top-0"></div>
       <Container>
         <Col className="w-full text-center">
-          <CommonTitle className='mb-7 md:mb-9 lg:mb-11' title="TANT Finance Specification" />
+          <CommonTitle className='mb-7 md:mb-9 lg:mb-11' title="SOLIFY Specification" />
         </Col>
         <Col className="w-full">
           <motion.div

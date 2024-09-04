@@ -82,7 +82,7 @@ export default function Dashboard() {
           <div className="flex items-center mb-2 md:mb-[10px]">
             <img src={dcicon} alt="" className="h-5 w-5" />
             <h5 className="ml-2 text-sm md:text-base lg:text-lg font-normal text-white">
-              TANT Finance
+              SOLIFY
             </h5>
             <span className="ml-1 mt-2 text-[10px] md-[12px] text-[#8591B1] uppercase ">
               TANT
@@ -312,7 +312,7 @@ export default function Dashboard() {
             <img src={dcicon} alt="" className="h-full w-full object-cover" />
             </div>
             <h5 className="ml-2 text-base mb-2 font-normal text-white">
-              TANT Finance
+              SOLIFY
             </h5>
             <span className="ml-1 text-[10px] text-[#8591B1] uppercase ">
               TANT

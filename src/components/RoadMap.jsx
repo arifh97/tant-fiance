@@ -147,7 +147,7 @@ export default function RoadMap() {
         <Col className="w-full">
           <div className="flex flex-wrap md:flex-nowrap items-center gap-4 mb-10 md:mb-16 lg:mb-20">
             <div className="w-full md:w-9/12 lg:w-7/12">
-              <CommonTitle className="!mb-0" title="Our Roadmap" des="TANT Finance pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions." />
+              <CommonTitle className="!mb-0" title="Our Roadmap" des="SOLIFY pioneers DeFi with futuristic debit cards, smart gateways, and AI lending, setting new standards in secure transactions." />
             </div>
             <div className="w-full md:w-3/12 lg:w-5/12">
               <motion.div
@@ -155,10 +155,10 @@ export default function RoadMap() {
                 whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
                 viewport={{ once: true, amount: 0 }}
                 className="flex items-center gap-4 md:gap-5 md:justify-end">
-                <Button onClick={prevSlide} disabled={isPrevSlide} color="" className="bg-[#181819] hover:bg-primary w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
+                <Button onClick={prevSlide} disabled={isPrevSlide} color="" className="bg-[#181819] hover:bg-[#B70CDE] w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
                   <FaAngleLeft />
                 </Button>
-                <Button onClick={nextSlide} disabled={isNextSlide} color="" className="bg-[#181819] hover:bg-primary w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
+                <Button onClick={nextSlide} disabled={isNextSlide} color="" className="bg-[#181819] hover:bg-[#B70CDE] w-10 h-10 md:w-14 md:h-14 lg:w-[68px] lg:h-[68px] min-w-0 rounded-full p-0 text-xl md:text-2xl lg:text-3xl text-white">
                   <FaAngleRight />
                 </Button>
               </motion.div>

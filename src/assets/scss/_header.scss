@@ -28,6 +28,9 @@
             --bs-navbar-padding-y: 1rem;
         }
     }
+    &-clear {
+        height: 116px;
+    }
     &-menu {
         @include mmd {
             position: fixed;

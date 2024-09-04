@@ -1,5 +1,5 @@
 import { Container, Col, CButton } from './CAllComponent'
-import BannerRight from './BannerRight'
+import img from '../assets/img/banner-img.png'
 import { motion } from "framer-motion";
 import BuyButton from './BuyButton';
 import pdf from '../assets/whitepaper.pdf'
@@ -18,7 +18,7 @@ export default function Banner() {
     </defs>
     </svg>
     `,
-    
+
     `<svg class="mx-auto" width="106" height="35" viewBox="0 0 106 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect x="0.875977" y="0.505371" width="104.326" height="33.6801" fill="url(#pattern0_282_758)"/>
     <defs>
@@ -29,7 +29,7 @@ export default function Banner() {
     </defs>
     </svg>
     `,
-    
+
     `<svg width="157" height="45" viewBox="0 0 157 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect x="0.727539" y="0.32373" width="155.447" height="44.0432" fill="url(#pattern0_282_757)"/>
     <defs>
@@ -85,48 +85,55 @@ export default function Banner() {
   ];
 
   return (
-    <div className="banner pt-[118px] md:pt-[164px] bg-contain bg-right-top bg-no-repeat bg-banner relative z-1 bg-[url('../img/banner-bg.png')]">
-      <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape left-[var(--position)] top-[var(--position)]"></div>
-      <Container rowClass="">
-        <Col className="w-full lg:w-6/12">
-          <motion.div
-            initial={{ y: 100 }}
-            whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
-            viewport={{ once: true, amount: 0 }}
-            className="banner-content text-center mb-10 lg:mb-0 md:px-[10%] lg:p-0 lg:text-left pt-0 md:10 lg:pt-16 xl:pt-28">
-            <span className="common-meta block mb-1 md:mb-3">TANT Finance Presale!</span>
-            <h1 className='mb-[10px] md:mb-6 font-semibold text-[34px] md:text-[54px] lg:text-[62px] 2xl:text-[68px] leading-tight'>Make your future with <span>TANT Finance</span></h1>
-            <p className='mb-6 md:mb-7 lg:mb-10 text-sm md:text-lg lg:text-[22px] leading-relaxed'>TANT Finance pioneers DeFi with futuristic debit cards, smart gateways and AI lending, setting new standards in secure transactions.</p>
-            <div className="flex items-center flex-wrap gap-4 justify-center lg:justify-start">
-              <BuyButton />
-              <CButton className="bg-[#1F1F1F] text-white" url={pdf} target="_blank" color=''>Whitepaper</CButton>
-            </div>
-          </motion.div>
-        </Col>
-        <Col className="w-full lg:w-6/12">
-          <BannerRight />
-        </Col>
-        <div className="w-full mt-4 md:mt-10 md:px-3 brands relative z-[1]">
-          <motion.div
-            initial={{ y: 100 }}
-            whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <span
-              className='block text-center md:text-start text-base lg:text-xl mb-3 md:mb-4 lg:mb-7 uppercase text-white'>AS SEEN IN</span>
-            <div
-              className="overflow-auto hide-scroll">
-              <div className="flex items-center gap-6 justify-center md:justify-between w-max lg:w-auto">
-                {brands.map((item, index) => (
-                  <div className='w-full' key={index} dangerouslySetInnerHTML={{ __html: item }}>
-                    {/* <img className='h-6 md:h-auto' src={item} alt="" /> */}
-                  </div>
-                ))}
+    <>
+      <div className="banner bg-contain bg-right-top bg-no-repeat bg-banner relative z-1 bg-[url('../img/banner-bg.png')]">
+        <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape left-[var(--position)] top-[var(--position)]"></div>
+        <Container rowClass="items-end">
+          <Col className="w-full lg:w-6/12">
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
+              viewport={{ once: true, amount: 0 }}
+              className="banner-content text-center mb-10 lg:mb-0 md:px-[10%] lg:px-0 lg:text-left">
+              <span className="common-meta block mb-1 md:mb-3 uppercase">welcome to solify</span>
+              <h1 className='mb-[10px] md:mb-6 font-semibold text-[34px] md:text-[54px] lg:text-[62px] 2xl:text-[68px] leading-tight'>Make your future with <span>SOLIFY</span></h1>
+              <p className='mb-6 md:mb-7 lg:mb-10 text-sm md:text-lg lg:text-[22px] leading-relaxed'>SOLIFY pioneers DeFi with frontrunninv sniper in collaboration with stacked validators to maximise the amount of your transactions landing on chain, futuristic debit cards, smart gateways for easy trading, and Al lending, setting new standards in secure transactions.</p>
+              <div className="flex items-center flex-wrap gap-4 justify-center lg:justify-start">
+                <BuyButton />
+                <CButton className="bg-[#1F1F1F] text-white" url={pdf} target="_blank" color=''>Whitepaper</CButton>
               </div>
-            </div>
-          </motion.div>
-        </div>
-      </Container>
-    </div>
+            </motion.div>
+          </Col>
+          <Col className="w-full lg:w-6/12">
+            <div className="banner-img"><img src={img} alt="" className='mx-auto' /></div>
+          </Col>
+
+        </Container>
+      </div>
+      <div className="w-full bg-[#100E0F] pt-5 md:pt-8 pb-8 md:pb-14">
+        <Container>
+          <Col className="w-full">
+            <motion.div
+              initial={{ y: 100 }}
+              whileInView={{ y: 0, transition: { duration: .5, delay: 0.1 } }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span
+                className='block text-center md:text-start text-base lg:text-xl mb-3 md:mb-4 lg:mb-7 uppercase text-white'>AS SEEN IN</span>
+              <div
+                className="overflow-auto hide-scroll">
+                <div className="flex items-center gap-6 justify-center md:justify-between w-max lg:w-auto">
+                  {brands.map((item, index) => (
+                    <div className='w-full' key={index} dangerouslySetInnerHTML={{ __html: item }}>
+                      {/* <img className='h-6 md:h-auto' src={item} alt="" /> */}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </Col>
+        </Container>
+      </div>
+    </>
   )
 }

@@ -60,11 +60,11 @@ export default function Footer() {
               </div>
               <div className='w-full md:w-auto'>
                 <p className={`md:mb-4 text-opacity-55 ${font20}`}>Support</p>
-                <a href="mailto:support@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>support@tantfinance.io</a>
+                <a href="mailto:support@solify.io" className={`hover:text-primary-700 ${font20}`}>support@solify.io</a>
               </div>
               <div className='w-full md:w-auto'>
                 <p className={`md:mb-4 text-opacity-55 ${font20}`}>Marketing</p>
-                <a href="mailto:socials@tantfinance.io" className={`hover:text-primary-700 ${font20}`}>socials@tantfinance.io</a>
+                <a href="mailto:socials@solify.io" className={`hover:text-primary-700 ${font20}`}>socials@solify.io</a>
               </div>
               <div className='w-full md:w-auto xl:w-[16%]'>
                 <p className={`mb-2 md:mb-4 text-opacity-55 ${font20}`}>We support</p>
@@ -97,7 +97,7 @@ export default function Footer() {
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
               viewport={{ once: true, amount: 0 }}
-              className={`text-center mb-5 md:mb-6 lg:mb-9 tracking-[-0.8px] ${font20}`}>2024 TANT Finance - All Rights Reserved</motion.p>
+              className={`text-center mb-5 md:mb-6 lg:mb-9 tracking-[-0.8px] text-opacity-55 ${font20}`}>2024 SOLIFY - All Rights Reserved</motion.p>
             <div>
               <motion.p
                 initial={{ y: 100 }}
@@ -105,7 +105,7 @@ export default function Footer() {
                 viewport={{ once: true, amount: 0 }}
                 className='text-white mb-0 !leading-relaxed mt-8 md:mt-0'>
                 <strong className='fw-bold block text-sm md:text-lg lg:text-xl'>Disclaimer: </strong>
-                <span className='text-sm text-opacity-70 block md:text-opacity-100 mt-6 !leading-relaxed md:mt-0'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>
+                <span className='text-sm text-white text-opacity-55 block mt-6 !leading-relaxed md:mt-0'>The information provided on this website is for informational purposes only and does not constitute investment advice or an offer to purchase any securities. Participation in the crypto presale involves significant risk and may not be suitable for all investors. Please ensure you fully understand the risks involved and seek independent advice if necessary. The value of cryptocurrencies can be highly volatile, and you may lose all or part of your investment. We make no guarantees regarding the future performance of any digital asset.</span>
               </motion.p>
             </div>
           </Col>

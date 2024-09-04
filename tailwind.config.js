@@ -17,8 +17,8 @@ export default {
             '2xl': '1300px'
         },
         colors: {
-            primary: '#00FFFF',
-            secondary: '#0152FF',
+            primary: '#B70CDE',
+            secondary: '#221BC0',
             body: '#B2B0B9',
             bg: '#060706',
             white: '#ffffff',

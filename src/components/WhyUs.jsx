@@ -77,7 +77,7 @@ export default function WhyUs() {
               <p className='font-regular text-white text-xl md:text-2xl !leading-[145%] mb-4 md:mb-6'>Subscribe for offers and rewards</p>
               <form ref={form} onSubmit={sendEmail} className="why-form rounded-full overflow-hidden relative z-10">
                 <input type="email" name="name" className='text-lg leading-[145%] py-[14px] md:py-5 px-6 lg:py-[30px] lg:px-10 border-0 bg-[#060706] text-white text-opacity-60 w-full rounded-full outline-none shadow-none' placeholder='Email Address' />
-                <Button color="primary" className="h-[calc(100%-14px)] absolute top-1/2 right-2 -translate-y-1/2 text-white rounded-full text-lg inline-block sm:px-4 sm:py-3 md:px-6 md:py-3 lg:px-10 lg:py-[16px]" type="submit">
+                <Button color="primary" className="h-[calc(100%-14px)] absolute top-1/2 right-2 -translate-y-1/2 text-white rounded-full text-lg inline-block px-5 py-3 md:px-8 md:py-3 lg:px-12 lg:py-[16px]" type="submit">
                   Subscribe
                 </Button>
               </form>
