@@ -194,7 +194,7 @@ export default function Features() {
 </defs>
 </svg>`,
       title: 'Token Burn',
-      des: `From the profit the TANT Ecosystem generates we will buy back TANT and burn it to decrease supply and stay deflationary.`
+      des: `From the profit the SOLIFY Ecosystem generates we will buy back SOLIFY and burn it to decrease supply and stay deflationary.`
     },
   ]
   return (

@@ -74,7 +74,7 @@ export default function RoadMap() {
         },
         {
           isChecked: false,
-          label: "Uniswap Launch",
+          label: "Solana Launch",
         },
       ]
     },

@@ -9,27 +9,41 @@ import BuyButton from './BuyButton';
 import pdf from '../assets/whitepaper.pdf'
 
 export default function Specification() {
-  const base_icon = `<svg class="h-full" width="131" height="58" viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_0_586)">
-                      <path d="M20.4648 49C31.5304 49 40.5 40.0464 40.5 29C40.5 17.9536 31.5304 9 20.4648 9C9.9672 9 1.356 17.0608 0.5 27.3184H26.9816V30.6816H0.5C1.356 40.9392 9.9672 49 20.4648 49Z" fill="#0052FF"/>
-                      </g>
-                      <g filter="url(#filter0_b_0_586)">
-                      <path d="M69.804 35.764C69.804 40.372 66.42 43 61.344 43H52.416V17.152H60.804C65.808 17.152 68.76 19.564 68.76 23.812C68.76 26.368 67.14 28.564 64.512 29.536C68.004 30.4 69.804 32.668 69.804 35.764ZM60.66 19.348H54.936V28.564H60.66C64.152 28.564 66.132 26.836 66.132 23.956C66.132 21.076 64.152 19.348 60.66 19.348ZM61.2 30.76H54.936V40.804H61.2C64.98 40.804 67.212 38.932 67.212 35.692C67.212 32.596 64.98 30.76 61.2 30.76ZM86.3648 43V39.544C85.2488 41.92 82.9448 43.36 79.9928 43.36C76.0688 43.36 73.5128 41.164 73.5128 37.744C73.5128 34.036 76.4648 32.092 82.2248 32.092C83.3768 32.092 84.2408 32.164 86.1128 32.308V30.724C86.1128 27.556 84.4208 25.684 81.5408 25.684C78.4448 25.684 76.5008 27.592 76.4648 30.688H74.1608C74.2688 26.476 77.1848 23.668 81.5048 23.668C85.9328 23.668 88.5248 26.26 88.5248 30.652V43H86.3648ZM75.9248 37.672C75.9248 39.976 77.6888 41.524 80.3528 41.524C83.8808 41.524 86.1128 39.22 86.1128 35.656V33.964C84.4928 33.82 83.3768 33.784 82.3328 33.784C78.0128 33.784 75.9248 35.044 75.9248 37.672ZM108.01 37.708C108.01 41.2 105.202 43.36 100.522 43.36C95.8058 43.36 92.9258 40.984 92.5658 37.06H94.9778C95.1578 39.76 97.2818 41.452 100.522 41.452C103.618 41.452 105.49 40.264 105.49 38.104C105.49 36.232 104.41 35.368 101.53 34.792L98.7938 34.252C95.1938 33.568 93.2858 31.804 93.2858 29.068C93.2858 25.9 96.0938 23.668 100.234 23.668C104.59 23.668 107.47 26.008 107.758 29.788H105.382C105.13 27.16 103.222 25.612 100.234 25.612C97.5698 25.612 95.7338 26.872 95.7338 28.852C95.7338 30.724 96.8858 31.624 99.6938 32.164L102.538 32.704C106.318 33.424 108.01 35.008 108.01 37.708ZM119.84 43.36C114.512 43.36 110.984 39.364 110.984 33.352C110.984 27.808 114.656 23.668 119.696 23.668C125.096 23.668 128.624 28.024 128.192 34.108H113.504C113.72 38.608 116.096 41.38 119.804 41.38C122.972 41.38 125.168 39.616 125.78 36.592H128.264C127.4 40.804 124.196 43.36 119.84 43.36ZM119.66 25.612C116.24 25.612 113.828 28.24 113.504 32.38H125.564C125.348 28.132 123.152 25.612 119.66 25.612Z" fill="white"/>
-                      </g>
-                      <defs>
-                      <filter id="filter0_b_0_586" x="-71.884" y="-107.148" width="324.808" height="274.808" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="62.15"/>
-                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_586"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_586" result="shape"/>
-                      </filter>
-                      <clipPath id="clip0_0_586">
-                      <rect width="40" height="40" fill="white" transform="translate(0.5 9)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>`;
+  const base_icon = `<svg width="159" height="58" viewBox="0 0 159 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_569)">
+                    <path d="M6.57889 36.897C6.80988 36.666 7.1275 36.5312 7.46436 36.5312H38.013C38.5712 36.5312 38.8503 37.205 38.4557 37.5996L32.4211 43.6342C32.1901 43.8652 31.8724 44 31.5356 44H0.986978C0.428749 44 0.149634 43.3262 0.544244 42.9316L6.57889 36.897Z" fill="url(#paint0_linear_1_569)"/>
+                    <path d="M6.57825 14.3657C6.81887 14.1347 7.13648 14 7.46372 14H38.0123C38.5706 14 38.8497 14.6737 38.4551 15.0683L32.4204 21.103C32.1894 21.334 31.8718 21.4687 31.5349 21.4687H0.986337C0.428108 21.4687 0.148993 20.795 0.543603 20.4004L6.57825 14.3657Z" fill="url(#paint1_linear_1_569)"/>
+                    <path d="M32.4211 25.5592C32.1901 25.3282 31.8724 25.1934 31.5356 25.1934H0.986978C0.428749 25.1934 0.149634 25.8671 0.544244 26.2618L6.57889 32.2964C6.80988 32.5274 7.1275 32.6621 7.46436 32.6621H38.013C38.5712 32.6621 38.8503 31.9884 38.4557 31.5938L32.4211 25.5592Z" fill="url(#paint2_linear_1_569)"/>
+                    </g>
+                    <g filter="url(#filter0_b_1_569)">
+                    <path d="M68.6626 35.836C68.6626 39.94 65.3146 43.36 59.3026 43.36C53.2906 43.36 49.7626 40.012 49.5106 35.116H52.2466C52.4986 38.788 54.8026 41.164 59.2666 41.164C62.9386 41.164 65.8186 39.292 65.8186 36.196C65.8186 33.532 64.3066 32.308 60.6346 31.552L57.3586 30.904C53.9386 30.22 50.3386 28.636 50.3386 24.136C50.3386 19.996 53.9746 16.792 59.1226 16.792C64.1626 16.792 68.0506 19.96 68.3386 24.892H65.5666C65.3866 21.472 62.8666 18.988 59.1586 18.988C55.1986 18.988 53.0746 21.4 53.0746 23.992C53.0746 27.052 55.6666 27.988 58.5466 28.564L61.8226 29.248C66.1786 30.148 68.6626 31.948 68.6626 35.836ZM81.1034 43.36C75.8834 43.36 72.1034 39.22 72.1034 33.496C72.1034 27.808 75.8834 23.704 81.1034 23.704C86.3594 23.704 90.1394 27.808 90.1394 33.496C90.1394 39.22 86.3594 43.36 81.1034 43.36ZM81.1034 41.164C84.8114 41.164 87.5834 38.212 87.5834 33.496C87.5834 28.852 84.8114 25.9 81.1034 25.9C77.4314 25.9 74.6594 28.852 74.6594 33.496C74.6594 38.212 77.4314 41.164 81.1034 41.164ZM96.7345 43H94.2145V17.152H96.7345V43ZM113.859 43V39.544C112.743 41.92 110.439 43.36 107.487 43.36C103.563 43.36 101.007 41.164 101.007 37.744C101.007 34.036 103.959 32.092 109.719 32.092C110.871 32.092 111.735 32.164 113.607 32.308V30.724C113.607 27.556 111.915 25.684 109.035 25.684C105.939 25.684 103.995 27.592 103.959 30.688H101.655C101.763 26.476 104.679 23.668 108.999 23.668C113.427 23.668 116.019 26.26 116.019 30.652V43H113.859ZM103.419 37.672C103.419 39.976 105.183 41.524 107.847 41.524C111.375 41.524 113.607 39.22 113.607 35.656V33.964C111.987 33.82 110.871 33.784 109.827 33.784C105.507 33.784 103.419 35.044 103.419 37.672ZM123.84 31.948V43H121.32V24.028H123.66V27.592C124.884 25.252 127.188 23.668 129.924 23.668C133.884 23.668 136.44 26.188 136.44 30.688V43H133.92V31.552C133.92 27.916 132.264 25.864 129.168 25.864C126.216 25.864 123.84 28.42 123.84 31.948ZM153.41 43V39.544C152.294 41.92 149.99 43.36 147.038 43.36C143.114 43.36 140.558 41.164 140.558 37.744C140.558 34.036 143.51 32.092 149.27 32.092C150.422 32.092 151.286 32.164 153.158 32.308V30.724C153.158 27.556 151.466 25.684 148.586 25.684C145.49 25.684 143.546 27.592 143.51 30.688H141.206C141.314 26.476 144.23 23.668 148.55 23.668C152.978 23.668 155.57 26.26 155.57 30.652V43H153.41ZM142.97 37.672C142.97 39.976 144.734 41.524 147.398 41.524C150.926 41.524 153.158 39.22 153.158 35.656V33.964C151.538 33.82 150.422 33.784 149.378 33.784C145.058 33.784 142.97 35.044 142.97 37.672Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_b_1_569" x="-74.7894" y="-107.508" width="354.659" height="275.168" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="62.15"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_569"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_569" result="shape"/>
+                    </filter>
+                    <linearGradient id="paint0_linear_1_569" x1="35.0947" y1="10.395" x2="13.9526" y2="50.8906" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00FFA3"/>
+                    <stop offset="1" stop-color="#DC1FFF"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1_569" x1="25.8496" y1="5.56868" x2="4.70752" y2="46.0642" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00FFA3"/>
+                    <stop offset="1" stop-color="#DC1FFF"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_1_569" x1="30.443" y1="7.96648" x2="9.30096" y2="48.462" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00FFA3"/>
+                    <stop offset="1" stop-color="#DC1FFF"/>
+                    </linearGradient>
+                    <clipPath id="clip0_1_569">
+                    <rect width="38.2772" height="30" fill="white" transform="translate(0.361389 14)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>`;
 
-  const token = "0x83351e3812las42fs3asfbdA02913";
+  const token = "Coming Soon";
   const [copied, setCopied] = useState(false);
   const copyHandle = () => {
     navigator.clipboard.writeText(token);
@@ -61,15 +75,16 @@ export default function Specification() {
                 className='text-center border-b border-[#1C1C1D] md:border-0 py-6 md:pb-0 w-full md:w-auto'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">TOTAL SUPPLY</h5>
                 <div className='flex items-center justify-center gap-2'>
-                  <img src={main_icon} alt="" />
-                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>502,000,000</span>
+                  {/* <img src={main_icon} alt="" /> */}
+                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>1,000,000,000</span>
                 </div>
               </div>
               <div
                 className='text-center py-6 md:py-0'>
                 <h5 className="font-normal text-lg md:text-xl leading-relaxed mb-1 md:mb-3 text-white text-opacity-70 text-center uppercase">CONTRACT ADDRESS</h5>
                 <div className='flex items-center justify-center gap-2'>
-                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span>
+                  {/* <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>{token.substring(0, 6)}.....{token.substring(token.length - 8)}</span> */}
+                  <span className='text-white leading-relaxed font-normal text-lg md:text-2xl lg:text-4xl'>{token}</span>
                   <button onClick={() => copyHandle()} className='cursor-pointer p-0 border-0 bg-transparent text-2xl text-white'>{!copied ? (<LuCopy />) : (<LuCopyCheck />)}</button>
                 </div>
               </div>
