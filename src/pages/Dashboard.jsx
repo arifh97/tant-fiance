@@ -301,7 +301,8 @@ export default function Dashboard() {
               </a>
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="lg:hidden relative">
+            <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
             <Dashboardtable tabledata={tabledata} />
           </div>
         </div>
@@ -311,7 +312,7 @@ export default function Dashboard() {
         <div className="card block lg:hidden  p-5 bg-[#080B13] mb-3 md:mb-5">
           <div className="flex items-center">
             <div className="h-[19px] w-[18px] -mt-2">
-            <img src={dcicon} alt="" className="h-full w-full object-cover" />
+              <img src={dcicon} alt="" className="h-full w-full object-cover" />
             </div>
             <h5 className="ml-2 text-base mb-2 font-normal text-white">
               SOLIFY
@@ -390,7 +391,7 @@ export default function Dashboard() {
           <CandlestickChart />
         </div>
         <div className="hidden lg:block relative">
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10" style={{backdropFilter:'blur(12px)'}}><img src={coming_soon} className="w-full h-full" alt="" /></div>
+          <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
           <Dashboardtable tabledata={tabledata} />
         </div>
       </div>
