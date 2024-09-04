@@ -20,27 +20,27 @@ export default function Footer() {
   const social = [
     {
       icon: <FaXTwitter />,
-      url: 'https://x.com/TantFinance',
+      url: 'https://x.com/SolifySpl',
       name: 'x',
     },
     {
       icon: <FaTelegram />,
-      url: 'https://t.me/tantfinanceofficial',
+      url: 'https://t.me/solifysolana',
       name: 'telegram',
     },
     {
       icon: <FaDiscord />,
-      url: 'https://discord.gg/6SAEzHsS',
+      url: '',
       name: 'discord',
     },
     {
       icon: <FaTiktok />,
-      url: 'https://www.tiktok.com/@tant.finance?is_from_webapp=1&sender_device=pc',
+      url: '',
       name: 'tiktok',
     },
     {
       icon: <FaYoutube />,
-      url: 'https://www.youtube.com/@TantFinance',
+      url: '',
       name: 'youtube',
     }
   ];

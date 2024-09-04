@@ -11,6 +11,7 @@ import icon5 from "../assets/img/ticon5.svg";
 import icon6 from "../assets/img/ticon6.svg";
 import icon7 from "../assets/img/ticon7.svg";
 import icon8 from "../assets/img/ticon8.svg";
+import coming_soon from '../assets/img/coming-soon.png'
 
 import {
   Table,
@@ -79,51 +80,52 @@ export default function Dex() {
       Signup: "30",
     },
   ];
-const items = [
-  {
-    title: "VOLUME TODAY",
-    img:`${dexicon}`,
-    des:"$74,097,895,234"
-  },
-  {
-    title: "PROFIT TODAY",
-    img:`${dexicon2}`,
-    des:"$2000"
-  },
-  {
-    title: "SIGNUPS",
-    img:`${dexicon3}`,
-    des:"200"
-  },
-  {
-    title: "USER REGISTERED",
-    img:`${dexicon4}`,
-    des:"122"
-  },
-]
+  const items = [
+    {
+      title: "VOLUME TODAY",
+      img: `${dexicon}`,
+      des: "$74,097,895,234"
+    },
+    {
+      title: "PROFIT TODAY",
+      img: `${dexicon2}`,
+      des: "$2000"
+    },
+    {
+      title: "SIGNUPS",
+      img: `${dexicon3}`,
+      des: "200"
+    },
+    {
+      title: "USER REGISTERED",
+      img: `${dexicon4}`,
+      des: "122"
+    },
+  ]
 
   return (
-    <div className="dex">
+    <div className="dex relative">
+      <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
       <div className="grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-4 gap-[20px]  mb-5 md:mb-8 lg:mb-12  xl:mb-[52px]">
         {
-          items.map((item,idx)=>(
+          items.map((item, idx) => (
             <div className=" imtitem flex  gap-4 bg-[#080B13] rounded-[10px] items-center md:items-start  p-3 md:p-6  " key={idx}>
-            <div className={`p-3 flex justify-center items-center ${idx==0 && "bg-[#0257FF]"} ${idx==1 && "bg-[#0276FF]"} ${idx==2 && "bg-[#5302FF]"}   ${idx==3 && "bg-[#6202FF]"}   rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3`}>
-              <img
-                className="w-5 h-5   md:w-10 md:h-10  flex-none "
-                src={item.img}
-                alt=""
-              />
-            </div>
-            <div>
-              <h6 className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280]   lg:mb-3 xl:mb-4   uppercase ">
-               {item.title}
-              </h6>
-              <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
-              {item.des}
-              </p>
-            </div>
-          </div>))
+              <div className={`p-3 flex justify-center items-center ${idx == 0 && "bg-[#0257FF]"} ${idx == 1 && "bg-[#0276FF]"} ${idx == 2 && "bg-[#5302FF]"}   ${idx == 3 && "bg-[#6202FF]"}   rounded-[10px] w-[47px] h-[47px]  md:w-[80px] md:h-[80px]   flex-none xl:2  xxl:p-3`}>
+                <img
+                  className="w-5 h-5   md:w-10 md:h-10  flex-none "
+                  src={item.img}
+                  alt=""
+                />
+              </div>
+              <div>
+                <h6 className=" title text-[12px] md:text-lg   leading-6 font-medium text-[#6B7280]   lg:mb-3 xl:mb-4   uppercase ">
+                  {item.title}
+                </h6>
+                <p className=" des text-base md:text-[30px]  leading-[40px] font-semibold text-[#D9DCE4]">
+                  {item.des}
+                </p>
+              </div>
+            </div>))
         }
       </div>
 

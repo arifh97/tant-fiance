@@ -302,7 +302,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="lg:hidden relative">
-            <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
+          <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
             <Dashboardtable tabledata={tabledata} />
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function Dashboard() {
           <CandlestickChart />
         </div>
         <div className="hidden lg:block relative">
-          <div className="absolute top-0 left-0 w-full h-full z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
+        <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
           <Dashboardtable tabledata={tabledata} />
         </div>
       </div>

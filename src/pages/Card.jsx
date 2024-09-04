@@ -1,6 +1,8 @@
 import card from "../assets/img/card.png";
 import ChartTwo from "../components/ChartTwo";
 import { Bar } from "react-chartjs-2";
+import coming_soon from '../assets/img/coming-soon.png'
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -59,7 +61,7 @@ export default function Card() {
       },
       y: {
         ticks: {
-          callback: function (value, index, values) {            
+          callback: function (value, index, values) {
             return `$${value}k`;
           }
         },
@@ -117,7 +119,8 @@ export default function Card() {
           <div className="w-full lg:w-[64.33%] xl:w-1/3 mb-6 lg:mb-0">
             <img className="w-full" src={card} alt="" />
           </div>
-          <div className="w-full lg:w-2/3 card-content-text">
+          <div className="w-full lg:w-2/3 card-content-text relative">
+            <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
             <div className="text-body grid grid-cols-2 xl:grid-cols-3 justify-center gap-x-[6.5rem] md:gap-y-[1.5rem] lg:gap-x-14  xl:gap-x-[36px] 2xl:gap-x-[163px] gap-y-8  lg:gap-y-[5px] xl:gap-y-[58px] uppercase ">
               {
                 items.map((item, idx) => <div key={idx}>
@@ -163,7 +166,8 @@ export default function Card() {
               </div>
             </div>
           </div>
-          <div className=" w-full xl:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px] mt-6 xl:mt-0">
+          <div className=" w-full xl:w-6/12 p-3 md:p-5 lg:p-[30px] bg-[#080B13] rounded-[20px] mt-6 xl:mt-0 relative">
+            <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
             <div className="chart-issu-chart h-full flex flex-col">
               <div className="flex items-center justify-between mb-4 md:mb-5 lg:mb-[28px] ">
                 <h4 className="text-base md:text-lg lg:text-[23px] leading-[37px] font-medium text-[#A8ABB3]">

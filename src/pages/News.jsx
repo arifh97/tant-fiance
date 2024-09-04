@@ -1,4 +1,5 @@
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import coming_soon from '../assets/img/coming-soon.png'
 
 import NewsCaed from "../components/NewsCaed";
 
@@ -14,93 +15,94 @@ import icon3 from "../assets/img/icon3.svg";
 export default function News() {
   const newscards = [
     {
-      "title" : "$BTC Bitcoin could hit 51K within hours.",
+      "title": "$BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard1}`,
       "icon": `${icon1}`,
-      "iconname" : "Soham",
-      "social" :"@soham . 6h"
+      "iconname": "Soham",
+      "social": "@soham . 6h"
     },
     {
-      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "title": " $BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard2}`,
       "icon": `${icon2}`,
-      "iconname" : "Darrell",
-      "social" :"@darrell . 6h"
+      "iconname": "Darrell",
+      "social": "@darrell . 6h"
     },
     {
-      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "title": " $BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to  spot",
       "img": `${newscard3}`,
       "icon": `${icon3}`,
-      "iconname" : "Shane",
-      "social" :"@shane . 6h"
+      "iconname": "Shane",
+      "social": "@shane . 6h"
     },
     {
-      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "title": " $BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard4}`,
       "icon": `${icon1}`,
-      "iconname" : "Soham",
-      "social" :"@soham . 6h"
+      "iconname": "Soham",
+      "social": "@soham . 6h"
     },
     {
-      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "title": " $BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard5}`,
       "icon": `${icon2}`,
-      "iconname" : "Darrell",
-      "social" :"@darrell . 6h"
+      "iconname": "Darrell",
+      "social": "@darrell . 6h"
     },
     {
-      "title" : "$BTC Bitcoin could hit 51K within hours.",
+      "title": "$BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard6}`,
       "icon": `${icon3}`,
-      "iconname" : "Shane",
-      "social" :"@shane . 6h"
+      "iconname": "Shane",
+      "social": "@shane . 6h"
     }
-    
+
   ]
   const newscards2 = [
     {
-      "title" : "$BTC Bitcoin could hit 51K within hours.",
+      "title": "$BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard1}`,
       "icon": `${icon1}`,
-      "iconname" : "Soham",
-      "social" :"@soham . 6h"
+      "iconname": "Soham",
+      "social": "@soham . 6h"
     },
     {
-      "title" : " $BTC Bitcoin could hit 51K within hours.",
+      "title": " $BTC Bitcoin could hit 51K within hours.",
       "des": "#BitcoinETFs could be approved anytime now. Prio to approval, they might shake the entire market with sharp movements. Be cautious, stick to spot trading! The trend is upward, stay calm stick to spot",
       "img": `${newscard2}`,
       "icon": `${icon2}`,
-      "iconname" : "Darrell",
-      "social" :"@darrell . 6h"
+      "iconname": "Darrell",
+      "social": "@darrell . 6h"
     }
   ]
   return (
-    <div className="news  w-full flex-col">
+    <div className="news relative w-full flex-col">
+      <div className="rounded-xl absolute top-0 left-0 w-full h-full border border-white border-opacity-10 z-10 bg-black bg-opacity-10 flex items-center justify-center" style={{ backdropFilter: 'blur(12px)' }}><img src={coming_soon} className="w-auto h-auto" alt="" /></div>
       <Tabs aria-label="Options">
         <Tab key="Top" title="Top" className=" text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
           <Card className="!border-none w-full card-card ">
             <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
               <div className=" grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-4 lg:gap-[26px]">
                 {
-                  newscards.map((item,idx)=><NewsCaed item={item} key={idx}/>)
+                  newscards.map((item, idx) => <NewsCaed item={item} key={idx} />)
                 }
               </div>
             </CardBody>
           </Card>
         </Tab>
         <Tab key="Latest" title="Latest" className="tab-btn text-[#6B7280] px-[30px] py-[10px] text-[17px] leading-[26px] font-normal ">
-        <Card className="!border-none w-full card-card ">
-          <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
-            <div className=" grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-3 cardbody  2xl:gap-[26px]">
+          <Card className="!border-none w-full card-card ">
+            <CardBody className="bg-[#03060D] text-white border-none card-des !w-full !p-0 mt-4">
+              <div className=" grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-3 cardbody  2xl:gap-[26px]">
                 {
-                  newscards2.map((item,idx)=><NewsCaed item={item} key={idx}/>)
+                  newscards2.map((item, idx) => <NewsCaed item={item} key={idx} />)
                 }
               </div>
             </CardBody>
