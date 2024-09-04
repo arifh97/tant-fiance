@@ -61,7 +61,7 @@
     }
     &-menu {
         & .active {
-            background: linear-gradient(292.05deg, #00FFFF -34.93%, #0152FF 84.08%);
+            background: var(--Liner, linear-gradient(97deg, #161BBE -0.25%, #BD09E0 100.69%));
             color: $white;
         }
     }
@@ -83,6 +83,6 @@
     }
 }
 
-.overflow-auto{
+.overflow-auto {
     @include custom-scroll(6px)
 }

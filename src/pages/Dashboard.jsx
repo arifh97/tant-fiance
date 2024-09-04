@@ -87,7 +87,7 @@ export default function Dashboard() {
               SOLIFY
             </h5>
             <span className="ml-1 mt-2 text-[10px] md-[12px] text-[#8591B1] uppercase ">
-              TANT
+              SOLIFY
             </span>
           </div>
           <div className="flex gap-2">
