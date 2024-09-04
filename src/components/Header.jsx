@@ -16,11 +16,11 @@ export default function Header() {
       btn_title: 'How to buy',
       to: 'howTo'
     },
-    {
-      btn_title: 'Whitepaper',
-      to: '/',
-      isBlank: true,
-    },
+    // {
+    //   btn_title: 'Whitepaper',
+    //   to: '/',
+    //   isBlank: true,
+    // },
     {
       btn_title: 'Tokenomics',
       to: 'sp'

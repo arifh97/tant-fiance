@@ -100,7 +100,7 @@ export default function Banner() {
               <p className='mb-6 md:mb-7 lg:mb-10 text-sm md:text-lg lg:text-[22px] leading-relaxed'>SOLIFY pioneers DeFi with frontrunninv sniper in collaboration with stacked validators to maximise the amount of your transactions landing on chain, futuristic debit cards, smart gateways for easy trading, and Al lending, setting new standards in secure transactions.</p>
               <div className="flex items-center flex-wrap gap-4 justify-center lg:justify-start">
                 <BuyButton />
-                <CButton className="bg-[#1F1F1F] text-white" url={pdf} target="_blank" color=''>Whitepaper</CButton>
+                <CButton className="bg-[#1F1F1F] text-white" url="https://t.me/solifysolana" target="_blank" color=''>Whitepaper</CButton>
               </div>
             </motion.div>
           </Col>
