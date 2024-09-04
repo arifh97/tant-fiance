@@ -3,6 +3,20 @@
     &-content {
         padding-top: 250px;
         padding-bottom: 140px;
+        @include xl {
+            padding-top: 150px;
+        }
+        @include lg {
+            padding-top: 100px;
+        }
+        @include md {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+        @include sm {
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
         & h1 {
             span {
                 background: linear-gradient(94deg, #676BFF 26.34%, #BD09E0 58.19%);

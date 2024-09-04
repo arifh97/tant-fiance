@@ -89,7 +89,7 @@ export default function Banner() {
       <div className="banner bg-contain bg-right-top bg-no-repeat bg-banner relative z-1 bg-[url('../img/banner-bg.png')]">
         <div className="w-[var(--width)] h-[var(--width)] rounded-full absolute common-shape left-[var(--position)] top-[var(--position)]"></div>
         <Container rowClass="items-end">
-          <Col className="w-full lg:w-6/12">
+          <Col className="w-full lg:w-7/12 xl:w-6/12">
             <motion.div
               initial={{ y: 100 }}
               whileInView={{ y: 0, transition: { duration: .5, delay: 0 } }}
@@ -104,7 +104,7 @@ export default function Banner() {
               </div>
             </motion.div>
           </Col>
-          <Col className="w-full lg:w-6/12">
+          <Col className="w-full lg:w-5/12 xl:w-6/12">
             <div className="banner-img"><img src={img} alt="" className='mx-auto' /></div>
           </Col>
 

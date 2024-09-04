@@ -95,6 +95,7 @@
         align-items: center;
         justify-content: center;
         background-color: rgba($color: #141618, $alpha: .80);
+        margin-left: 14px;
         & svg {
             --width: 40px;
             width: var(--width);
